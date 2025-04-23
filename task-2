@@ -1,0 +1,3896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>project management system</title>
+</head>
+<div class="app-container">
+<div class="app-header">
+<div class="app-header-left">
+<span class="app-icon"></span>
+<p class="app-name">Portfolio</p>
+<div class="search-wrapper">
+<input class="search-input" type="text" placeholder="Search">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-search" viewBox="0 0 24 24">
+<defs></defs>
+<circle cx="11" cy="11" r="8"></circle>
+<path d="M21 21l-4.35-4.35"></path>
+</svg>
+</div>
+</div>
+<div class="app-header-right">
+<button class="mode-switch" title="Switch Theme">
+<svg class="moon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="24" height="24" viewBox="0 0 24 24">
+<defs></defs>
+<path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+</svg>
+</button>
+<button class="add-btn" title="Add New Project">
+<svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
+<line x1="12" y1="5" x2="12" y2="19" />
+<line x1="5" y1="12" x2="19" y2="12" /></svg>
+</button>
+<button class="notification-btn">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell">
+<path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
+<path d="M13.73 21a2 2 0 0 1-3.46 0" /></svg>
+</button>
+<button class="profile-btn">
+<img src="https://assets.codepen.io/3306515/IMG_2025.jpg" />
+<span>Aybüke C.</span>
+</button>
+</div>
+<button class="messages-btn">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle">
+<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" /></svg>
+</button>
+</div>
+<div class="app-content">
+<div class="app-sidebar">
+<a href="" class="app-sidebar-link active">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home">
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+<polyline points="9 22 9 12 15 12 15 22" /></svg>
+</a>
+<a href="" class="app-sidebar-link">
+<svg class="link-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-pie-chart" viewBox="0 0 24 24">
+<defs />
+<path d="M21.21 15.89A10 10 0 118 2.83M22 12A10 10 0 0012 2v10z" />
+</svg>
+</a>
+<a href="" class="app-sidebar-link">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+<rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+<line x1="16" y1="2" x2="16" y2="6" />
+<line x1="8" y1="2" x2="8" y2="6" />
+<line x1="3" y1="10" x2="21" y2="10" /></svg>
+</a>
+<a href="" class="app-sidebar-link">
+<svg class="link-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-settings" viewBox="0 0 24 24">
+<defs />
+<circle cx="12" cy="12" r="3" />
+<path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z" />
+</svg>
+</a>
+</div>
+<div class="projects-section">
+<div class="projects-section-header">
+<p>Projects</p>
+<p class="time">December, 12</p>
+</div>
+<div class="projects-section-line">
+<div class="projects-status">
+<div class="item-status">
+<span class="status-number">45</span>
+<span class="status-type">In Progress</span>
+</div>
+<div class="item-status">
+<span class="status-number">24</span>
+<span class="status-type">Upcoming</span>
+</div>
+<div class="item-status">
+<span class="status-number">62</span>
+<span class="status-type">Total Projects</span>
+</div>
+</div>
+<div class="view-actions">
+<button class="view-btn list-view" title="List View">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-list">
+<line x1="8" y1="6" x2="21" y2="6" />
+<line x1="8" y1="12" x2="21" y2="12" />
+<line x1="8" y1="18" x2="21" y2="18" />
+<line x1="3" y1="6" x2="3.01" y2="6" />
+<line x1="3" y1="12" x2="3.01" y2="12" />
+<line x1="3" y1="18" x2="3.01" y2="18" /></svg>
+</button>
+<button class="view-btn grid-view active" title="Grid View">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-grid">
+<rect x="3" y="3" width="7" height="7" />
+<rect x="14" y="3" width="7" height="7" />
+<rect x="14" y="14" width="7" height="7" />
+<rect x="3" y="14" width="7" height="7" /></svg>
+</button>
+</div>
+</div>
+<div class="project-boxes jsGridView">
+<div class="project-box-wrapper">
+<div class="project-box" style="background-color: #fee4cb;">
+<div class="project-box-header">
+<span>December 10, 2020</span>
+<div class="more-wrapper">
+<button class="project-btn-more">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
+<circle cx="12" cy="12" r="1" />
+<circle cx="12" cy="5" r="1" />
+<circle cx="12" cy="19" r="1" /></svg>
+</button>
+</div>
+</div>
+<div class="project-box-content-header">
+<p class="box-content-header">Web Designing</p>
+<p class="box-content-subheader">Prototyping</p>
+</div>
+<div class="box-progress-wrapper">
+<p class="box-progress-header">Progress</p>
+<div class="box-progress-bar">
+<span class="box-progress" style="width: 60%; background-color: #ff942e"></span>
+</div>
+<p class="box-progress-percentage">60%</p>
+</div>
+<div class="project-box-footer">
+<div class="participants">
+<img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80" alt="participant">
+<img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTB8fG1hbnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="participant">
+<button class="add-participant" style="color: #ff942e;">
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
+<path d="M12 5v14M5 12h14" />
+</svg>
+</button>
+</div>
+<div class="days-left" style="color: #ff942e;">
+2 Days Left
+</div>
+</div>
+</div>
+</div>
+<div class="project-box-wrapper">
+<div class="project-box" style="background-color: #e9e7fd;">
+<div class="project-box-header">
+<span>December 10, 2020</span>
+<div class="more-wrapper">
+<button class="project-btn-more">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
+<circle cx="12" cy="12" r="1" />
+<circle cx="12" cy="5" r="1" />
+<circle cx="12" cy="19" r="1" /></svg>
+</button>
+</div>
+</div>
+<div class="project-box-content-header">
+<p class="box-content-header">Testing</p>
+<p class="box-content-subheader">Prototyping</p>
+</div>
+<div class="box-progress-wrapper">
+<p class="box-progress-header">Progress</p>
+<div class="box-progress-bar">
+<span class="box-progress" style="width: 50%; background-color: #4f3ff0"></span>
+</div>
+<p class="box-progress-percentage">50%</p>
+</div>
+<div class="project-box-footer">
+<div class="participants">
+<img src="https://images.unsplash.com/photo-1596815064285-45ed8a9c0463?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1215&q=80" alt="participant">
+<img src="https://images.unsplash.com/photo-1583195764036-6dc248ac07d9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2555&q=80" alt="participant">
+<button class="add-participant" style="color: #4f3ff0;">
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
+<path d="M12 5v14M5 12h14" />
+</svg>
+</button>
+</div>
+<div class="days-left" style="color: #4f3ff0;">
+2 Days Left
+</div>
+</div>
+</div>
+</div>
+<div class="project-box-wrapper">
+<div class="project-box">
+<div class="project-box-header">
+<span>December 10, 2020</span>
+<div class="more-wrapper">
+<button class="project-btn-more">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
+<circle cx="12" cy="12" r="1" />
+<circle cx="12" cy="5" r="1" />
+<circle cx="12" cy="19" r="1" /></svg>
+</button>
+</div>
+</div>
+<div class="project-box-content-header">
+<p class="box-content-header">Svg Animations</p>
+<p class="box-content-subheader">Prototyping</p>
+</div>
+<div class="box-progress-wrapper">
+<p class="box-progress-header">Progress</p>
+<div class="box-progress-bar">
+<span class="box-progress" style="width: 80%; background-color: #096c86"></span>
+</div>
+<p class="box-progress-percentage">80%</p>
+</div>
+<div class="project-box-footer">
+<div class="participants">
+<img src="https://images.unsplash.com/photo-1587628604439-3b9a0aa7a163?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjR8fHdvbWFufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="participant">
+<img src="https://images.unsplash.com/photo-1596815064285-45ed8a9c0463?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1215&q=80" alt="participant">
+<button class="add-participant" style="color: #096c86;">
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
+<path d="M12 5v14M5 12h14" />
+</svg>
+</button>
+</div>
+<div class="days-left" style="color: #096c86;">
+2 Days Left
+</div>
+</div>
+</div>
+</div>
+<div class="project-box-wrapper">
+<div class="project-box" style="background-color: #ffd3e2;">
+<div class="project-box-header">
+<span>December 10, 2020</span>
+<div class="more-wrapper">
+<button class="project-btn-more">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
+<circle cx="12" cy="12" r="1" />
+<circle cx="12" cy="5" r="1" />
+<circle cx="12" cy="19" r="1" /></svg>
+</button>
+</div>
+</div>
+<div class="project-box-content-header">
+<p class="box-content-header">UI Development</p>
+<p class="box-content-subheader">Prototyping</p>
+</div>
+<div class="box-progress-wrapper">
+<p class="box-progress-header">Progress</p>
+<div class="box-progress-bar">
+<span class="box-progress" style="width: 20%; background-color: #df3670"></span>
+</div>
+<p class="box-progress-percentage">20%</p>
+</div>
+<div class="project-box-footer">
+<div class="participants">
+<img src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80" alt="participant">
+<img src="https://images.unsplash.com/photo-1587628604439-3b9a0aa7a163?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjR8fHdvbWFufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="participant">
+<button class="add-participant" style="color: #df3670;">
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
+<path d="M12 5v14M5 12h14" />
+</svg>
+</button>
+</div>
+<div class="days-left" style="color: #df3670;">
+2 Days Left
+</div>
+</div>
+</div>
+</div>
+<div class="project-box-wrapper">
+<div class="project-box" style="background-color: #c8f7dc;">
+<div class="project-box-header">
+<span>December 10, 2020</span>
+<div class="more-wrapper">
+<button class="project-btn-more">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
+<circle cx="12" cy="12" r="1" />
+<circle cx="12" cy="5" r="1" />
+<circle cx="12" cy="19" r="1" /></svg>
+</button>
+</div>
+</div>
+<div class="project-box-content-header">
+<p class="box-content-header">Data Analysis</p>
+<p class="box-content-subheader">Prototyping</p>
+</div>
+<div class="box-progress-wrapper">
+<p class="box-progress-header">Progress</p>
+<div class="box-progress-bar">
+<span class="box-progress" style="width: 60%; background-color: #34c471"></span>
+</div>
+<p class="box-progress-percentage">60%</p>
+</div>
+<div class="project-box-footer">
+<div class="participants">
+<img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80" alt="participant">
+<img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTB8fG1hbnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="participant">
+<button class="add-participant" style="color: #34c471;">
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
+<path d="M12 5v14M5 12h14" />
+</svg>
+</button>
+</div>
+<div class="days-left" style="color: #34c471;">
+2 Days Left
+</div>
+</div>
+</div>
+</div>
+<div class="project-box-wrapper">
+<div class="project-box" style="background-color: #d5deff;">
+<div class="project-box-header">
+<span>December 10, 2020</span>
+<div class="more-wrapper">
+<button class="project-btn-more">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
+<circle cx="12" cy="12" r="1" />
+<circle cx="12" cy="5" r="1" />
+<circle cx="12" cy="19" r="1" /></svg>
+</button>
+</div>
+</div>
+<div class="project-box-content-header">
+<p class="box-content-header">Web Designing</p>
+<p class="box-content-subheader">Prototyping</p>
+</div>
+<div class="box-progress-wrapper">
+<p class="box-progress-header">Progress</p>
+<div class="box-progress-bar">
+<span class="box-progress" style="width: 40%; background-color: #4067f9"></span>
+</div>
+<p class="box-progress-percentage">40%</p>
+</div>
+<div class="project-box-footer">
+<div class="participants">
+<img src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80" alt="participant">
+<img src="https://images.unsplash.com/photo-1583195764036-6dc248ac07d9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2555&q=80" alt="participant">
+<button class="add-participant" style="color: #4067f9;">
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
+<path d="M12 5v14M5 12h14" />
+</svg>
+</button>
+</div>
+<div class="days-left" style="color: #4067f9;">
+2 Days Left
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="messages-section">
+<button class="messages-close">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle">
+<circle cx="12" cy="12" r="10" />
+<line x1="15" y1="9" x2="9" y2="15" />
+<line x1="9" y1="9" x2="15" y2="15" /></svg>
+</button>
+<div class="projects-section-header">
+<p>Client Messages</p>
+</div>
+<div class="messages">
+<div class="message-box">
+<img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80" alt="profile image">
+<div class="message-content">
+<div class="message-header">
+<div class="name">Stephanie</div>
+<div class="star-checkbox">
+<input type="checkbox" id="star-1">
+<label for="star-1">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
+<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+</label>
+</div>
+</div>
+<p class="message-line">
+I got your first assignment. It was quite good.  We can continue with the next assignment.
+</p>
+<p class="message-line time">
+Dec, 12
+</p>
+</div>
+</div>
+<div class="message-box">
+<img src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80" alt="profile image">
+<div class="message-content">
+<div class="message-header">
+<div class="name">Mark</div>
+<div class="star-checkbox">
+<input type="checkbox" id="star-2">
+<label for="star-2">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
+<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+</label>
+</div>
+</div>
+<p class="message-line">
+Hey, can tell me about progress of project? I'm waiting for your response.
+</p>
+<p class="message-line time">
+Dec, 12
+</p>
+</div>
+</div>
+<div class="message-box">
+<img src="https://images.unsplash.com/photo-1543965170-4c01a586684e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDZ8fG1hbnxlbnwwfDB8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="profile image">
+<div class="message-content">
+<div class="message-header">
+<div class="name">David</div>
+<div class="star-checkbox">
+<input type="checkbox" id="star-3">
+<label for="star-3">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
+<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+</label>
+</div>
+</div>
+<p class="message-line">
+Awesome!  I like it. We can schedule a meeting for the next one.
+</p>
+<p class="message-line time">
+Dec, 12
+</p>
+</div>
+</div>
+<div class="message-box">
+<img src="https://images.unsplash.com/photo-1533993192821-2cce3a8267d1?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTl8fHdvbWFuJTIwbW9kZXJufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="profile image">
+<div class="message-content">
+<div class="message-header">
+<div class="name">Jessica</div>
+<div class="star-checkbox">
+<input type="checkbox" id="star-4">
+<label for="star-4">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
+<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+</label>
+</div>
+</div>
+<p class="message-line">
+I am really impressed! Can't wait to see the final result.
+</p>
+<p class="message-line time">
+Dec, 11
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+====@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
+* {
+box-sizing: border-box;
+}
+:root {
+--app-container: #f3f6fd;
+--main-color: #1f1c2e;
+--secondary-color: #4a4a4a;
+--link-color: #1f1c2e;
+--link-color-hover: #c3cff4;
+--link-color-active: #fff;
+--link-color-active-bg: #1f1c2e;
+--projects-section: #fff;
+--message-box-hover: #fafcff;
+--message-box-border: #e9ebf0;
+--more-list-bg: #fff;
+--more-list-bg-hover: #f6fbff;
+--more-list-shadow: rgba(209, 209, 209, 0.4);
+--button-bg: #1f1c24;
+--search-area-bg: #fff;
+--star: #1ff1c2 e;
+--message-btn: #fff;
+}
+.dark:root {
+--app-container: #1f1d2b;
+--app-container: #111827;
+--main-color: #fff;
+--secondary-color: rgba(255, 255, 255, .8);
+--projects-section: #1f2937;
+--link-color: rgba(255, 255, 255, .8);
+--link-color-hover: rgba(195, 207, 244, 0.1);
+--link-color-active-bg: rgba(195, 207, 244, 0.2);
+--button-bg: #1f2937;
+--search-area-bg: #1f2937;
+--message-box-hover: #243244;
+--message-box-border: rgba(255, 255, 255, .1);
+--star: #ffd92c;
+--light-font: rgba(255, 255, 255, .8);
+--more-list-bg: #2f3142;
+--more-list-bg-hover: rgba(195, 207, 244, 0.1);
+--more-list-shadow: rgba(195, 207, 244, 0.1);
+--message-btn: rgba(195, 207, 244, 0.1);
+}
+html, body {
+width: 100%;
+height: 100vh;
+margin: 0;
+}
+body {
+font-family: 'DM Sans', sans-serif;
+overflow: hidden;
+display: flex;
+justify-content: center;
+background-color: var(--app-container);
+}
+button, a {
+cursor: pointer;
+}
+.app-container {
+width: 100%;
+display: flex;
+flex-direction: column;
+height: 100%;
+background-color: var(--app-container);
+transition: 0.2s;
+max-width: 1800px;
+}
+.app-container button, .app-container input, .app-container optgroup, .app-container select, .app-container textarea {
+font-family: 'DM Sans', sans-serif;
+}
+.app-content {
+display: flex;
+height: 100%;
+overflow: hidden;
+padding: 16px 24px 24px 0;
+}
+.app-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+padding: 16px 24px;
+position: relative;
+}
+.app-header-left, .app-header-right {
+display: flex;
+align-items: center;
+}
+.app-header-left {
+flex-grow: 1;
+}
+.app-header-right button {
+margin-left: 10px;
+}
+.app-icon {
+width: 26px;
+height: 2px;
+border-radius: 4px;
+background-color: var(--main-color);
+position: relative;
+}
+.app-icon:before, .app-icon:after {
+content: '';
+position: absolute;
+width: 12px;
+height: 2px;
+border-radius: 4px;
+background-color: var(--main-color);
+left: 50%;
+transform: translatex(-50%);
+}
+.app-icon:before {
+top: -6px;
+}
+.app-icon:after {
+bottom: -6px;
+}
+.app-name {
+color: var(--main-color);
+margin: 0;
+font-size: 20px;
+line-height: 24px;
+font-weight: 700;
+margin: 0 32px;
+}
+.mode-switch {
+background-color: transparent;
+border: none;
+padding: 0;
+color: var(--main-color);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.search-wrapper {
+border-radius: 20px;
+background-color: var(--search-area-bg);
+padding-right: 12px;
+height: 40px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+max-width: 480px;
+color: var(--light-font);
+box-shadow: 0 2px 6px 0 rgba(136, 148, 171, .2), 0 24px 20px -24px rgba(71, 82, 107, .1);
+overflow: hidden;
+}
+.dark .search-wrapper {
+box-shadow: none;
+}
+.search-input {
+border: none;
+flex: 1;
+outline: none;
+height: 100%;
+padding: 0 20px;
+font-size: 16px;
+background-color: var(--search-area-bg);
+color: var(--main-color);
+}
+.search-input:placeholder {
+color: var(--main-color);
+opacity: 0.6;
+}
+.add-btn {
+color: #fff;
+background-color: var(--button-bg);
+padding: 0;
+border: 0;
+border-radius: 50%;
+width: 32px;
+height: 32px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.notification-btn {
+color: var(--main-color);
+padding: 0;
+border: 0;
+background-color: transparent;
+height: 32px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.profile-btn {
+padding: 0;
+border: 0;
+background-color: transparent;
+display: flex;
+align-items: center;
+padding-left: 12px;
+border-left: 2px solid #ddd;
+}
+.profile-btn img {
+width: 32px;
+height: 32px;
+object-fit: cover;
+border-radius: 50%;
+margin-right: 4px;
+}
+.profile-btn span {
+color: var(--main-color);
+font-size: 16px;
+line-height: 24px;
+font-weight: 700;
+}
+.page-content {
+flex: 1;
+width: 100%;
+}
+.app-sidebar {
+padding: 40px 16px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.app-sidebar-link {
+color: var(--main-color);
+color: var(--link-color);
+margin: 16px 0;
+transition: 0.2s;
+border-radius: 50%;
+flex-shrink: 0;
+width: 40px;
+height: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.app-sidebar-link:hover {
+background-color: var(--link-color-hover);
+color: var(--link-color-active);
+}
+.app-sidebar-link.active {
+background-color: var(--link-color-active-bg);
+color: var(--link-color-active);
+}
+.projects-section {
+flex: 2;
+background-color: var(--projects-section);
+border-radius: 32px;
+padding: 32px 32px 0 32px;
+overflow: hidden;
+height: 100%;
+display: flex;
+flex-direction: column;
+}
+.projects-section-line {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-bottom: 32px;
+}
+.projects-section-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 24px;
+color: var(--main-color);
+}
+.projects-section-header p {
+font-size: 24px;
+line-height: 32px;
+font-weight: 700;
+opacity: 0.9;
+margin: 0;
+color: var(--main-color);
+}
+.projects-section-header .time {
+font-size: 20px;
+}
+.projects-status {
+display: flex;
+}
+.item-status {
+display: flex;
+flex-direction: column;
+margin-right: 16px;
+}
+.item-status:not(:last-child) .status-type:after {
+content: '';
+position: absolute;
+right: 8px;
+top: 50%;
+transform: translatey(-50%);
+width: 6px;
+height: 6px;
+border-radius: 50%;
+border: 1px solid var(--secondary-color);
+}
+.status-number {
+font-size: 24px;
+line-height: 32px;
+font-weight: 700;
+color: var(--main-color);
+}
+.status-type {
+position: relative;
+padding-right: 24px;
+color: var(--secondary-color);
+}
+.view-actions {
+display: flex;
+align-items: center;
+}
+.view-btn {
+width: 36px;
+height: 36px;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 6px;
+border-radius: 4px;
+background-color: transparent;
+border: none;
+color: var(--main-color);
+margin-left: 8px;
+transition: 0.2s;
+}
+.view-btn.active {
+background-color: var(--link-color-active-bg);
+color: var(--link-color-active);
+}
+.view-btn:not(.active):hover {
+background-color: var(--link-color-hover);
+color: var(--link-color-active);
+}
+.messages-section {
+flex-shrink: 0;
+padding-bottom: 32px;
+background-color: var(--projects-section);
+margin-left: 24px;
+flex: 1;
+width: 100%;
+border-radius: 30px;
+position: relative;
+overflow: auto;
+transition: all 300ms cubic-bezier(0.19, 1, 0.56, 1);
+}
+.messages-section .messages-close {
+position: absolute;
+top: 12px;
+right: 12px;
+z-index: 3;
+border: none;
+background-color: transparent;
+color: var(--main-color);
+display: none;
+}
+.messages-section.show {
+transform: translateX(0);
+opacity: 1;
+margin-left: 0;
+}
+.messages-section .projects-section-header {
+position: sticky;
+top: 0;
+z-index: 1;
+padding: 32px 24px 0 24px;
+background-color: var(--projects-section);
+}
+.message-box {
+border-top: 1px solid var(--message-box-border);
+padding: 16px;
+display: flex;
+align-items: flex-start;
+width: 100%;
+}
+.message-box:hover {
+background-color: var(--message-box-hover);
+border-top-color: var(--link-color-hover);
+}
+.message-box:hover + .message-box {
+border-top-color: var(--link-color-hover);
+}
+.message-box img {
+border-radius: 50%;
+object-fit: cover;
+width: 40px;
+height: 40px;
+}
+.message-header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+}
+.message-header .name {
+font-size: 16px;
+line-height: 24px;
+font-weight: 700;
+color: var(--main-color);
+margin: 0;
+}
+.message-content {
+padding-left: 16px;
+width: 100%;
+}
+.star-checkbox input {
+opacity: 0;
+position: absolute;
+width: 0;
+height: 0;
+}
+.star-checkbox label {
+width: 24px;
+height: 24px;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+}
+.dark .star-checkbox {
+color: var(--secondary-color);
+}
+.dark .star-checkbox input:checked + label {
+color: var(--star);
+}
+.star-checkbox input:checked + label svg {
+fill: var(--star);
+transition: 0.2s;
+}
+.message-line {
+font-size: 14px;
+line-height: 20px;
+margin: 8px 0;
+color: var(--secondary-color);
+opacity: 0.7;
+}
+.message-line.time {
+text-align: right;
+margin-bottom: 0;
+}
+.project-boxes {
+margin: 0 -8px;
+overflow-y: auto;
+}
+.project-boxes.jsGridView {
+display: flex;
+flex-wrap: wrap;
+}
+.project-boxes.jsGridView .project-box-wrapper {
+width: 33.3%;
+}
+.project-boxes.jsListView .project-box {
+display: flex;
+border-radius: 10px;
+position: relative;
+}
+.project-boxes.jsListView .project-box > * {
+margin-right: 24px;
+}
+.project-boxes.jsListView .more-wrapper {
+position: absolute;
+right: 16px;
+top: 16px;
+}
+.project-boxes.jsListView .project-box-content-header {
+order: 1;
+max-width: 120px;
+}
+.project-boxes.jsListView .project-box-header {
+order: 2;
+}
+.project-boxes.jsListView .project-box-footer {
+order: 3;
+padding-top: 0;
+flex-direction: column;
+justify-content: flex-start;
+}
+.project-boxes.jsListView .project-box-footer:after {
+display: none;
+}
+.project-boxes.jsListView .participants {
+margin-bottom: 8px;
+}
+.project-boxes.jsListView .project-box-content-header p {
+text-align: left;
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+}
+.project-boxes.jsListView .project-box-header > span {
+position: absolute;
+bottom: 16px;
+left: 16px;
+font-size: 12px;
+}
+.project-boxes.jsListView .box-progress-wrapper {
+order: 3;
+flex: 1;
+}
+.project-box {
+--main-color-card: #dbf6fd;
+border-radius: 30px;
+padding: 16px;
+background-color: var(--main-color-card);
+}
+.project-box-header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-bottom: 16px;
+color: var(--main-color);
+}
+.project-box-header span {
+color: #4a4a4a;
+opacity: 0.7;
+font-size: 14px;
+line-height: 16px;
+}
+.project-box-content-header {
+text-align: center;
+margin-bottom: 16px;
+}
+.project-box-content-header p {
+margin: 0;
+}
+.project-box-wrapper {
+padding: 8px;
+transition: 0.2s;
+}
+.project-btn-more {
+padding: 0;
+height: 14px;
+width: 24px;
+height: 24px;
+position: relative;
+background-color: transparent;
+border: none;
+flex-shrink: 0;
+/*&:after, &:before {
+content: '';
+position: absolute;
+width: 6px;
+height: 6px;
+border-radius: 50%;
+background-color: var(--main-color);
+opacity: .8;
+left: 50%;
+transform: translatex(-50%);
+}
+&:before {
+top: 0;
+}
+&:after {
+bottom: 0;
+}
+*/
+}
+.more-wrapper {
+position: relative;
+}
+.box-content-header {
+font-size: 16px;
+line-height: 24px;
+font-weight: 700;
+opacity: 0.7;
+}
+.box-content-subheader {
+font-size: 14px;
+line-height: 24px;
+opacity: 0.7;
+}
+.box-progress {
+display: block;
+height: 4px;
+border-radius: 6px;
+}
+.box-progress-bar {
+width: 100%;
+height: 4px;
+border-radius: 6px;
+overflow: hidden;
+background-color: #fff;
+margin: 8px 0;
+}
+.box-progress-header {
+font-size: 14px;
+font-weight: 700;
+line-height: 16px;
+margin: 0;
+}
+.box-progress-percentage {
+text-align: right;
+margin: 0;
+font-size: 14px;
+font-weight: 700;
+line-height: 16px;
+}
+.project-box-footer {
+display: flex;
+justify-content: space-between;
+padding-top: 16px;
+position: relative;
+}
+.project-box-footer:after {
+content: '';
+position: absolute;
+background-color: rgba(255, 255, 255, 0.6);
+width: calc(100% + 32px);
+top: 0;
+left: -16px;
+height: 1px;
+}
+.participants {
+display: flex;
+align-items: center;
+}
+.participants img {
+width: 20px;
+height: 20px;
+border-radius: 50%;
+overflow: hidden;
+object-fit: cover;
+}
+.participants img:not(:first-child) {
+margin-left: -8px;
+}
+.add-participant {
+width: 20px;
+height: 20px;
+border-radius: 50%;
+border: none;
+background-color: rgba(255, 255, 255, 0.6);
+margin-left: 6px;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0;
+}
+.days-left {
+background-color: rgba(255, 255, 255, 0.6);
+font-size: 12px;
+border-radius: 20px;
+flex-shrink: 0;
+padding: 6px 16px;
+font-weight: 700;
+}
+.mode-switch.active .moon {
+fill: var(--main-color);
+}
+.messages-btn {
+border-radius: 4px 0 0 4px;
+position: absolute;
+right: 0;
+top: 58px;
+background-color: var(--message-btn);
+border: none;
+color: var(--main-color);
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 4px;
+display: none;
+}
+@media screen and (max-width: 980px) {
+.project-boxes.jsGridView .project-box-wrapper {
+width: 50%;
+}
+.status-number, .status-type {
+font-size: 14px;
+}
+.status-type:after {
+width: 4px;
+height: 4px;
+}
+.item-status {
+margin-right: 0;
+}
+}
+@media screen and (max-width: 880px) {
+.messages-section {
+transform: translateX(100%);
+position: absolute;
+opacity: 0;
+top: 0;
+z-index: 2;
+height: 100%;
+width: 100%;
+}
+.messages-section .messages-close {
+display: block;
+}
+.messages-btn {
+display: flex;
+}
+}
+@media screen and (max-width: 720px) {
+.app-name, .profile-btn span {
+display: none;
+}
+.add-btn, .notification-btn, .mode-switch {
+width: 20px;
+height: 20px;
+}
+.add-btn svg, .notification-btn svg, .mode-switch svg {
+width: 16px;
+height: 16px;
+}
+.app-header-right button {
+margin-left: 4px;
+}
+}
+@media screen and (max-width: 520px) {
+.projects-section {
+overflow: auto;
+}
+.project-boxes {
+overflow-y: visible;
+}
+.app-sidebar, .app-icon {
+display: none;
+}
+.app-content {
+padding: 16px 12px 24px 12px;
+}
+.status-number, .status-type {
+font-size: 10px;
+}
+.view-btn {
+width: 24px;
+height: 24px;
+}
+.app-header {
+padding: 16px 10px;
+}
+.search-input {
+max-width: 120px;
+}
+.project-boxes.jsGridView .project-box-wrapper {
+width: 100%;
+}
+.projects-section {
+padding: 24px 16px 0 16px;
+}
+.profile-btn img {
+width: 24px;
+height: 24px;
+}
+.app-header {
+padding: 10px;
+}
+.projects-section-header p, .projects-section-header .time {
+font-size: 18px;
+}
+.status-type {
+padding-right: 4px;
+}
+.status-type:after {
+display: none;
+}
+.search-input {
+font-size: 14px;
+}
+.messages-btn {
+top: 48px;
+}
+.box-content-header {
+font-size: 12px;
+line-height: 16px;
+}
+.box-content-subheader {
+font-size: 12px;
+line-height: 16px;
+}
+.project-boxes.jsListView .project-box-header > span {
+font-size: 10px;
+}
+.box-progress-header {
+font-size: 12px;
+}
+.box-progress-percentage {
+font-size: 10px;
+}
+.days-left {
+font-size: 8px;
+padding: 6px 6px;
+text-align: center;
+}
+.project-boxes.jsListView .project-box > * {
+margin-right: 10px;
+}
+.project-boxes.jsListView .more-wrapper {
+right: 2px;
+top: 10px;
+}
+}
+============
+document.addEventListener('DOMContentLoaded', function () {
+var modeSwitch = document.querySelector('.mode-switch');
+modeSwitch.addEventListener('click', function () { document.documentElement.classList.toggle('dark');
+modeSwitch.classList.toggle('active');
+});
+var listView = document.querySelector('.list-view');
+var gridView = document.querySelector('.grid-view');
+var projectsList = document.querySelector('.project-boxes');
+listView.addEventListener('click', function () {
+gridView.classList.remove('active');
+listView.classList.add('active');
+projectsList.classList.remove('jsGridView');
+projectsList.classList.add('jsListView');
+});
+gridView.addEventListener('click', function () {
+gridView.classList.add('active');
+listView.classList.remove('active');
+projectsList.classList.remove('jsListView');
+projectsList.classList.add('jsGridView');
+});
+document.querySelector('.messages-btn').addEventListener('click', function () {
+document.querySelector('.messages-section').classList.add('show');
+});
+document.querySelector('.messages-close').addEventListener('click', function() {
+document.querySelector('.messages-section').classList.remove('show');
+});
+});
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+</head>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+    @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+    :root {
+        --body-bg-color: #e5f4f9;
+        --body-color-light: #8b939c;
+        --body-font: "Roboto", sans-serif;
+        --page-bg-color: #f2f5f7;
+        --body-color: #3d4954;
+        --border-color: #b8bec3;
+        --placeholder: #ccd0d2;
+    }
+
+    * {
+        outline: none;
+        box-sizing: border-box;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    html {
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+        background-color: #fff;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='946' height='473' viewBox='0 0 1600 800'%3E%3Cpath fill='%23e436ff' d='M1102.5 734.8c2.5-1.2 24.8-8.6 25.6-7.5.5.7-3.9 23.8-4.6 24.5C1123.3 752.1 1107.5 739.5 1102.5 734.8zM1226.3 229.1c0-.1-4.9-9.4-7-14.2-.1-.3-.3-1.1-.4-1.6-.1-.4-.3-.7-.6-.9-.3-.2-.6-.1-.8.1l-13.1 12.3c0 0 0 0 0 0-.2.2-.3.5-.4.8 0 .3 0 .7.2 1 .1.1 1.4 2.5 2.1 3.6 2.4 3.7 6.5 12.1 6.5 12.2.2.3.4.5.7.6.3 0 .5-.1.7-.3 0 0 1.8-2.5 2.7-3.6 1.5-1.6 3-3.2 4.6-4.7 1.2-1.2 1.6-1.4 2.1-1.6.5-.3 1.1-.5 2.5-1.9C1226.5 230.4 1226.6 229.6 1226.3 229.1zM33 770.3C33 770.3 33 770.3 33 770.3c0-.7-.5-1.2-1.2-1.2-.1 0-.3 0-.4.1-1.6.2-14.3.1-22.2 0-.3 0-.6.1-.9.4-.2.2-.4.5-.4.9 0 .2 0 4.9.1 5.9l.4 13.6c0 .3.2.6.4.9.2.2.5.3.8.3 0 0 .1 0 .1 0 7.3-.7 14.7-.9 22-.6.3 0 .7-.1.9-.3.2-.2.4-.6.4-.9C32.9 783.3 32.9 776.2 33 770.3z'/%3E%3Cpath fill='%232ee7ff' d='M171.1 383.4c1.3-2.5 14.3-22 15.6-21.6.8.3 11.5 21.2 11.5 22.1C198.1 384.2 177.9 384 171.1 383.4zM596.4 711.8c-.1-.1-6.7-8.2-9.7-12.5-.2-.3-.5-1-.7-1.5-.2-.4-.4-.7-.7-.8-.3-.1-.6 0-.8.3L574 712c0 0 0 0 0 0-.2.2-.2.5-.2.9 0 .3.2.7.4.9.1.1 1.8 2.2 2.8 3.1 3.1 3.1 8.8 10.5 8.9 10.6.2.3.5.4.8.4.3 0 .5-.2.6-.5 0 0 1.2-2.8 2-4.1 1.1-1.9 2.3-3.7 3.5-5.5.9-1.4 1.3-1.7 1.7-2 .5-.4 1-.7 2.1-2.4C596.9 713.1 596.8 712.3 596.4 711.8zM727.5 179.9C727.5 179.9 727.5 179.9 727.5 179.9c.6.2 1.3-.2 1.4-.8 0-.1 0-.2 0-.4.2-1.4 2.8-12.6 4.5-19.5.1-.3 0-.6-.2-.8-.2-.3-.5-.4-.8-.5-.2 0-4.7-1.1-5.7-1.3l-13.4-2.7c-.3-.1-.7 0-.9.2-.2.2-.4.4-.5.6 0 0 0 .1 0 .1-.8 6.5-2.2 13.1-3.9 19.4-.1.3 0 .6.2.9.2.3.5.4.8.5C714.8 176.9 721.7 178.5 727.5 179.9zM728.5 178.1c-.1-.1-.2-.2-.4-.2C728.3 177.9 728.4 178 728.5 178.1z'/%3E%3Cg fill='%23FFF'%3E%3Cpath d='M699.6 472.7c-1.5 0-2.8-.8-3.5-2.3-.8-1.9 0-4.2 1.9-5 3.7-1.6 6.8-4.7 8.4-8.5 1.6-3.8 1.7-8.1.2-11.9-.3-.9-.8-1.8-1.2-2.8-.8-1.7-1.8-3.7-2.3-5.9-.9-4.1-.2-8.6 2-12.8 1.7-3.1 4.1-6.1 7.6-9.1 1.6-1.4 4-1.2 5.3.4 1.4 1.6 1.2 4-.4 5.3-2.8 2.5-4.7 4.7-5.9 7-1.4 2.6-1.9 5.3-1.3 7.6.3 1.4 1 2.8 1.7 4.3.5 1.1 1 2.2 1.5 3.3 2.1 5.6 2 12-.3 17.6-2.3 5.5-6.8 10.1-12.3 12.5C700.6 472.6 700.1 472.7 699.6 472.7zM740.4 421.4c1.5-.2 3 .5 3.8 1.9 1.1 1.8.4 4.2-1.4 5.3-3.7 2.1-6.4 5.6-7.6 9.5-1.2 4-.8 8.4 1.1 12.1.4.9 1 1.7 1.6 2.7 1 1.7 2.2 3.5 3 5.7 1.4 4 1.2 8.7-.6 13.2-1.4 3.4-3.5 6.6-6.8 10.1-1.5 1.6-3.9 1.7-5.5.2-1.6-1.4-1.7-3.9-.2-5.4 2.6-2.8 4.3-5.3 5.3-7.7 1.1-2.8 1.3-5.6.5-7.9-.5-1.3-1.3-2.7-2.2-4.1-.6-1-1.3-2.1-1.9-3.2-2.8-5.4-3.4-11.9-1.7-17.8 1.8-5.9 5.8-11 11.2-14C739.4 421.6 739.9 421.4 740.4 421.4zM261.3 590.9c5.7 6.8 9 15.7 9.4 22.4.5 7.3-2.4 16.4-10.2 20.4-3 1.5-6.7 2.2-11.2 2.2-7.9-.1-12.9-2.9-15.4-8.4-2.1-4.7-2.3-11.4 1.8-15.9 3.2-3.5 7.8-4.1 11.2-1.6 1.2.9 1.5 2.7.6 3.9-.9 1.2-2.7 1.5-3.9.6-1.8-1.3-3.6.6-3.8.8-2.4 2.6-2.1 7-.8 9.9 1.5 3.4 4.7 5 10.4 5.1 3.6 0 6.4-.5 8.6-1.6 4.7-2.4 7.7-8.6 7.2-15-.5-7.3-5.3-18.2-13-23.9-4.2-3.1-8.5-4.1-12.9-3.1-3.1.7-6.2 2.4-9.7 5-6.6 5.1-11.7 11.8-14.2 19-2.7 7.7-2.1 15.8 1.9 23.9.7 1.4.1 3.1-1.3 3.7-1.4.7-3.1.1-3.7-1.3-4.6-9.4-5.4-19.2-2.2-28.2 2.9-8.2 8.6-15.9 16.1-21.6 4.1-3.1 8-5.1 11.8-6 6-1.4 12 0 17.5 4C257.6 586.9 259.6 588.8 261.3 590.9z'/%3E%3Ccircle cx='1013.7' cy='153.9' r='7.1'/%3E%3Ccircle cx='1024.3' cy='132.1' r='7.1'/%3E%3Ccircle cx='1037.3' cy='148.9' r='7.1'/%3E%3Cpath d='M1508.7 297.2c-4.8-5.4-9.7-10.8-14.8-16.2 5.6-5.6 11.1-11.5 15.6-18.2 1.2-1.7.7-4.1-1-5.2-1.7-1.2-4.1-.7-5.2 1-4.2 6.2-9.1 11.6-14.5 16.9-4.8-5-9.7-10-14.7-14.9-1.5-1.5-3.9-1.5-5.3 0-1.5 1.5-1.5 3.9 0 5.3 4.9 4.8 9.7 9.8 14.5 14.8-1.1 1.1-2.3 2.2-3.5 3.2-4.1 3.8-8.4 7.8-12.4 12-1.4 1.5-1.4 3.8 0 5.3 0 0 0 0 0 0 1.5 1.4 3.9 1.4 5.3-.1 3.9-4 8.1-7.9 12.1-11.7 1.2-1.1 2.3-2.2 3.5-3.3 4.9 5.3 9.8 10.6 14.6 15.9.1.1.1.1.2.2 1.4 1.4 3.7 1.5 5.2.2C1510 301.2 1510.1 298.8 1508.7 297.2zM327.6 248.6l-.4-2.6c-1.5-11.1-2.2-23.2-2.3-37 0-5.5 0-11.5.2-18.5 0-.7 0-1.5 0-2.3 0-5 0-11.2 3.9-13.5 2.2-1.3 5.1-1 8.5.9 5.7 3.1 13.2 8.7 17.5 14.9 5.5 7.8 7.3 16.9 5 25.7-3.2 12.3-15 31-30 32.1L327.6 248.6zM332.1 179.2c-.2 0-.3 0-.4.1-.1.1-.7.5-1.1 2.7-.3 1.9-.3 4.2-.3 6.3 0 .8 0 1.7 0 2.4-.2 6.9-.2 12.8-.2 18.3.1 12.5.7 23.5 2 33.7 11-2.7 20.4-18.1 23-27.8 1.9-7.2.4-14.8-4.2-21.3l0 0C347 188.1 340 183 335 180.3 333.6 179.5 332.6 179.2 332.1 179.2zM516.3 60.8c-.1 0-.2 0-.4-.1-2.4-.7-4-.9-6.7-.7-.7 0-1.3-.5-1.4-1.2 0-.7.5-1.3 1.2-1.4 3.1-.2 4.9 0 7.6.8.7.2 1.1.9.9 1.6C517.3 60.4 516.8 60.8 516.3 60.8zM506.1 70.5c-.5 0-1-.3-1.2-.8-.8-2.1-1.2-4.3-1.3-6.6 0-.7.5-1.3 1.2-1.3.7 0 1.3.5 1.3 1.2.1 2 .5 3.9 1.1 5.8.2.7-.1 1.4-.8 1.6C506.4 70.5 506.2 70.5 506.1 70.5zM494.1 64.4c-.4 0-.8-.2-1-.5-.4-.6-.3-1.4.2-1.8 1.8-1.4 3.7-2.6 5.8-3.6.6-.3 1.4 0 1.7.6.3.6 0 1.4-.6 1.7-1.9.9-3.7 2-5.3 3.3C494.7 64.3 494.4 64.4 494.1 64.4zM500.5 55.3c-.5 0-.9-.3-1.2-.7-.5-1-1.2-1.9-2.4-3.4-.3-.4-.7-.9-1.1-1.4-.4-.6-.3-1.4.2-1.8.6-.4 1.4-.3 1.8.2.4.5.8 1 1.1 1.4 1.3 1.6 2.1 2.6 2.7 3.9.3.6 0 1.4-.6 1.7C500.9 55.3 500.7 55.3 500.5 55.3zM506.7 55c-.3 0-.5-.1-.8-.2-.6-.4-.7-1.2-.3-1.8 1.2-1.7 2.3-3.4 3.3-5.2.3-.6 1.1-.9 1.7-.5.6.3.9 1.1.5 1.7-1 1.9-2.2 3.8-3.5 5.6C507.4 54.8 507.1 55 506.7 55zM1029.3 382.8c-.1 0-.2 0-.4-.1-2.4-.7-4-.9-6.7-.7-.7 0-1.3-.5-1.4-1.2 0-.7.5-1.3 1.2-1.4 3.1-.2 4.9 0 7.6.8.7.2 1.1.9.9 1.6C1030.3 382.4 1029.8 382.8 1029.3 382.8zM1019.1 392.5c-.5 0-1-.3-1.2-.8-.8-2.1-1.2-4.3-1.3-6.6 0-.7.5-1.3 1.2-1.3.7 0 1.3.5 1.3 1.2.1 2 .5 3.9 1.1 5.8.2.7-.1 1.4-.8 1.6C1019.4 392.5 1019.2 392.5 1019.1 392.5zM1007.1 386.4c-.4 0-.8-.2-1-.5-.4-.6-.3-1.4.2-1.8 1.8-1.4 3.7-2.6 5.8-3.6.6-.3 1.4 0 1.7.6.3.6 0 1.4-.6 1.7-1.9.9-3.7 2-5.3 3.3C1007.7 386.3 1007.4 386.4 1007.1 386.4zM1013.5 377.3c-.5 0-.9-.3-1.2-.7-.5-1-1.2-1.9-2.4-3.4-.3-.4-.7-.9-1.1-1.4-.4-.6-.3-1.4.2-1.8.6-.4 1.4-.3 1.8.2.4.5.8 1 1.1 1.4 1.3 1.6 2.1 2.6 2.7 3.9.3.6 0 1.4-.6 1.7C1013.9 377.3 1013.7 377.3 1013.5 377.3zM1019.7 377c-.3 0-.5-.1-.8-.2-.6-.4-.7-1.2-.3-1.8 1.2-1.7 2.3-3.4 3.3-5.2.3-.6 1.1-.9 1.7-.5.6.3.9 1.1.5 1.7-1 1.9-2.2 3.8-3.5 5.6C1020.4 376.8 1020.1 377 1019.7 377zM1329.7 573.4c-1.4 0-2.9-.2-4.5-.7-8.4-2.7-16.6-12.7-18.7-20-.4-1.4-.7-2.9-.9-4.4-8.1 3.3-15.5 10.6-15.4 21 0 1.5-1.2 2.7-2.7 2.8 0 0 0 0 0 0-1.5 0-2.7-1.2-2.7-2.7-.1-6.7 2.4-12.9 7-18 3.6-4 8.4-7.1 13.7-8.8.5-6.5 3.1-12.9 7.4-17.4 7-7.4 18.2-8.9 27.3-10.1l.7-.1c1.5-.2 2.9.9 3.1 2.3.2 1.5-.9 2.9-2.3 3.1l-.7.1c-8.6 1.2-18.4 2.5-24 8.4-3 3.2-5 7.7-5.7 12.4 7.9-1 17.7 1.3 24.3 5.7 4.3 2.9 7.1 7.8 7.2 12.7.2 4.3-1.7 8.3-5.2 11.1C1335.2 572.4 1332.6 573.4 1329.7 573.4zM1311 546.7c.1 1.5.4 3 .8 4.4 1.7 5.8 8.7 14.2 15.1 16.3 2.8.9 5.1.5 7.2-1.1 2.7-2.1 3.2-4.8 3.1-6.6-.1-3.2-2-6.4-4.8-8.3C1326.7 547.5 1317.7 545.6 1311 546.7z'/%3E%3C/g%3E%3C/svg%3E");
+        background-attachment: fixed;
+        font-family: var(--body-font);
+        color: var(--body-color);
+        font-weight: 400;
+        margin: 0;
+    }
+
+    %display {
+         display: flex;
+         align-items: center;
+     }
+
+    .book-store {
+        display: flex;
+        flex-direction: column;
+        max-width: 1400px;
+        height: 100vh;
+        background-color: var(--page-bg-color);
+        margin: 0 auto;
+        overflow: hidden;
+        box-shadow: 0px 2px 50px 10px rgba(0, 0, 0, 0.21);
+    }
+
+    .header {
+        @extend %display;
+        height: 70px;
+        width: 100%;
+        background-color: #ffffff;
+        padding: 0 30px;
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--body-color-light);
+        justify-content: space-between;
+        flex-shrink: 0;
+    }
+
+    .search-bar {
+        position: relative;
+        input {
+            height: 100%;
+            width: 100%;
+            display: block;
+            background-color: transparent;
+            border: none;
+            font-weight: 600;
+            padding: 0 10px 0 40px;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' stroke='%238b939c' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' class='feather feather-search'%3e%3ccircle cx='11' cy='11' r='8'/%3e%3cpath d='M21 21l-4.35-4.35'/%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-size: 15px;
+            background-position: 15px 50%;
+            color: var(--body-color);
+            font-family: var(--body-font);
+            &::placeholder {
+                color: var(--placeholder);
+            }
+        }
+    }
+
+    .browse {
+        @extend %display;
+        &-category {
+            @extend %display;
+            border-right: 1px solid var(--border-color);
+            white-space: nowrap;
+            svg {
+                width: 16px;
+                margin: 2px 10px 0 8px;
+            }
+        }
+    }
+
+    .header-title {
+        font-size: 16px;
+        font-weight: 400;
+        margin-right: 120px;
+        span {
+            font-weight: 500;
+            color: var(--body-color);
+        }
+    }
+
+    .user-img {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+
+    .user-profile {
+        position: relative;
+        cursor: pointer;
+        flex-shrink: 0;
+        &:before {
+            content: "";
+            position: absolute;
+            background-color: #f86d72;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            border: 2px solid var(--theme-bg-color);
+            right: 12px;
+            top: -3px;
+            border: 2px solid #fff;
+        }
+    }
+
+    .profile {
+        @extend %display;
+        flex-shrink: 0;
+        &-menu {
+            @extend %display;
+            border-left: 1px solid var(--border-color);
+        }
+        svg {
+            width: 16px;
+            margin: 0 8px 0 15px;
+            flex-shrink: 0;
+        }
+    }
+
+    .book-slide {
+        width: 100%;
+    }
+
+    .book {
+        background: #fff;
+    }
+
+    .book-cell {
+        position: relative;
+        display: flex;
+        padding: 25px;
+        width: 40%;
+        height: 250px;
+        margin-right: 1px;
+        &:nth-child(1) {
+            background-color: #fbadaf;
+        }
+        &:nth-child(2) {
+            background-color: #a4e0eb;
+        }
+        &:nth-child(3) {
+            background-color: #edb9d6;
+        }
+        &:nth-child(4) {
+            background-color: #fdca95;
+        }
+        &:nth-child(5) {
+            background-color: #cbb5e2;
+        }
+    }
+
+    .flickity-page-dots {
+        display: none;
+    }
+
+    .flickity-prev-next-button .arrow {
+        fill: #d6d6d6;
+    }
+
+    .flickity-prev-next-button svg {
+        left: 25%;
+        top: 25%;
+        width: 50%;
+        height: 50%;
+    }
+
+    .flickity-prev-next-button {
+        &.previous {
+            left: 15px;
+        }
+        &.next {
+            right: 15px;
+        }
+    }
+
+    .flickity-viewport {
+        overflow: visible;
+    }
+
+    .book-photo {
+        width: 180px;
+        flex-shrink: 0;
+        bottom: -35px;
+        left: 35px;
+        border-radius: 2px;
+        box-shadow: -2px 6px 19px 0px #7f818e;
+        transition: .3s ease;
+        &:hover {
+            transform: scale(1.03);
+        }
+    }
+
+    .book-img {
+        flex-shrink: 0;
+    }
+
+    .book-title {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .book-title {
+        color: #ffffff;
+        font-weight: 600;
+    }
+
+    .book-author {
+        margin-top: 3px;
+        font-size: 14px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .book-content {
+        padding: 0 20px;
+        color: #ffffff;
+        overflow: hidden;
+    }
+
+    fieldset,
+    label {
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    h1 {
+        font-size: 0.5em;
+        margin: 10px;
+    }
+    .rating {
+        border: none;
+    }
+
+    .rating > input {
+        display: none;
+    }
+    .rating > label:before {
+        margin-right: 5px;
+        margin-top: 10px;
+        font-size: 0.9em;
+        font-family: FontAwesome;
+        display: inline-block;
+        content: "\f005";
+    }
+
+    .rating > label {
+        color: #fff;
+        float: right;
+    }
+
+    .rating > input:checked ~ label,
+    .rating:not(:checked) > label:hover,
+    .rating:not(:checked) > label:hover ~ label {
+        color: #d85d61;
+    }
+    .rating > input:checked + label:hover,
+    .rating > input:checked ~ label:hover,
+    .rating > label:hover ~ input:checked ~ label,
+    .rating > input:checked ~ label:hover ~ label {
+        color: #d85d61;
+    }
+
+    .blue > input:checked ~ label,
+    .blue:not(:checked) > label:hover,
+    .blue:not(:checked) > label:hover ~ label {
+        color: #458997;
+    }
+    .blue > input:checked + label:hover,
+    .blue > input:checked ~ label:hover,
+    .blue > label:hover ~ input:checked ~ label,
+    .blue > input:checked ~ label:hover ~ label {
+        color: #458997;
+    }
+
+    .purple > input:checked ~ label,
+    .purple:not(:checked) > label:hover,
+    .purple:not(:checked) > label:hover ~ label {
+        color: #a76287;
+    }
+    .purple > input:checked + label:hover,
+    .purple > input:checked ~ label:hover,
+    .purple > label:hover ~ input:checked ~ label,
+    .purple > input:checked ~ label:hover ~ label {
+        color: #a76287;
+    }
+
+    .yellow > input:checked ~ label,
+    .yellow:not(:checked) > label:hover,
+    .yellow:not(:checked) > label:hover ~ label {
+        color: #ffad58;
+    }
+    .yellow > input:checked + label:hover,
+    .yellow > input:checked ~ label:hover,
+    .yellow > label:hover ~ input:checked ~ label,
+    .yellow > input:checked ~ label:hover ~ label {
+        color: #ffad58;
+    }
+
+    .dark-purp > input:checked ~ label,
+    .dark-purp:not(:checked) > label:hover,
+    .dark-purp:not(:checked) > label:hover ~ label {
+        color: #905587;
+    }
+    .dark-purp > input:checked + label:hover,
+    .dark-purp > input:checked ~ label:hover,
+    .dark-purp > label:hover ~ input:checked ~ label,
+    .dark-purp > input:checked ~ label:hover ~ label {
+        color: #905587;
+    }
+
+    .book-voters {
+        color: #fff;
+        vertical-align: sub;
+        font-size: 13px;
+        margin-left: 7px;
+        white-space: nowrap;
+        margin-top: 7px;
+    }
+
+    .book-sum {
+        margin-top: 20px;
+        font-size: 14px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+
+    .book-see {
+        margin-top: 25px;
+        text-align: center;
+        background-color: #fff;
+        color: #fbadaf;
+        font-weight: 600;
+        padding: 8px;
+        font-size: 14px;
+        width: 160px;
+        border-radius: 20px;
+        &:hover {
+            color: #ff6e72;
+        }
+        &.book-blue {
+            color: #a4e0eb;
+            &:hover {
+                color: #22cdec;
+            }
+        }
+        &.book-pink {
+            color: #edb9d6;
+            &:hover {
+                color: #ff6dbe;
+            }
+        }
+        &.book-yellow {
+            color: #fdca95;
+            &:hover {
+                color: #fb9124;
+            }
+        }
+        &.book-purple {
+            color: #cbb5e2;
+            &:hover {
+                color: #a764ec;
+            }
+        }
+    }
+
+    .main-wrapper {
+        width: 100%;
+        display: flex;
+        flex-grow: 1;
+        margin-top: 100px;
+        overflow: hidden;
+    }
+
+    .books-of {
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        overflow-x: hidden;
+        flex-shrink: 0;
+    }
+
+    .popular-books {
+        flex-grow: 1;
+        padding: 0 30px 50px;
+        overflow-y: auto;
+    }
+
+    .genre {
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    .main-menu {
+        @extend %display;
+        white-space: nowrap;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #dcddde;
+        position: sticky;
+        top: 0;
+        right: 0;
+        background-color: var(--page-bg-color);
+        z-index: 2;
+    }
+
+    .book-types {
+        margin-left: auto;
+        a {
+            text-decoration: none;
+            color: var(--body-color);
+            font-size: 14px;
+        }
+    }
+
+    .book-type + .book-type {
+        margin-left: 20px;
+    }
+
+    .book-type {
+        position: relative;
+        transition: 0.2s;
+        &.active,
+        &:hover {
+            -webkit-text-stroke: .3px;
+            &:before {
+                content: "";
+                position: absolute;
+                width: 28px;
+                height: 2px;
+                bottom: -17px;
+                right: 15px;
+                background-color: #67d4ea;
+                box-shadow: 0px -1px 5px 0px #67d4ea;
+            }
+        }
+        &:nth-child(2):before {
+            right: 12px;
+        }
+        &:nth-child(3):before {
+            right: 8px;
+        }
+        &:nth-child(4):before {
+            right: 6px;
+        }
+        &:nth-child(5):before {
+            right: 20px;
+        }
+    }
+
+    .week {
+        padding: 0 30px;
+    }
+
+    .author {
+        @extend %display;
+        & + & {
+            margin-top: 20px;
+        }
+        &-name {
+            font-size: 14px;
+        }
+        &:last-child {
+            margin-bottom: 40px;
+        }
+    }
+
+    .author-title {
+        padding: 0 0 20px;
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    .author-img {
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        margin-right: 16px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .year-book {
+        @extend %display;
+        &-img {
+            width: 45px;
+            margin-right: 16px;
+        }
+        &-name {
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+        &-author {
+            font-size: 13px;
+        }
+        & + & {
+            margin-top: 20px;
+        }
+    }
+
+    .year-book-content {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+    }
+
+    .overlay {
+        position: sticky;
+        bottom: 0;
+        left: 0;
+        width: 340px;
+        flex-shrink: 0;
+        background: linear-gradient(
+                to bottom,
+                rgba(255, 255, 255, 0) 0%,
+                #f2f5f7 65%,
+                #f2f5f7 100%
+        );
+        height: 60px;
+        margin-left: -35px;
+    }
+
+    .book-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;
+        padding-top: 40px;
+        position: relative;
+    }
+
+    .book-card {
+        margin-top: 20px;
+        background-color: #fff;
+        height: 270px;
+        box-shadow: -1px 3px 8px -1px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        padding: 0 0 20px 20px;
+        color: var(--body-color-light);
+    }
+
+    .book-card-img {
+        width: 160px;
+        margin-top: -35px;
+        border-radius: 2px;
+        box-shadow: 0px 1px 7px 2px #c7c9d3;
+        border-bottom: 1px solid #dcddde;
+        object-fit: cover;
+        margin-bottom: 20px;
+        transition: .3s ease;
+        &:hover {
+            transform: scale(1.04);
+        }
+    }
+
+
+    .card-content {
+        color: var(--body-color);
+        padding: 30px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .book-name {
+        font-weight: 500;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .book-by {
+        font-size: 13px;
+        color: var(--body-color-light);
+        margin-top: 4px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .book-rate > label {
+        color: #cccccc;
+    }
+
+    .rate {
+        display: inline-block;
+        white-space: nowrap;
+    }
+
+    .book-rate > input:checked ~ label,
+    .book-rate:not(:checked) > label:hover,
+    .book-rate:not(:checked) > label:hover ~ label {
+        color: #ff9700;
+    }
+    .book-rate > input:checked + label:hover,
+    .book-rate > input:checked ~ label:hover,
+    .book-rate > label:hover ~ input:checked ~ label,
+    .book-rate > input:checked ~ label:hover ~ label {
+        color: #ff9700;
+    }
+
+    .card-vote {
+        color: var(--body-color-light);
+    }
+
+    .card-sum {
+        color: var(--body-color-light);
+        font-size: 13px;
+        line-height: 1.6em;
+        -webkit-line-clamp: 4;
+        margin-top: 15px;
+    }
+
+    .content-wrapper {
+        display: flex;
+        border-bottom: 1px solid #ebedef;
+        position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            background-color: #8f98a9;
+            background-color: #aaaebc;
+            box-shadow: 0 -6px 0 0 #aaaebc, 0 6px 0 0 #aaaebc;
+            width: 4px;
+            height: 4px;
+            border: 0;
+            padding: 0;
+            right: 12px;
+            top: 17px;
+            border-radius: 50%;
+            margin-left: auto;
+        }
+    }
+
+    .like-profile {
+        margin-top: 8px;
+        & + & {
+            margin-left: -5px;
+        }
+    }
+
+    .like-img {
+        border-radius: 50%;
+        width: 28px;
+        object-fit: cover;
+        border: 2px solid #fff;
+    }
+
+    .like-name {
+        font-size: 13px;
+        margin-left: 15px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        span {
+            font-weight: 600;
+        }
+    }
+
+    .likes {
+        @extend %display;
+    }
+
+
+    @media (max-width: 1103px) {
+        .book-cell {
+            width: 60%;
+        }
+    }
+
+    @media (max-width: 765px) {
+        .book-cell {
+            width: 80%;
+        }
+    }
+
+    @media (max-width: 575px) {
+        .book-cell {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 458px) {
+        .book-photo {
+            width: 180px;
+        }
+        .book-voters {
+            display: none;
+        }
+    }
+
+    @media (max-width: 420px) {
+        .book-see {
+            width: 120px;
+            font-size: 13px;
+        }
+        .book-photo {
+            width: 130px;
+        }
+        .main-wrapper {
+            margin-top: 50px;
+        }
+    }
+
+    @media (max-width: 360px) {
+        .rating > label:before {
+            font-size: 0.8em;
+        }
+    }
+
+    @media (max-width: 1220px) {
+        .card-vote {
+            display: none;
+        }
+    }
+
+    @media (max-width: 1085px) {
+        .book-rate > label {
+            font-size: .7em;
+        }
+    }
+
+    @media (max-width: 1045px) {
+        .books-of {
+            display: none;
+        }
+    }
+
+    @media (max-width: 725px) {
+        .browse-category, .search-bar {
+            display: none;
+        }
+        .header-title {
+            margin-right: auto;
+        }
+        .book-cards {
+            grid-template-columns: 1fr;
+        }
+        .book-types {
+            display: none;
+        }
+    }
+
+    @media (max-width: 372px)  {
+        .card-content {
+            padding: 20px;
+        }
+    }
+</style>
+<body>
+<div class="book-store">
+    <div class="header">
+        <div class="browse">
+            <div class="browse-category">
+                Browse Category
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
+                    <path d="M6 9l6 6 6-6" /></svg>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search Book" />
+            </div>
+        </div>
+        <div class="header-title">read<span>books</span></div>
+        <div class="profile">
+            <div class="user-profile">
+                <img src="https://randomuser.me/api/portraits/women/63.jpg" alt="" class="user-img">
+            </div>
+            <div class="profile-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+                    <path d="M3 12h18M3 6h18M3 18h18" /></svg>
+                Menu
+            </div>
+        </div>
+    </div>
+    <div class="book-slide">
+        <div class="book js-flickity" data-flickity-options='{ "wrapAround": true }'>
+            <div class="book-cell">
+                <div class="book-img">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/81WcnNQ-TBL.jpg" alt="" class="book-photo">
+                </div>
+                <div class="book-content">
+                    <div class="book-title">BIG MAGIC</div>
+                    <div class="book-author">by Elizabeth Gilbert</div>
+                    <div class="rate">
+                        <fieldset class="rating">
+                            <input type="checkbox" id="star5" name="rating" value="5" />
+                            <label class="full" for="star5"></label>
+                            <input type="checkbox" id="star4" name="rating" value="4" />
+                            <label class="full" for="star4"></label>
+                            <input type="checkbox" id="star3" name="rating" value="3" />
+                            <label class="full" for="star3"></label>
+                            <input type="checkbox" id="star2" name="rating" value="2" />
+                            <label class="full" for="star2"></label>
+                            <input type="checkbox" id="star1" name="rating" value="1" />
+                            <label class="full" for="star1"></label>
+                        </fieldset>
+                        <span class="book-voters">1.987 voters</span>
+                    </div>
+                    <div class="book-sum">Readers of all ages and walks of life have drawn inspiration and empowerment from Elizabeth Gilbert’s books for years. </div>
+                    <div class="book-see">See The Book</div>
+                </div>
+            </div>
+            <div class="book-cell">
+                <div class="book-img">
+                    <img src="https://i.pinimg.com/originals/a8/b9/ff/a8b9ff74ed0f3efd97e09a7a0447f892.jpg" alt="" class="book-photo">
+                </div>
+                <div class="book-content">
+                    <div class="book-title">Ten Thousand Skies Above You</div>
+                    <div class="book-author">by Claudia Gray</div>
+                    <div class="rate">
+                        <fieldset class="rating blue">
+                            <input type="checkbox" id="star6" name="rating" value="5" />
+                            <label class="full1" for="star6"></label>
+                            <input type="checkbox" id="star7" name="rating" value="4" />
+                            <label class="full1" for="star7"></label>
+                            <input type="checkbox" id="star8" name="rating" value="3" />
+                            <label class="full1" for="star8"></label>
+                            <input type="checkbox" id="star9" name="rating" value="2" />
+                            <label class="full1" for="star9"></label>
+                            <input type="checkbox" id="star10" name="rating" value="1" />
+                            <label class="full1" for="star10"></label>
+                        </fieldset>
+                        <span class="book-voters">1.987 voters</span>
+                    </div>
+                    <div class="book-sum">The hunt for each splinter of Paul's soul sends Marguerite racing through a war-torn San Francisco.</div>
+                    <div class="book-see book-blue">See The Book</div>
+                </div>
+            </div>
+            <div class="book-cell">
+                <div class="book-img">
+                    <img src="https://www.abebooks.com/blog/wp-content/uploads/2016/08/10.jpg" alt="" class="book-photo">
+                </div>
+                <div class="book-content">
+                    <div class="book-title">A Tale For The Time Being</div>
+                    <div class="book-author">by Ruth Ozeki</div>
+                    <div class="rate">
+                        <fieldset class="rating purple">
+                            <input type="checkbox" id="star11" name="rating" value="5" />
+                            <label class="full" for="star11"></label>
+                            <input type="checkbox" id="star12" name="rating" value="4" />
+                            <label class="full" for="star12"></label>
+                            <input type="checkbox" id="star13" name="rating" value="3" />
+                            <label class="full" for="star13"></label>
+                            <input type="checkbox" id="star14" name="rating" value="2" />
+                            <label class="full" for="star14"></label>
+                            <input type="checkbox" id="star15" name="rating" value="1" />
+                            <label class="full" for="star15"></label>
+                        </fieldset>
+                        <span class="book-voters">1.987 voters</span>
+                    </div>
+                    <div class="book-sum">In Tokyo, sixteen-year-old Nao has decided there’s only one escape from her aching loneliness and her classmates’ bullying.</div>
+                    <div class="book-see book-pink">See The Book</div>
+                </div>
+            </div>
+            <div class="book-cell">
+                <div class="book-img">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/81af+MCATTL.jpg" alt="" class="book-photo">
+                </div>
+                <div class="book-content">
+                    <div class="book-title">The Great Gatsby</div>
+                    <div class="book-author">by F.Scott Fitzgerald</div>
+                    <div class="rate">
+                        <fieldset class="rating yellow">
+                            <input type="checkbox" id="star16" name="rating" value="5" />
+                            <label class="full" for="star16"></label>
+                            <input type="checkbox" id="star17" name="rating" value="4" />
+                            <label class="full" for="star17"></label>
+                            <input type="checkbox" id="star18" name="rating" value="3" />
+                            <label class="full" for="star18"></label>
+                            <input type="checkbox" id="star19" name="rating" value="2" />
+                            <label class="full" for="star19"></label>
+                            <input type="checkbox" id="star20" name="rating" value="1" />
+                            <label class="full" for="star20"></label>
+                        </fieldset>
+                        <span class="book-voters">1.987 voters</span>
+                    </div>
+                    <div class="book-sum">The Great Gatsby, F. Scott Fitzgerald’s third book, stands as the supreme achievement of his career.</div>
+                    <div class="book-see book-yellow">See The Book</div>
+                </div>
+            </div>
+            <div class="book-cell">
+                <div class="book-img">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/81UWB7oUZ0L.jpg" alt="" class="book-photo">
+                </div>
+                <div class="book-content">
+                    <div class="book-title">After You</div>
+                    <div class="book-author">by Jojo Moyes</div>
+                    <div class="rate">
+                        <fieldset class="rating dark-purp">
+                            <input type="checkbox" id="star21" name="rating" value="5" />
+                            <label class="full" for="star21"></label>
+                            <input type="checkbox" id="star22" name="rating" value="4" />
+                            <label class="full" for="star22"></label>
+                            <input type="checkbox" id="star23" name="rating" value="3" />
+                            <label class="full" for="star23"></label>
+                            <input type="checkbox" id="star24" name="rating" value="2" />
+                            <label class="full" for="star24"></label>
+                            <input type="checkbox" id="star25" name="rating" value="1" />
+                            <label class="full" for="star25"></label>
+                        </fieldset>
+                        <span class="book-voters">1.987 voters</span>
+                    </div>
+                    <div class="book-sum">Louisa Clark is no longer just an ordinary girl living an ordinary life. After the transformative six months spent.</div>
+                    <div class="book-see book-purple">See The Book</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-wrapper">
+        <div class="books-of">
+            <div class="week">
+                <div class="author-title">Author of the week</div>
+                <div class="author">
+                    <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80" alt="" class="author-img">
+                    <div class="author-name">Sebastian Jeremy</div>
+                </div>
+                <div class="author">
+                    <img src="https://images.unsplash.com/photo-1586297098710-0382a496c814?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" alt="" class="author-img">
+                    <div class="author-name">Jonathan Doe</div>
+                </div>
+                <div class="author">
+                    <img src="https://images.unsplash.com/photo-1573140247632-f8fd74997d5c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" class="author-img">
+                    <div class="author-name">Angeline Summer</div>
+                </div>
+                <div class="author">
+                    <img src="https://pbs.twimg.com/profile_images/737221709267374081/sdwta9Oh.jpg" alt="" class="author-img">
+                    <div class="author-name">Noah Jones</div>
+                </div>
+                <div class="author">
+                    <img src="https://pbs.twimg.com/profile_images/2452384114/noplz47r59v1uxvyg8ku.png" alt="" class="author-img">
+                    <div class="author-name">Tommy Adam</div>
+                </div>
+                <div class="author">
+                    <img src="https://images.unsplash.com/photo-1546961329-78bef0414d7c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" class="author-img">
+                    <div class="author-name">Ian Cassandra</div>
+                </div>
+            </div>
+            <div class="week year">
+                <div class="author-title">Books of the year</div>
+                <div class="year-book">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/A1kNdYXw0GL.jpg" alt="" class="year-book-img">
+                    <div class="year-book-content">
+                        <div class="year-book-name">Disappearing Earth</div>
+                        <div class="year-book-author">by Julia Phillips</div>
+                    </div>
+                </div>
+                <div class="year-book">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/81eI0ExR+VL.jpg" alt="" class="year-book-img">
+                    <div class="year-book-content">
+                        <div class="year-book-name">Lost Children Archive</div>
+                        <div class="year-book-author">by Valeria Luiselli</div>
+                    </div>
+                </div>
+                <div class="year-book">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/81OF9eJDA4L.jpg" alt="" class="year-book-img">
+                    <div class="year-book-content">
+                        <div class="year-book-name">Phantoms: A Thriller </div>
+                        <div class="year-book-author">by Dean Koontz</div>
+                    </div>
+                </div>
+                <div class="year-book">
+                    <img src="https://m.media-amazon.com/images/I/515FWPyZ-5L.jpg" alt="" class="year-book-img">
+                    <div class="year-book-content">
+                        <div class="year-book-name">Midnight in Chernobyl</div>
+                        <div class="year-book-author">by Adam Higginbotham</div>
+                    </div>
+                </div>
+                <div class="year-book">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/91dBtgERNUL.jpg" alt="" class="year-book-img">
+                    <div class="year-book-content">
+                        <div class="year-book-name">10 Minutes 38 Seconds</div>
+                        <div class="year-book-author">by Elif Shafak</div>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay"></div>
+        </div>
+        <div class="popular-books">
+            <div class="main-menu">
+                <div class="genre">Popular by Genre</div>
+                <div class="book-types">
+                    <a href="#" class="book-type active"> All Genres</a>
+                    <a href="#" class="book-type"> Business</a>
+                    <a href="#" class="book-type"> Science</a>
+                    <a href="#" class="book-type"> Fiction</a>
+                    <a href="#" class="book-type"> Philosophy</a>
+                    <a href="#" class="book-type"> Biography</a>
+                </div>
+            </div>
+            <div class="book-cards">
+                <div class="book-card">
+                    <div class="content-wrapper">
+                        <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2019%2F07%2Fchances-are-1-2000.jpg&q=85" alt="" class="book-card-img">
+                        <div class="card-content">
+                            <div class="book-name">Changes Are</div>
+                            <div class="book-by">by Richard Russo</div>
+                            <div class="rate">
+                                <fieldset class="rating book-rate">
+                                    <input type="checkbox" id="star-c1" name="rating" value="5">
+                                    <label class="full" for="star-c1"></label>
+                                    <input type="checkbox" id="star-c2" name="rating" value="4">
+                                    <label class="full" for="star-c2"></label>
+                                    <input type="checkbox" id="star-c3" name="rating" value="3">
+                                    <label class="full" for="star-c3"></label>
+                                    <input type="checkbox" id="star-c4" name="rating" value="2">
+                                    <label class="full" for="star-c4"></label>
+                                    <input type="checkbox" id="star-c5" name="rating" value="1">
+                                    <label class="full" for="star-c5"></label>
+                                </fieldset>
+                                <span class="book-voters card-vote">1.987 voters</span>
+                            </div>
+                            <div class="book-sum card-sum">Readers of all ages and walks of life have drawn inspiration and empowerment from Elizabeth Gilbert’s books for years. </div>
+                        </div>
+                    </div>
+                    <div class="likes">
+                        <div class="like-profile">
+                            <img src="https://randomuser.me/api/portraits/women/63.jpg" alt="" class="like-img">
+                        </div>
+                        <div class="like-profile">
+                            <img src="https://pbs.twimg.com/profile_images/2452384114/noplz47r59v1uxvyg8ku.png" alt="" class="like-img">
+                        </div>
+                        <div class="like-profile">
+                            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80" alt="" class="like-img">
+                        </div>
+                        <div class="like-name"><span>Samantha William</span> and<span> 2 other friends</span> like this</div>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="content-wrapper">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/7167iiDUeAL.jpg" alt="" class="book-card-img">
+                        <div class="card-content">
+                            <div class="book-name">Dominicana</div>
+                            <div class="book-by">by Angie Cruz</div>
+                            <div class="rate">
+                                <fieldset class="rating book-rate">
+                                    <input type="checkbox" id="star-c6" name="rating" value="5">
+                                    <label class="full" for="star-c6"></label>
+                                    <input type="checkbox" id="star-c7" name="rating" value="4">
+                                    <label class="full" for="star-c7"></label>
+                                    <input type="checkbox" id="star-c8" name="rating" value="3">
+                                    <label class="full" for="star-c8"></label>
+                                    <input type="checkbox" id="star-c9" name="rating" value="2">
+                                    <label class="full" for="star-c9"></label>
+                                    <input type="checkbox" id="star-c10" name="rating" value="1">
+                                    <label class="full" for="star-c10"></label>
+                                </fieldset>
+                                <span class="book-voters card-vote">1.987 voters</span>
+                            </div>
+                            <div class="book-sum card-sum">Readers of all ages and walks of life have drawn inspiration and empowerment from Elizabeth Gilbert’s books for years. </div>
+                        </div>
+                    </div>
+                    <div class="likes">
+                        <div class="like-profile">
+                            <img src="https://randomuser.me/api/portraits/women/63.jpg" alt="" class="like-img">
+                        </div>
+                        <div class="like-name"><span>Kimberly Jones</span> like this</div>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="content-wrapper">
+                        <img src="https://assets.fontsinuse.com/static/use-media-items/95/94294/full-2000x3056/5d56c6b1/cg%201.jpeg?resolution=0" alt="" class="book-card-img">
+                        <div class="card-content">
+                            <div class="book-name">The Travellers</div>
+                            <div class="book-by">by Regina Porter</div>
+                            <div class="rate">
+                                <fieldset class="rating book-rate">
+                                    <input type="checkbox" id="star-c11" name="rating" value="5">
+                                    <label class="full" for="star-c11"></label>
+                                    <input type="checkbox" id="star-c12" name="rating" value="4">
+                                    <label class="full" for="star-c12"></label>
+                                    <input type="checkbox" id="star-c13" name="rating" value="3">
+                                    <label class="full" for="star-c13"></label>
+                                    <input type="checkbox" id="star-c14" name="rating" value="2">
+                                    <label class="full" for="star-c14"></label>
+                                    <input type="checkbox" id="star-c15" name="rating" value="1">
+                                    <label class="full" for="star-c15"></label>
+                                </fieldset>
+                                <span class="book-voters card-vote">1.987 voters</span>
+                            </div>
+                            <div class="book-sum card-sum">Readers of all ages and walks of life have drawn inspiration and empowerment from Elizabeth Gilbert’s books for years. </div>
+                        </div>
+                    </div>
+                    <div class="likes">
+                        <div class="like-profile">
+                            <img src="https://randomuser.me/api/portraits/women/63.jpg" alt="" class="like-img">
+                        </div>
+                        <div class="like-profile">
+                            <img src="https://pbs.twimg.com/profile_images/2452384114/noplz47r59v1uxvyg8ku.png" alt="" class="like-img">
+                        </div>
+                        <div class="like-name"><span>Adam</span> and<span> Kimberly</span> like this</div>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="content-wrapper">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/91M4E+SURUL.jpg" alt="" class="book-card-img">
+                        <div class="card-content">
+                            <div class="book-name">Afternoon Of A Faun</div>
+                            <div class="book-by">by James Lasdun</div>
+                            <div class="rate">
+                                <fieldset class="rating book-rate">
+                                    <input type="checkbox" id="star-c16" name="rating" value="5">
+                                    <label class="full" for="star-c16"></label>
+                                    <input type="checkbox" id="star-c17" name="rating" value="4">
+                                    <label class="full" for="star-c17"></label>
+                                    <input type="checkbox" id="star-18" name="rating" value="3">
+                                    <label class="full" for="star-c18"></label>
+                                    <input type="checkbox" id="star-c19" name="rating" value="2">
+                                    <label class="full" for="star-c19"></label>
+                                    <input type="checkbox" id="star-c20" name="rating" value="1">
+                                    <label class="full" for="star-c20"></label>
+                                </fieldset>
+                                <span class="book-voters card-vote">1.987 voters</span>
+                            </div>
+                            <div class="book-sum card-sum">Readers of all ages and walks of life have drawn inspiration and empowerment from Elizabeth Gilbert’s books for years. </div>
+                        </div>
+                    </div>
+                    <div class="likes">
+                        <div class="like-profile">
+                            <img src="https://randomuser.me/api/portraits/women/63.jpg" alt="" class="like-img">
+                        </div>
+                        <div class="like-profile">
+                            <img src="https://pbs.twimg.com/profile_images/2452384114/noplz47r59v1uxvyg8ku.png" alt="" class="like-img">
+                        </div>
+                        <div class="like-profile">
+                            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80" alt="" class="like-img">
+                        </div>
+                        <div class="like-name"><span>Samantha William</span> and<span> 2 other friends</span> like this</div>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="content-wrapper">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/61OTY2-4anL.jpg" alt="" class="book-card-img">
+                        <div class="card-content">
+                            <div class="book-name">Flash Count Diary</div>
+                            <div class="book-by">by Darcey Steinke</div>
+                            <div class="rate">
+                                <fieldset class="rating book-rate">
+                                    <input type="checkbox" id="star-c21" name="rating" value="5">
+                                    <label class="full" for="star-c21"></label>
+                                    <input type="checkbox" id="star-c22" name="rating" value="4">
+                                    <label class="full" for="star-c22"></label>
+                                    <input type="checkbox" id="star-c23" name="rating" value="3">
+                                    <label class="full" for="star-c23"></label>
+                                    <input type="checkbox" id="star-c24" name="rating" value="2">
+                                    <label class="full" for="star-c24"></label>
+                                    <input type="checkbox" id="star-c25" name="rating" value="1">
+                                    <label class="full" for="star-c25"></label>
+                                </fieldset>
+                                <span class="book-voters card-vote">1.987 voters</span>
+                            </div>
+                            <div class="book-sum card-sum">Readers of all ages and walks of life have drawn inspiration and empowerment from Elizabeth Gilbert’s books for years. </div>
+                        </div>
+                    </div>
+                    <div class="likes">
+                        <div class="like-profile">
+                            <img src="https://randomuser.me/api/portraits/women/63.jpg" alt="" class="like-img">
+                        </div>
+                        <div class="like-profile">
+                            <img src="https://pbs.twimg.com/profile_images/2452384114/noplz47r59v1uxvyg8ku.png" alt="" class="like-img">
+                        </div>
+                        <div class="like-profile">
+                            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80" alt="" class="like-img">
+                        </div>
+                        <div class="like-name"><span>Angelina Stone</span> and<span> 2 other friends</span> like this</div>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="content-wrapper">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/61Vc+xM23GL.jpg" alt="" class="book-card-img">
+                        <div class="card-content">
+                            <div class="book-name">Picnic Comma Lightning</div>
+                            <div class="book-by">by Lucy Parker</div>
+                            <div class="rate">
+                                <fieldset class="rating book-rate">
+                                    <input type="checkbox" id="star-c1" name="rating" value="5">
+                                    <label class="full" for="star-c1"></label>
+                                    <input type="checkbox" id="star-c2" name="rating" value="4">
+                                    <label class="full" for="star-c2"></label>
+                                    <input type="checkbox" id="star-c3" name="rating" value="3">
+                                    <label class="full" for="star-c3"></label>
+                                    <input type="checkbox" id="star-c4" name="rating" value="2">
+                                    <label class="full" for="star-c4"></label>
+                                    <input type="checkbox" id="star-c5" name="rating" value="1">
+                                    <label class="full" for="star-c5"></label>
+                                </fieldset>
+                                <span class="book-voters card-vote">1.987 voters</span>
+                            </div>
+                            <div class="book-sum card-sum">Readers of all ages and walks of life have drawn inspiration and empowerment from Elizabeth Gilbert’s books for years. </div>
+                        </div>
+                    </div>
+                    <div class="likes">
+                        <div class="like-profile">
+                            <img src="https://pbs.twimg.com/profile_images/2452384114/noplz47r59v1uxvyg8ku.png" alt="" class="like-img">
+                        </div>
+                        <div class="like-profile">
+                            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80" alt="" class="like-img">
+                        </div>
+                        <div class="like-name"><span>George</span> and<span> Mike</span> like this</div>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="content-wrapper">
+                        <img src="https://prodimage.images-bn.com/pimages/9780525655633_p0_v5_s1200x630.jpg" alt="" class="book-card-img">
+                        <div class="card-content">
+                            <div class="book-name">Very Nica</div>
+                            <div class="book-by">by Lucy Parker</div>
+                            <div class="rate">
+                                <fieldset class="rating book-rate">
+                                    <input type="checkbox" id="star-c1" name="rating" value="5">
+                                    <label class="full" for="star-c1"></label>
+                                    <input type="checkbox" id="star-c2" name="rating" value="4">
+                                    <label class="full" for="star-c2"></label>
+                                    <input type="checkbox" id="star-c3" name="rating" value="3">
+                                    <label class="full" for="star-c3"></label>
+                                    <input type="checkbox" id="star-c4" name="rating" value="2">
+                                    <label class="full" for="star-c4"></label>
+                                    <input type="checkbox" id="star-c5" name="rating" value="1">
+                                    <label class="full" for="star-c5"></label>
+                                </fieldset>
+                                <span class="book-voters card-vote">1.987 voters</span>
+                            </div>
+                            <div class="book-sum card-sum">Readers of all ages and walks of life have drawn inspiration and empowerment from Elizabeth Gilbert’s books for years. </div>
+                        </div>
+                    </div>
+                    <div class="likes">
+                        <div class="like-profile">
+                            <img src="https://randomuser.me/api/portraits/women/63.jpg" alt="" class="like-img">
+                        </div>
+                        <div class="like-profile">
+                            <img src="https://pbs.twimg.com/profile_images/2452384114/noplz47r59v1uxvyg8ku.png" alt="" class="like-img">
+                        </div>
+                        <div class="like-profile">
+                            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80" alt="" class="like-img">
+                        </div>
+                        <div class="like-name"><span>Samantha William</span> and<span> 2 other friends</span> like this</div>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="content-wrapper">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/71PL7BiZ5NL.jpg" alt="" class="book-card-img">
+                        <div class="card-content">
+                            <div class="book-name">Stay And Fight</div>
+                            <div class="book-by">by Lucy Parker</div>
+                            <div class="rate">
+                                <fieldset class="rating book-rate">
+                                    <input type="checkbox" id="star-c1" name="rating" value="5">
+                                    <label class="full" for="star-c1"></label>
+                                    <input type="checkbox" id="star-c2" name="rating" value="4">
+                                    <label class="full" for="star-c2"></label>
+                                    <input type="checkbox" id="star-c3" name="rating" value="3">
+                                    <label class="full" for="star-c3"></label>
+                                    <input type="checkbox" id="star-c4" name="rating" value="2">
+                                    <label class="full" for="star-c4"></label>
+                                    <input type="checkbox" id="star-c5" name="rating" value="1">
+                                    <label class="full" for="star-c5"></label>
+                                </fieldset>
+                                <span class="book-voters card-vote">1.987 voters</span>
+                            </div>
+                            <div class="book-sum card-sum">Readers of all ages and walks of life have drawn inspiration and empowerment from Elizabeth Gilbert’s books for years. </div>
+                        </div>
+                    </div>
+                    <div class="likes">
+                        <div class="like-profile">
+                            <img src="https://randomuser.me/api/portraits/women/63.jpg" alt="" class="like-img">
+                        </div>
+                        <div class="like-profile">
+                            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80" alt="" class="like-img">
+                        </div>
+                        <div class="like-name"><span>Samantha William</span> and<span> Jonathan</span> like this</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+==================
+     <code data-lang="htmlmixed" id="actual-html-code" class=" cm-s-default"><div class="container" x-data="{ rightSide: false, leftSide: false }">
+  <div class="left-side" :class="{'active' : leftSide}">
+    <div class="left-side-button" @click="leftSide = !leftSide">
+      <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+  <path d="M19 12H5M12 19l-7-7 7-7"/>
+</svg>
+    </div>
+    <div class="logo">ULTRANET</div>
+    <div class="side-wrapper">
+      <div class="side-title">MENU</div>
+      <div class="side-menu">
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+            <path d="M9 22V12h6v10" />
+          </svg>
+          Home
+        </a>
+        <a href="#">
+          <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+          </svg>
+          Latest News
+        </a>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+            <circle cx="12" cy="10" r="3" /></svg>
+          Explore
+        </a>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+            <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" />
+          </svg>
+          Files
+        </a>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+            <circle cx="8.5" cy="8.5" r="1.5" />
+            <path d="M21 15l-5-5L5 21" />
+          </svg>
+          Galery
+        </a>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+            <path d="M16 2v4M8 2v4M3 10h18" />
+          </svg>
+          Events
+        </a>
+      </div>
+    </div>
+    <div class="side-wrapper">
+      <div class="side-title">YOUR FAVOURITE</div>
+      <div class="side-menu">
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 472.11 472.11">
+            <path d="260.07 
+216.1163.94 63.94 0 00-28.26-53.1 55.95 55.95 0 00-43.74-90.9-.8 0-1.6.1-2.4.1256 56 0 10-107.2 0c-.8 0-1.6-.12-2.4-.1255.95 55.95 0 0043.75 90.9 64 64 0 000 106.2 55.95 55.95 0 0043.75 90.9h112a55.95 55.95 0 0043.74-90.9 63.94 63.94 0 0028.26-53.1" fill="#6a9923"/>
+            <path d="193.8 178.518 8 0 00-11.32-.16l-42.41 41.03V104.1a8 8 0 00-16 0v56.7l-36.35-36.35a8 8 0 00-11.31 11.3l47.66 47.67V292.8l-34.35-34.34a8 8 0 00-11.31 11.3l45.66 45.67V464.1a8 8 0 0016 0V241.63l53.6-51.78a8 8 0 00.12-11.34z" fill="#618c20" />
+            <path d="M468.07 216.11a63.94 63.94 0 00-28.26-53.1 55.95 55.95 0 00-43.74-90.9c-.8 0-1.6.1-2.4.12a56 56 0 10-107.2 0c-.8 0-1.6-.12-2.4-.12a55.95 55.95 0 00-43.75 90.9 64 64 0 000 106.2 55.95 55.95 0 0043.75 90.9h112a55.95 55.95 0 0043.74-90.9 63.94 63.94 0 0028.26-53.1z" fill="#6a9923" />
+            <path d="M401.72 178.46a8 8 0 00-11.31 0l-42.34 42.34V104.11a8 8 0 00-16 0v56.7l-36.35-36.35a8 8 0 00-11.31 11.3l47.66 47.67V292.8l-34.35-34.34a8 8 0 00-11.31 11.3l45.66 45.67V464.1a8 8 0 0016 0V242.87c.6-.3 1.15-.66 1.65-1.1l52-52a8 8 0 000-11.31z" fill="#618c20" />
+            <path d="M364.07 216.11a63.94 63.94 0 00-28.26-53.1 55.95 55.95 0 00-43.74-90.9c-.8 0-1.6.1-2.4.12a56 56 0 10-107.2 0c-.8 0-1.6-.12-2.4-.12a55.95 55.95 0 00-43.75 90.9 64 64 0 000 106.2 55.95 55.95 0 0043.75 90.9h112a55.95 55.95 0 0043.74-90.9 63.94 63.94 0 0028.26-53.1z" fill="#88b337" />
+            <path d="M297.72 178.46a8 8 0 00-11.31 0l-42.34 42.34V104.11a8 8 0 00-16 0v56.7l-36.35-36.35a8 8 0 00-11.31 11.3l47.66 47.67V292.8l-34.35-34.34a8 8 0 00-11.31 11.3l45.66 45.67V464.1a8 8 0 0016 0V242.87c.6-.3 1.15-.66 1.65-1.1l52-52a8 8 0 000-11.31z" fill="#6a9923" />
+            <path d="M372.07 472.11h-272a8 8 0 010-16h272a8 8 0 010 16z" fill="#595959" /></svg>
+          Foresto
+        </a>
+        <a href="#">
+          <svg viewBox="0 0 56 58" width="512" xmlns="http://www.w3.org/2000/svg">
+            <g fill="none" transform="translate(0 -1)">
+              <path d="M46.8 48.4a30.5 30.5 0 01-8.8-24l6.9-12C44.4 9.6 41.6 1 28 1A32 32 0 003.4 13.5a.2.2 0 00.2.4l2.5-.5a.5.5 0 01.4.8 14.2 14.2 0 00-3.3 4.3.2.2 0 00.3.4l2.5-.6a.5.5 0 01.6.6C5 22.5-.4 37.1.9 56.8a.5.5 0 00.9.2c2.2-3.3 5-6.2 8.4-8.3a.5.5 0 01.7.4c0 2.4.8 4.7 2.4 6.4a.5.5 0 001-.1 14 14 0 015.4-8h.5c1.7 1.2 3 3.8 3.6 5.8.5 1.8 1 3.6 1.1 5.4a.5.5 0 00.8.4c7-4 7.1-8.5 7.2-8.6a.5.5 0 01.9-.2c1.4 1.6 2.7 3.4 3.7 5.2a.5.5 0 001 0c.8-2 1.3-4.3 1.5-6.6l6.4.5a.5.5 0 00.4-1z" fill="#f9eab0" />
+              <path d="M44.5 49c-4.8-.4-4.3-.3-5.6-.6a.5.5 0 00-.5.5c-.2 2-.6 4-1.2 5.9-1-1.7-2.2-3.2-3.4-4.7a.5.5 0 00-.9.2v.1c-.7 4.4-5.4 7.5-7.2 8.5a.5.5 0 01-.8-.4c-.4-3.6-1.6-8.8-4.6-11a.5.5 0 00-.6 0 14 14 0 00-5.5 7.9c-1.3-1.8-2-4-2-6.2a.5.5 0 00-.6-.4l-.7.4a.5.5 0 00-.7-.4c-2.7 1.7-5 3.9-7 6.4a91.2 91.2 0 015-36.8.5.5 0 00-.4-.1l-1.2.3c-.1-.2-.4-.4-.6-.3l-.7.1c.8-1.5 1.8-3 3-4.2.4-.3 0-1-.4-.8l-1.2.2c0-.2-.3-.3-.5-.2l-.7.1c.4-.4 6.8-10.3 18.4-12.2a27 27 0 013.9-.3c12 0 14.5 8.7 15 11.3l-6.2 12a32.6 32.6 0 007.9 24c.2.3.2.6 0 .8z" fill="#f5efca" />
+              <path d="M27.8 1z" fill="#ecf0f1" />
+              <path d="M53 29c.1-1.8-.5-3.6-1.8-5-1.5-1.6-4.2-3-9.2-3-12 0-13 2-13 2s0-3.8 10-6.7c.5-.2.8-.6.8-1.1-.1-1 .2-2.1.9-2.9.2-.2.5-.3.8-.3 1.7 0 8 .4 10.5 3 3 3 5 7 1 14z" fill="#f0c419" />
+              <path d="M51.2 24c-4.5 5.2-3.8-1.8-19.2 1 0 0-3 0-3-2 0 0 1-2 13-2 5 0 7.7 1.4 9.2 3z" fill="#f29c1f" />
+              <path d="M32 12.3a3 3 0 11-3.5-2.3z" fill="#f0c419" />
+              <path d="M44 18a1 1 0 010-2c.5-.1 1-.3 1.3-.7a1 1 0 011.4 1.4C46 17.4 45 18 44 18z" fill="#e57e25" />
+              <circle cx="29" cy="13" fill="#393f4a" r="2" />
+              <path d="M34.6 14c-2 0-3.8-.9-5.2-2.2a4 4 0 00-3.4-1.1c-2 .4-3.1 2.7-3.1 2.8a1 1 0 01-1.8-1s1.6-3.1 4.5-3.8c1.8-.3 3.6.3 5 1.5 2.1 1.8 3.6 2 4.4 1.9.4-.1.8-.3 1.1-.6a1 1 0 011.7 1c-.8 1-2 1.6-3.2 1.6z" fill="#7f6e5d" />
+            </g>
+          </svg>
+          Birds
+        </a>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path d="M339.4 346.5a636.5 636.5 0 00-46.7-140.2 8.4 8.4 0 00-7.6-4.8h-21a8.4 8.4 0 00-8 11 662.9 662.9 0 0129 289.7 8.4 8.4 0 008.4 9.5h50.3c4.4 0 8.1-3.6 8.3-8 2.3-52.8-2-105.6-12.7-157.2z" fill="#ff9940" />
+            <g fill="#f5760f">
+              <path d="M300.7 508.8a8.4 8.4 0 01-2-6.6 662.7 662.7 0 00-29-289.7 8.4 8.4 0 018-11H264a8.4 8.4 0 00-8 11 662.9 662.9 0 0129 289.7 8.4 8.4 0 008.4 9.5H307c-2.4 0-4.7-1-6.3-2.9z" />
+              <path d="M331.2 312.2l-48.8 9.1c.9 5.6 1.7 11.1 2.4 16.7l50.6-9.5c-1.3-5.5-2.7-10.9-4.2-16.3zM288 369.2l1.1 16.7h57.2a641 641 0 00-2.6-16.7H288z" />
+            </g>
+            <path d="M499.7 157.8A125.9 125.9 0 00276.9 212a8.4 8.4 0 0010.2 9.7L495 171a8.5 8.5 0 004.6-13.3z" fill="#a4d64d" />
+            <path d="M351.1 2.9a8.4 8.4 0 00-7.5-2.8 125.9 125.9 0 00-93 185c7.4 13.4 17 25.2 28.6 35.1a8.4 8.4 0 0013.5-4l60.1-205.5c.8-2.7.2-5.6-1.7-7.8z" fill="#8ec42f" />
+            <g fill="#a4d64d">
+              <path d="M327 199.3c-15.3-.3-30.3 2.1-44.7 7.2a8.4 8.4 0 00-3.3 13.7l148 154.7a8.5 8.5 0 0013.8-2.6 125.9 125.9 0 00-113.7-173z" />
+              <path d="M293.3 212.1a125.9 125.9 0 00-222.8-54.3A8.5 8.5 0 0075 171l208 50.7a8.4 8.4 0 0010.2-9.7z" />
+            </g>
+            <path d="M293.2 212.5c-.6-2.8-2.6-5-5.3-6a125.9 125.9 0 00-158.5 165.8c2.2 5.5 9.7 7 13.8 2.6l148-154.7c2-2 2.7-5 2-7.7z" fill="#8ec42f" />
+            <path d="M491.7 496.5c-71.3-45-153.8-68.7-238.6-68.7S86 451.6 14.5 496.5A8.4 8.4 0 0019 512h468.3a8.4 8.4 0 004.4-15.5z" fill="#ffd042" />
+            <path d="M35.5 506c-1-3.6.4-7.5 3.6-9.5A447 447 0 01265.4 428l-12.3-.2a447.2 447.2 0 00-238.6 68.7A8.4 8.4 0 0019 512h24.6c-3.8 0-7-2.5-8-6z" fill="#ffc412" />
+            <circle cx="290.8" cy="218.3" r="29.3" fill="#a4a09a" />
+            <path d="M299.2 239.2a29.3 29.3 0 01-24.5-45.4 29.3 29.3 0 1040.7 40.6c-4.7 3-10.2 4.8-16.2 4.8z" fill="#928d86" />
+            <circle cx="316" cy="256" r="29.3" fill="#a4a09a" />
+            <path d="M324.4 281.1a29.3 29.3 0 01-17.1-53.1 29.4 29.4 0 1025.8 51.8c-2.8.9-5.7 1.3-8.7 1.3z" fill="#928d86" />
+            <circle cx="261.5" cy="256" r="29.3" fill="#a4a09a" />
+            <path d="M269.9 277a29.3 29.3 0 01-24.5-45.5A29.3 29.3 0 10286 272c-4.6 3-10.2 4.9-16.1 4.9z" fill="#928d86" />
+            <g fill="#ffb266">
+              <circle cx="274.1" cy="473.9" r="8.4" />
+              <circle cx="378.9" cy="482.3" r="8.4" />
+              <circle cx="328.6" cy="465.6" r="8.4" />
+              <circle cx="223.8" cy="457.2" r="8.4" />
+              <circle cx="202.8" cy="482.3" r="8.4" />
+              <circle cx="144.2" cy="482.3" r="8.4" />
+            </g>
+          </svg>
+          Nature
+        </a>
+        <a href="#"><svg viewBox="0 0 511.4 511.4" width="512" xmlns="http://www.w3.org/2000/svg">
+            <path d="M102.8 145c-47.5 0-86 38.6-86 86v29.3h168.6V145z" fill="#0dca71" />
+            <path d="M432.9 377.8l-43-70.8-95.1 60.2 84 144.2 25.2-15.3a86.2 86.2 0 0028.9-118.3z" fill="#0cba68" />
+            <path d="M121.6 307l-43 70.8a86.2 86.2 0 0028.8 118.3l25.3 15.3 84-144.2z" fill="#0dca71" />
+            <path d="M408.6 145H326v115.3h168.7v-29.2c0-47.5-38.6-86.1-86-86.1z" fill="#0cba68" />
+            <path d="M345.9 90.2A90.3 90.3 0 00255.7 0L245 85.3l10.7 82.1H346V90.2z" fill="#0cba68" />
+            <path d="M255.7 0a90.3 90.3 0 00-90.2 90.2v77.2h90.2z" fill="#0dca71" />
+            <g>
+              <path d="M420 269.3c0-62.4-31.7-117.1-79.2-147.4l-85 147.4z" fill="#ebb65b" />
+              <path d="M255.7 269.3L340.8 122c-24.8-15.8-54-25-85-25L245 160z" fill="#fdd278" />
+              <path d="M91.4 269.3h164.3l-85-147.4a174.3 174.3 0 00-79.3 147.4z" fill="#ffc663" />
+              <path d="M255.7 97c-31.1 0-60.2 9.1-85 25l85 147.3z" fill="#ffe7ab" />
+              <path d="M255.7 269.3L245 384l10.7 57.7c31.1 0 60.3-9.2 85.1-25z" fill="#ebb65b" />
+              <path d="M255.7 269.3l85.1 147.4c47.5-30.2 79.2-85 79.2-147.4z" fill="#fdd278" />
+              <path d="M170.6 416.7c24.9 15.8 54 25 85.1 25V269.3z" fill="#ffc663" />
+              <path d="M255.7 269.3H91.4c0 62.4 31.8 117.2 79.2 147.4z" fill="#ffe7ab" />
+              <path d="M337 269.3L296.4 199h-40.7L245 266.7l10.7 73h40.7z" fill="#ffe5a5" />
+              <path d="M215 198.9l-40.6 70.4 40.7 70.5h40.6V198.9z" fill="#fffaed" />
+            </g>
+          </svg>
+          Animals
+        </a>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path d="M176.6 360l-51.1-24.2-26-12.3L155.1 187l35.5-8.8s-58 97.4-14 181.9z" fill="#f8b40e" />
+            <path d="M488.8 330.5v-62.4c0-5-4-9-9-9h-25.7c-5 0-9 4-9 9v22.5" fill="#f2171c" />
+            <path d="M464.7 330.5v-71.3H454c-5 0-9 4-9 8.9v22.5" fill="#d8131e" />
+            <path d="M225.8 266.7a60.1 60.1 0 110 120.2l42 22.6 141.3-15 14.6-127.8-190.4-15" fill="#bf8104" />
+            <path d="M130.2 107.4H175a39.8 39.8 0 110 79.7h-44.8a8.1 8.1 0 01-8.1-8.2v-63.4c0-4.5 3.6-8.1 8-8.1z" fill="#f8b40e" />
+            <path d="M175 170.8h-53v8.1c0 4.5 3.7 8.1 8.2 8.1H175a40 40 0 0039-48 39.8 39.8 0 01-39 31.8z" fill="#dd9b0a" />
+            <path fill="#f8b40e" d="M356.5 423H143.1v-36h183.8" />
+            <circle cx="415.1" cy="423" r="78.2" fill="#2c4046" />
+            <path fill="#dd9b0a" d="M167.5 187l-64.9 173.8-3-37.3L155 187z" />
+            <circle cx="415.1" cy="423" r="42.8" fill="#9aa7b8" />
+            <circle cx="99.5" cy="423" r="78.2" fill="#2c4046" />
+            <circle cx="99.5" cy="423" r="42.8" fill="#9aa7b8" />
+            <path d="M99.5 473.6C71.6 473.6 49 451 49 423h15.7a35 35 0 0069.8 0h15.7c0 28-22.7 50.6-50.6 50.6z" fill="#1d2c30" />
+            <path d="M343.6 423A78.8 78.8 0 01381 274.7c42 0 125 22.2 131 135.1.4 7.2-5.3 13.2-12.4 13.2h-156z" fill="#f8b40e" />
+            <path d="M327.6 365.6a78.9 78.9 0 0179-79c12.4 0 28.6 2 45.2 7.8a138.7 138.7 0 00-70.8-19.7A78.9 78.9 0 00343.6 423h8.8a78.7 78.7 0 01-24.8-57.4z" fill="#dd9b0a" />
+            <path d="M199 423a99.5 99.5 0 00-199 0h199z" fill="#f8b40e" />
+            <path d="M116 324.9A99.5 99.5 0 000 423h33a99.5 99.5 0 0183-98.1z" fill="#dd9b0a" />
+            <path d="M415.1 473.6c-27.9 0-50.6-22.7-50.6-50.6h15.7a35 35 0 0069.8 0h15.8c0 28-22.8 50.6-50.7 50.6z" fill="#1d2c30" />
+            <path d="M146.1 107.4h-16a8.1 8.1 0 00-8 8V179c0 4.5 3.6 8.1 8 8.1h16v-79.6z" fill="#a0d9f2" />
+            <path d="M146.1 170.8h-24v8.1c0 4.5 3.6 8.1 8 8.1h16v-16.2z" fill="#84bed3" />
+            <path d="M394.9 222.4l-153 10.8a33.6 33.6 0 00-31.2 33.5h213v-17.4a27 27 0 00-28.8-26.9z" fill="#444d56" />
+            <path fill="#d3d3d3" d="M183.9 65.5h15.7v77.2h-15.7z" />
+            <g fill="#dd9b0a">
+              <path d="M452.2 337.4h-76.6a7.9 7.9 0 010-15.8h76.6a7.9 7.9 0 010 15.8zM432.2 362.7h-56.6a7.9 7.9 0 010-15.7h56.6a7.9 7.9 0 010 15.7zM412.1 387.8h-36.5a7.9 7.9 0 010-15.7H412a7.9 7.9 0 010 15.7z" />
+            </g>
+            <circle cx="191.8" cy="147.2" r="23.1" fill="#444d56" />
+            <path d="M191.8 84c-8 0-14.3-6.4-14.3-14.2V25a14.3 14.3 0 1128.6 0v44.6c0 8-6.5 14.3-14.3 14.3z" fill="#e6e6e6" />
+          </svg>
+          Motobike
+        </a>
+        <a href="#">
+          <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+            <path d="M424 101l-8 25v6l16 21c3 4 0 9-4 9h-27l-5 2-15 22c-3 4-9 3-10-2l-8-25-4-4-25-8c-5-1-6-7-2-10l22-15 2-5V90c0-4 5-7 9-4l21 16h6l25-8c4-2 9 3 7 7z" fill="#fe9901" />
+            <path d="M428 162h-27l-5 2-15 22c-3 4-9 3-10-2l-5-15 2-2 16-23 5-2h28c2 0 4-1 5-3l10 14c3 4 0 9-4 9z" fill="#fb8801" />
+            <circle cx="438.8" cy="403.5" fill="#60b7ff" r="23.4" />
+            <path d="M462 403a23 23 0 11-46-2c4 4 9 7 16 7 12 0 22-10 23-21 4 4 7 10 7 16z" fill="#26a6fe" />
+            <path d="M24 511l321-137-101-100-100-101L7 494c-4 11 6 21 17 17z" fill="#fe7d43" />
+            <path d="M345 374L24 511c-11 4-21-6-17-17 3 1 5 0 8-1l315-134z" fill="#fd6930" />
+            <g fill="#7acaa6">
+              <path d="M47 401l95 60-54 22-60-37zM84 315l162 101-54 23-128-80zM120 229l210 131 15 14-49 21-195-122z" />
+            </g>
+            <g fill="#57be92">
+              <path d="M142 461l-54 22-20-12 54-23zM246 416l-54 23-20-13 54-23zM345 374l-49 21-20-13 53-23 1 1z" />
+            </g>
+            <path d="M136 4c-6 11-18 33-38 41-3 1-3 5 0 7 20 8 32 29 38 41 1 2 4 2 6 0 5-12 18-33 37-41 3-2 3-6 0-7-19-8-32-30-37-41-2-2-5-2-6 0z" fill="#fe9901" />
+            <path d="M179 52c-19 8-32 29-37 41-2 2-5 2-6 0l-9-15a87 87 0 0139-41l13 8c3 1 3 5 0 7z" fill="#fb8801" />
+            <path d="M345 426c-4 9-14 26-30 33-2 1-2 4 0 5 16 7 26 24 30 33 1 2 4 2 5 0 5-9 15-26 31-33 2-1 2-4 0-5-16-7-26-24-31-33-1-2-4-2-5 0z" fill="#fe9901" />
+            <path d="M381 464c-16 7-26 24-31 33-1 2-4 2-5 0l-7-12a70 70 0 0132-33l11 7c2 1 2 4 0 5z" fill="#fb8801" />
+            <g fill="#acacac">
+              <path d="M504 288a52 52 0 00-37-19c-7 0-13 1-20 3-13-8-30-8-50-1a8 8 0 106 14c7-2 17-5 28-3l-3 3c-10 10-13 27-5 38a26 26 0 0021 11c7 0 14-4 18-9l5-12c2-10-1-20-6-28h5c10 0 19 5 26 13a8 8 0 1012-10zm-52 23c-1 4-4 7-8 7s-7-2-8-4c-4-5-2-13 3-18l7-6c5 6 7 13 6 21zM443 80c11 9 28 8 39-2l2-2c2 10-2 21-5 28a8 8 0 1014 6c8-18 9-36 3-50 3-6 4-12 5-19 1-14-5-28-15-39a8 8 0 10-11 11 37 37 0 0110 33c-8-7-18-10-28-9-5 0-9 2-12 4-6 3-10 10-10 18-1 8 2 16 8 21zm7-20c0-2 0-5 3-6 4-3 9-2 13-1 1 0 13 6 12 7l-6 7c-6 4-14 5-19 1-2-2-3-5-3-8zM289 43c-4 1-6 6-5 10 11 30 2 84-18 109a8 8 0 1012 10c11-14 20-36 24-60s3-48-3-65c-2-4-6-6-10-4zM460 231a8 8 0 105-15c-17-6-41-7-65-3s-46 13-60 25a8 8 0 1010 11c25-20 79-29 110-18z" />
+            </g>
+            <circle cx="345.3" cy="31.1" fill="#60b7ff" r="23.4" />
+            <path d="M369 31a23 23 0 11-47 0v-1c4 3 8 5 13 5 13 0 23-10 24-23 6 4 10 11 10 19z" fill="#26a6fe" />
+            <circle cx="227.5" cy="94.5" fill="#60b7ff" r="23.4" />
+            <path d="M251 94a23 23 0 11-47 0c4 2 8 4 13 4 13 0 23-10 23-23 7 4 11 11 11 19z" fill="#26a6fe" />
+            <path d="M164 136l217 217c3 3 3 8 0 11l-21 21c-3 3-8 3-11 0L132 168c-3-3-3-8 0-11l21-21c3-3 8-3 11 0z" fill="#f3eae6" />
+            <path d="M381 364l-21 20c-3 4-8 4-11 0l-15-14c4 3 9 3 12 0l20-20c3-4 3-9 0-12l15 15c3 3 3 8 0 11z" fill="#e1d3ce" />
+          </svg>
+          Dance
+        </a>
+      </div>
+    </div>
+    <a href="https://twitter.com/AysnrTrkk" class="follow-me" target="_blank">
+      <span class="follow-text">
+        <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+        Follow me on Twitter
+     </span>
+      <span class="developer">
+        <img src="https://pbs.twimg.com/profile_images/1253782473953157124/x56UURmt_400x400.jpg" />
+        Aysenur Turk — @AysnrTrkk
+      </span>
+    </a>
+  </div>
+  <div class="main">
+    <div class="search-bar">
+      <input type="text" placeholder="Search" />
+      <button class="right-side-button" @click="rightSide = !rightSide">
+         <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+      </button>
+    </div>
+    <div class="main-container">
+      <div class="profile">
+        <div class="profile-avatar">
+          <img src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg" alt="" class="profile-img">
+          <div class="profile-name">Quan Ha</div>
+        </div>
+        <img src="https://images.unsplash.com/photo-1508247967583-7d982ea01526?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80" alt="" class="profile-cover">
+        <div class="profile-menu">
+          <a class="profile-menu-link active">Timeline</a>
+          <a class="profile-menu-link">About</a>
+          <a class="profile-menu-link">Friends</a>
+          <a class="profile-menu-link">Photos</a>
+          <a class="profile-menu-link">More</a>
+        </div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-left">
+          <div class="intro box">
+            <div class="intro-title">
+              Introduction
+              <button class="intro-menu"></button>
+            </div>
+            <div class="info">
+              <div class="info-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 503.889 503.889" fill="currentColor">
+                  <path d="M453.727 114.266H345.151V70.515c0-20.832-16.948-37.779-37.78-37.779H196.517c-20.832 0-37.78 16.947-37.78 37.779v43.751H50.162C22.502 114.266 0 136.769 0 164.428v256.563c0 27.659 22.502 50.161 50.162 50.161h403.565c27.659 0 50.162-22.502 50.162-50.161V164.428c0-27.659-22.503-50.162-50.162-50.162zm-262.99-43.751a5.786 5.786 0 015.78-5.779h110.854a5.786 5.786 0 015.78 5.779v43.751H190.737zM32 164.428c0-10.015 8.147-18.162 18.162-18.162h403.565c10.014 0 18.162 8.147 18.162 18.162v23.681c0 22.212-14.894 42.061-36.22 48.27l-167.345 48.723a58.482 58.482 0 01-32.76 0L68.22 236.378C46.894 230.169 32 210.321 32 188.109zm421.727 274.725H50.162c-10.014 0-18.162-8.147-18.162-18.161V253.258c8.063 6.232 17.254 10.927 27.274 13.845 184.859 53.822 175.358 52.341 192.67 52.341 17.541 0 7.595 1.544 192.67-52.341 10.021-2.918 19.212-7.613 27.274-13.845v167.733c.001 10.014-8.147 18.162-18.161 18.162z" /></svg>
+                Product Designer at <a href="#">Bravebist</a>
+              </div>
+              <div class="info-item">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                  <path d="M9 22V12h6v10" />
+                </svg>
+                Live in <a href="#">Hanoi, Vietnam</a>
+              </div>
+              <div class="info-item">
+                <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                  <path d="M437 75C388.7 26.6 324.4 0 256 0S123.3 26.6 75 75C26.6 123.3 0 187.6 0 256s26.6 132.7 75 181c48.3 48.4 112.6 75 181 75s132.7-26.6 181-75c48.4-48.3 75-112.6 75-181s-26.6-132.7-75-181zM252.4 481.9c-52-.9-103.7-19.5-145.2-55.8L256 277.2l21.7 21.8a165.9 165.9 0 00-35.7 87c-3.5 30.5 0 63.3 10.4 95.9zM299 320.3l105.7 105.8a224.8 224.8 0 01-121.3 54.1C262 419.5 268 360.3 299 320.3zm21.2-21.2c40-31 99.2-37 160-15.6A224.8 224.8 0 01426 404.8zM482 252.4a231.7 231.7 0 00-96-10.4 165.9 165.9 0 00-87 35.7L277.3 256l148.9-148.8c36.3 41.5 55 93.2 55.8 145.2zm-290.2-39.5c-40 31-99.2 37-160 15.6A224.8 224.8 0 0186 107.2zm-84.5-127a224.8 224.8 0 01121.3-54.1C250 92.5 244 151.7 213 191.7zM270 126c3.5-30.5 0-63.3-10.4-95.9 52 .9 103.7 19.5 145.2 55.8L256 234.8 234.3 213a165.9 165.9 0 0035.7-87zM30 259.6a242 242 0 0072.7 11.7c7.8 0 15.6-.5 23.2-1.3a165.9 165.9 0 0087-35.7l21.8 21.7L85.9 404.8a225.3 225.3 0 01-55.8-145.2z" /></svg>
+                Player name <a href="#">Quan Ha</a>
+              </div>
+            </div>
+          </div>
+          <div class="event box">
+            <div class="event-wrapper">
+              <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" class="event-img" />
+              <div class="event-date">
+                <div class="event-month">Jan</div>
+                <div class="event-day">01</div>
+              </div>
+              <div class="event-title">Winter Wonderland</div>
+              <div class="event-subtitle">01st Jan, 2019 07:00AM</div>
+            </div>
+          </div>
+          <div class="pages box">
+            <div class="intro-title">
+              Your pages
+              <button class="intro-menu"></button>
+            </div>
+            <div class="user">
+              <img src="https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjE3Nzg0f" alt="" class="user-img">
+              <div class="username">Chandelio</div>
+            </div>
+            <div class="user">
+              <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=d5849d81af587a09dbcf3f11f6fa122f" alt="" class="user-img">
+              <div class="username">Janet Jolie</div>
+            </div>
+            <div class="user">
+              <img src="https://images.unsplash.com/photo-1546539782-6fc531453083?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjE3Nzg0fQ" alt="" class="user-img">
+              <div class="username">Patrick Watsons</div>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-right">
+          <div class="status box">
+            <div class="status-menu">
+              <a class="status-menu-item active" href="#">Status</a>
+              <a class="status-menu-item" href="#">Photos</a>
+              <a class="status-menu-item" href="#">Videos</a>
+            </div>
+            <div class="status-main">
+              <img src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg" class="status-img">
+              <textarea class="status-textarea" placeholder="Write something to Quan Ha.."></textarea>
+            </div>
+            <div class="status-actions">
+              <a href="#" class="status-action">
+                <svg viewBox="-42 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M333.7 123.3c0 33.9-12.2 63.2-36.2 87.2-24 24-53.3 36.1-87.1 36.1h-.1c-33.9 0-63.2-12.1-87.1-36.1-24-24-36.2-53.3-36.2-87.2 0-33.9 12.2-63.2 36.2-87.2 24-24 53.2-36 87-36.1h.2c33.8 0 63.2 12.2 87.1 36.1 24 24 36.2 53.3 36.2 87.2zm0 0" fill="#ffbb85" />
+                  <path d="M427.2 424c0 26.7-8.5 48.3-25.3 64.3-16.5 15.7-38.4 23.7-65 23.7H90.2c-26.6 0-48.5-8-65-23.7C8.5 472.3 0 450.7 0 423.9c0-10.2.3-20.4 1-30.2a302.7 302.7 0 0112.1-64.9c3.3-10.3 7.8-20.5 13.4-30.3 5.8-10.2 12.5-19 20.1-26.3a89 89 0 0129-18.2c11.2-4.4 23.7-6.7 37-6.7 5.2 0 10.3 2.2 20 8.5l21 13.5c6.6 4.3 15.7 8.3 27 11.9a107.7 107.7 0 0033 5.3c11 0 22-1.8 33-5.3 11.2-3.6 20.3-7.6 27-12l21-13.4c9.7-6.3 14.7-8.5 20-8.5 13.3 0 25.7 2.3 37 6.7a89 89 0 0128.9 18.2c7.6 7.3 14.4 16.1 20.2 26.3 5.5 9.8 10 20 13.3 30.3a305.5 305.5 0 0112.1 64.9c.7 9.8 1 20 1 30.2zm0 0" fill="#6aa9ff" />
+                  <path d="M210.4 246.6h-.1V0c34 0 63.3 12.2 87.2 36.1 24 24 36.2 53.3 36.2 87.2 0 33.9-12.2 63.2-36.2 87.2-24 24-53.3 36.1-87.1 36.1zm0 0" fill="#f5a86c" />
+                  <path d="M427.2 424c0 26.7-8.5 48.3-25.3 64.3-16.5 15.7-38.4 23.7-65 23.7H210.2V286.5h3.3c11 0 22-1.8 33-5.3 11.2-3.6 20.3-7.6 27-12l21-13.4c9.7-6.3 14.7-8.5 20-8.5 13.3 0 25.7 2.3 37 6.7a89 89 0 0128.9 18.2c7.6 7.3 14.4 16.1 20.2 26.3 5.5 9.8 10 20 13.3 30.3a305.5 305.5 0 0112.1 64.9c.7 9.8 1 20 1 30.2zm0 0" fill="#2682ff" />
+                </svg>
+                People
+              </a>
+              <a href="#" class="status-action">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path d="M87.084 192c-.456-5.272-.688-10.6-.688-16C86.404 78.8 162.34 0 256.004 0s169.6 78.8 169.6 176c0 5.392-.232 10.728-.688 16h.688c0 96.184-169.6 320-169.6 320s-169.6-223.288-169.6-320h.68zm168.92 32c36.392 1.024 66.744-27.608 67.84-64-1.096-36.392-31.448-65.024-67.84-64-36.392-1.024-66.744 27.608-67.84 64 1.096 36.392 31.448 65.024 67.84 64z" fill="#e21b1b" />
+                </svg>
+                Check in
+              </a>
+              <a href="#" class="status-action">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <circle cx="256" cy="256" r="256" fill="#ffca28" />
+                  <g fill="#6d4c41">
+                    <path d="M399.68 208.32c-8.832 0-16-7.168-16-16 0-17.632-14.336-32-32-32s-32 14.368-32 32c0 8.832-7.168 16-16 16s-16-7.168-16-16c0-35.296 28.704-64 64-64s64 28.704 64 64c0 8.864-7.168 16-16 16zM207.68 208.32c-8.832 0-16-7.168-16-16 0-17.632-14.368-32-32-32s-32 14.368-32 32c0 8.832-7.168 16-16 16s-16-7.168-16-16c0-35.296 28.704-64 64-64s64 28.704 64 64c0 8.864-7.168 16-16 16z" />
+                  </g>
+                  <path d="M437.696 294.688c-3.04-4-7.744-6.368-12.736-6.368H86.4c-5.024 0-9.728 2.336-12.736 6.336-3.072 4.032-4.032 9.184-2.688 14.016C94.112 390.88 170.08 448.32 255.648 448.32s161.536-57.44 184.672-139.648c1.376-4.832.416-9.984-2.624-13.984z" fill="#fafafa" />
+                </svg>
+                Mood
+              </a>
+              <button class="status-share">Share</button>
+            </div>
+          </div>
+          <div class="album box">
+            <div class="status-main">
+              <img src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg" class="status-img" />
+              <div class="album-detail">
+                <div class="album-title"><strong>Quan Ha</strong> create new <span>album</span></div>
+                <div class="album-date">6 hours ago</div>
+              </div>
+              <button class="intro-menu"></button>
+            </div>
+            <div class="album-content">When the bass drops, so do my problems.
+              <div class="album-photos">
+                <img src="https://images.unsplash.com/photo-1508179719682-dbc62681c355?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2378&q=80" alt="" class="album-photo" />
+                <div class="album-right">
+                  <img src="https://images.unsplash.com/photo-1502872364588-894d7d6ddfab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80" alt="" class="album-photo" />
+                  <img src="https://images.unsplash.com/photo-1566737236500-c8ac43014a67?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="" class="album-photo" />
+                </div>
+              </div>
+            </div>
+            <div class="album-actions">
+              <a href="#" class="album-action">
+                <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" />
+                </svg>
+                87
+              </a>
+              <a href="#" class="album-action">
+                <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1" viewBox="0 0 24 24">
+                  <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+                </svg>
+                20
+              </a>
+              <a href="#" class="album-action">
+                <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1" viewBox="0 0 24 24">
+                  <path d="M17 1l4 4-4 4" />
+                  <path d="M3 11V9a4 4 0 014-4h14M7 23l-4-4 4-4" />
+                  <path d="M21 13v2a4 4 0 01-4 4H3" />
+                </svg>
+                13
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="right-side" :class="{ 'active': rightSide }">
+    <div class="account">
+      <button class="account-button">
+        <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1" viewBox="0 0 24 24">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+          <path d="M22 6l-10 7L2 6" />
+        </svg>
+      </button>
+      <button class="account-button">
+        <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1" viewBox="0 0 24 24">
+          <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0" />
+        </svg>
+      </button>
+      <span class="account-user">Quan Ha
+        <img src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg" alt="" class="account-profile" alt="">
+        <span>▼</span>
+      </span>
+    </div>
+    <div class="side-wrapper stories">
+      <div class="side-title">STORIES</div>
+      <div class="user">
+        <img src="https://pbs.twimg.com/profile_images/1102351320567164931/ZCkJgJIH.png" alt="" class="user-img">
+        <div class="username">Lisandro Matos
+          <div class="album-date">12 hours ago</div>
+        </div>
+      </div>
+      <div class="user">
+        <img src="https://pbs.twimg.com/profile_images/1153966095444992000/1lpIyHaQ.jpg" alt="" class="user-img">
+        <div class="username">Gvozden Boskovsky
+          <div class="album-date">29 minutes ago</div>
+        </div>
+      </div>
+      <div class="user">
+        <img src="https://images.unsplash.com/photo-1565464027194-7957a2295fb7?ixlib=rb-1.2.1&auto=format&fit=crop&w=3500&q=80" alt="" class="user-img">
+        <div class="username">Hnek Fortuin
+          <div class="album-date">3 hours ago</div>
+        </div>
+      </div>
+      <div class="user">
+        <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80" alt="" class="user-img">
+        <div class="username">Lubomir Dvorak
+          <div class="album-date">18 hours ago</div>
+        </div>
+      </div>
+    </div>
+    <div class="side-wrapper contacts">
+      <div class="side-title">CONTACTS</div>
+      <div class="user">
+        <img src="https://randomuser.me/api/portraits/men/1.jpg" class="user-img">
+        <div class="username">Andrei Mashrin
+          <div class="user-status"></div>
+        </div>
+      </div>
+      <div class="user">
+        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=046c29138c1335ef8edee7daf521ba50" class="user-img">
+        <div class="username">Aryn Jacobssen
+          <div class="user-status offline"></div>
+        </div>
+      </div>
+      <div class="user">
+        <img src="https://images.unsplash.com/photo-1575084713138-342cae5f8d00?ixlib=rb-1.2.1&auto=format&fit=crop&w=958&q=80" class="user-img">
+        <div class="username">Carole Landu
+          <div class="user-status offline"></div>
+        </div>
+      </div>
+      <div class="user">
+        <img src="https://images.pexels.com/photos/598745/pexels-photo-598745.jpeg?h=350&auto=compress&cs=tinysrgb" class="user-img">
+        <div class="username">Chineze Afa
+          <div class="user-status"></div>
+        </div>
+      </div>
+      <div class="user">
+        <img src="https://pbs.twimg.com/profile_images/2452384114/noplz47r59v1uxvyg8ku.png" class="user-img">
+        <div class="username">Mok Kwang
+          <div class="user-status"></div>
+        </div>
+      </div>
+      <div class="user">
+        <img src="https://randomuser.me/api/portraits/women/63.jpg" class="user-img">
+        <div class="username">Naomi Yepes
+          <div class="user-status"></div>
+        </div>
+      </div>
+      <div class="user">
+        <img src="https://images.unsplash.com/photo-1476493279419-b785d41e38d8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=61eaea85f1aa3d065400179c78163f15" class="user-img">
+        <div class="username">Shaamikh Ale
+          <div class="user-status"></div>
+        </div>
+      </div>
+      <div class="user">
+        <img src="https://m.media-amazon.com/images/M/MV5BMjI4NDcyNjQxNl5BMl5BanBnXkFtZTgwMzI4OTM3NjM@._V1_UY256_CR13,0,172,256_AL_.jpg" class="user-img">
+        <div class="username">Sofia Alcocer
+          <div class="user-status idle"></div>
+        </div>
+      </div>
+      <div class="user">
+        <img src="https://images.unsplash.com/photo-1509380836717-c4320ccf1a6f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=e01c8c45a063daaf6d6e571a32bd6c90" class="user-img">
+        <div class="username">Wen Yahui
+          <div class="user-status"></div>
+        </div>
+      </div>
+      <div class="user">
+        <img src="https://pbs.twimg.com/profile_images/737221709267374081/sdwta9Oh.jpg" alt="" class="user-img">
+        <div class="username">Leslee Moss
+          <div class="user-status idle"></div>
+        </div>
+      </div>
+    </div>
+    <div class="search-bar right-search">
+      <input type="text" placeholder="Search" />
+      <div class="search-bar-svgs">
+        <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="3"/>
+          <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/>
+        </svg>
+        <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 469.34 469.34">
+          <path d="M456.84 76.17l-64-64.06c-16.13-16.13-44.18-16.17-60.37.04L45.77 301.67a10.73 10.73 0 00-2.7 4.59L.41 455.73a10.68 10.68 0 0013.19 13.2l149.33-42.7c1.73-.5 3.3-1.42 4.58-2.7l289.33-286.98c8.06-8.07 12.5-18.78 12.5-30.19s-4.44-22.12-12.5-30.2zM285.99 89.74L325.25 129l-205 205-14.7-29.44a10.67 10.67 0 00-9.55-5.9H78.92L286 89.75zM26.2 443.14l13.9-48.64 34.74 34.74-48.64 13.9zm123.14-35.18L98.3 422.54l-51.5-51.5L61.38 320H89.4l18.38 36.77a10.67 10.67 0 004.77 4.77l36.78 18.39v28.03zm21.33-17.54v-17.09c0-4.04-2.28-7.72-5.9-9.54l-29.43-14.7 205-205 39.26 39.26-208.93 207.07zm271.11-268.7l-47.03 46.61L301 74.6l46.59-47c8.06-8.07 22.1-8.07 30.16 0l64 64c4.03 4.03 6.25 9.38 6.25 15.08s-2.22 11.05-6.22 15.05z" /></svg>
+        <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+      <path d="M12 5v14M5 12h14"/>
+    </svg>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" @click="rightSide = false; leftSide = false" :class="{ 'active': rightSide || leftSide }"></div>
+</div>
+===================
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+:root {
+ --body-bg-color: #e5f4f9;
+ --body-color-light: #8b939c;
+ --body-font: "Roboto", sans-serif;
+ --page-bg-color: #f2f5f7;
+ --body-color: #3d4954;
+ --border-color: #b8bec3;
+ --placeholder: #ccd0d2;
+}
+
+* {
+ outline: none;
+ box-sizing: border-box;
+}
+
+img {
+ max-width: 100%;
+}
+
+html {
+ box-sizing: border-box;
+ -webkit-font-smoothing: antialiased;
+}
+
+body {
+background-color: #fff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='946' height='473' viewBox='0 0 1600 800'%3E%3Cpath fill='%23e436ff' d='M1102.5 734.8c2.5-1.2 24.8-8.6 25.6-7.5.5.7-3.9 23.8-4.6 24.5C1123.3 752.1 1107.5 739.5 1102.5 734.8zM1226.3 229.1c0-.1-4.9-9.4-7-14.2-.1-.3-.3-1.1-.4-1.6-.1-.4-.3-.7-.6-.9-.3-.2-.6-.1-.8.1l-13.1 12.3c0 0 0 0 0 0-.2.2-.3.5-.4.8 0 .3 0 .7.2 1 .1.1 1.4 2.5 2.1 3.6 2.4 3.7 6.5 12.1 6.5 12.2.2.3.4.5.7.6.3 0 .5-.1.7-.3 0 0 1.8-2.5 2.7-3.6 1.5-1.6 3-3.2 4.6-4.7 1.2-1.2 1.6-1.4 2.1-1.6.5-.3 1.1-.5 2.5-1.9C1226.5 230.4 1226.6 229.6 1226.3 229.1zM33 770.3C33 770.3 33 770.3 33 770.3c0-.7-.5-1.2-1.2-1.2-.1 0-.3 0-.4.1-1.6.2-14.3.1-22.2 0-.3 0-.6.1-.9.4-.2.2-.4.5-.4.9 0 .2 0 4.9.1 5.9l.4 13.6c0 .3.2.6.4.9.2.2.5.3.8.3 0 0 .1 0 .1 0 7.3-.7 14.7-.9 22-.6.3 0 .7-.1.9-.3.2-.2.4-.6.4-.9C32.9 783.3 32.9 776.2 33 770.3z'/%3E%3Cpath fill='%232ee7ff' d='M171.1 383.4c1.3-2.5 14.3-22 15.6-21.6.8.3 11.5 21.2 11.5 22.1C198.1 384.2 177.9 384 171.1 383.4zM596.4 711.8c-.1-.1-6.7-8.2-9.7-12.5-.2-.3-.5-1-.7-1.5-.2-.4-.4-.7-.7-.8-.3-.1-.6 0-.8.3L574 712c0 0 0 0 0 0-.2.2-.2.5-.2.9 0 .3.2.7.4.9.1.1 1.8 2.2 2.8 3.1 3.1 3.1 8.8 10.5 8.9 10.6.2.3.5.4.8.4.3 0 .5-.2.6-.5 0 0 1.2-2.8 2-4.1 1.1-1.9 2.3-3.7 3.5-5.5.9-1.4 1.3-1.7 1.7-2 .5-.4 1-.7 2.1-2.4C596.9 713.1 596.8 712.3 596.4 711.8zM727.5 179.9C727.5 179.9 727.5 179.9 727.5 179.9c.6.2 1.3-.2 1.4-.8 0-.1 0-.2 0-.4.2-1.4 2.8-12.6 4.5-19.5.1-.3 0-.6-.2-.8-.2-.3-.5-.4-.8-.5-.2 0-4.7-1.1-5.7-1.3l-13.4-2.7c-.3-.1-.7 0-.9.2-.2.2-.4.4-.5.6 0 0 0 .1 0 .1-.8 6.5-2.2 13.1-3.9 19.4-.1.3 0 .6.2.9.2.3.5.4.8.5C714.8 176.9 721.7 178.5 727.5 179.9zM728.5 178.1c-.1-.1-.2-.2-.4-.2C728.3 177.9 728.4 178 728.5 178.1z'/%3E%3Cg fill='%23FFF'%3E%3Cpath d='M699.6 472.7c-1.5 0-2.8-.8-3.5-2.3-.8-1.9 0-4.2 1.9-5 3.7-1.6 6.8-4.7 8.4-8.5 1.6-3.8 1.7-8.1.2-11.9-.3-.9-.8-1.8-1.2-2.8-.8-1.7-1.8-3.7-2.3-5.9-.9-4.1-.2-8.6 2-12.8 1.7-3.1 4.1-6.1 7.6-9.1 1.6-1.4 4-1.2 5.3.4 1.4 1.6 1.2 4-.4 5.3-2.8 2.5-4.7 4.7-5.9 7-1.4 2.6-1.9 5.3-1.3 7.6.3 1.4 1 2.8 1.7 4.3.5 1.1 1 2.2 1.5 3.3 2.1 5.6 2 12-.3 17.6-2.3 5.5-6.8 10.1-12.3 12.5C700.6 472.6 700.1 472.7 699.6 472.7zM740.4 421.4c1.5-.2 3 .5 3.8 1.9 1.1 1.8.4 4.2-1.4 5.3-3.7 2.1-6.4 5.6-7.6 9.5-1.2 4-.8 8.4 1.1 12.1.4.9 1 1.7 1.6 2.7 1 1.7 2.2 3.5 3 5.7 1.4 4 1.2 8.7-.6 13.2-1.4 3.4-3.5 6.6-6.8 10.1-1.5 1.6-3.9 1.7-5.5.2-1.6-1.4-1.7-3.9-.2-5.4 2.6-2.8 4.3-5.3 5.3-7.7 1.1-2.8 1.3-5.6.5-7.9-.5-1.3-1.3-2.7-2.2-4.1-.6-1-1.3-2.1-1.9-3.2-2.8-5.4-3.4-11.9-1.7-17.8 1.8-5.9 5.8-11 11.2-14C739.4 421.6 739.9 421.4 740.4 421.4zM261.3 590.9c5.7 6.8 9 15.7 9.4 22.4.5 7.3-2.4 16.4-10.2 20.4-3 1.5-6.7 2.2-11.2 2.2-7.9-.1-12.9-2.9-15.4-8.4-2.1-4.7-2.3-11.4 1.8-15.9 3.2-3.5 7.8-4.1 11.2-1.6 1.2.9 1.5 2.7.6 3.9-.9 1.2-2.7 1.5-3.9.6-1.8-1.3-3.6.6-3.8.8-2.4 2.6-2.1 7-.8 9.9 1.5 3.4 4.7 5 10.4 5.1 3.6 0 6.4-.5 8.6-1.6 4.7-2.4 7.7-8.6 7.2-15-.5-7.3-5.3-18.2-13-23.9-4.2-3.1-8.5-4.1-12.9-3.1-3.1.7-6.2 2.4-9.7 5-6.6 5.1-11.7 11.8-14.2 19-2.7 7.7-2.1 15.8 1.9 23.9.7 1.4.1 3.1-1.3 3.7-1.4.7-3.1.1-3.7-1.3-4.6-9.4-5.4-19.2-2.2-28.2 2.9-8.2 8.6-15.9 16.1-21.6 4.1-3.1 8-5.1 11.8-6 6-1.4 12 0 17.5 4C257.6 586.9 259.6 588.8 261.3 590.9z'/%3E%3Ccircle cx='1013.7' cy='153.9' r='7.1'/%3E%3Ccircle cx='1024.3' cy='132.1' r='7.1'/%3E%3Ccircle cx='1037.3' cy='148.9' r='7.1'/%3E%3Cpath d='M1508.7 297.2c-4.8-5.4-9.7-10.8-14.8-16.2 5.6-5.6 11.1-11.5 15.6-18.2 1.2-1.7.7-4.1-1-5.2-1.7-1.2-4.1-.7-5.2 1-4.2 6.2-9.1 11.6-14.5 16.9-4.8-5-9.7-10-14.7-14.9-1.5-1.5-3.9-1.5-5.3 0-1.5 1.5-1.5 3.9 0 5.3 4.9 4.8 9.7 9.8 14.5 14.8-1.1 1.1-2.3 2.2-3.5 3.2-4.1 3.8-8.4 7.8-12.4 12-1.4 1.5-1.4 3.8 0 5.3 0 0 0 0 0 0 1.5 1.4 3.9 1.4 5.3-.1 3.9-4 8.1-7.9 12.1-11.7 1.2-1.1 2.3-2.2 3.5-3.3 4.9 5.3 9.8 10.6 14.6 15.9.1.1.1.1.2.2 1.4 1.4 3.7 1.5 5.2.2C1510 301.2 1510.1 298.8 1508.7 297.2zM327.6 248.6l-.4-2.6c-1.5-11.1-2.2-23.2-2.3-37 0-5.5 0-11.5.2-18.5 0-.7 0-1.5 0-2.3 0-5 0-11.2 3.9-13.5 2.2-1.3 5.1-1 8.5.9 5.7 3.1 13.2 8.7 17.5 14.9 5.5 7.8 7.3 16.9 5 25.7-3.2 12.3-15 31-30 32.1L327.6 248.6zM332.1 179.2c-.2 0-.3 0-.4.1-.1.1-.7.5-1.1 2.7-.3 1.9-.3 4.2-.3 6.3 0 .8 0 1.7 0 2.4-.2 6.9-.2 12.8-.2 18.3.1 12.5.7 23.5 2 33.7 11-2.7 20.4-18.1 23-27.8 1.9-7.2.4-14.8-4.2-21.3l0 0C347 188.1 340 183 335 180.3 333.6 179.5 332.6 179.2 332.1 179.2zM516.3 60.8c-.1 0-.2 0-.4-.1-2.4-.7-4-.9-6.7-.7-.7 0-1.3-.5-1.4-1.2 0-.7.5-1.3 1.2-1.4 3.1-.2 4.9 0 7.6.8.7.2 1.1.9.9 1.6C517.3 60.4 516.8 60.8 516.3 60.8zM506.1 70.5c-.5 0-1-.3-1.2-.8-.8-2.1-1.2-4.3-1.3-6.6 0-.7.5-1.3 1.2-1.3.7 0 1.3.5 1.3 1.2.1 2 .5 3.9 1.1 5.8.2.7-.1 1.4-.8 1.6C506.4 70.5 506.2 70.5 506.1 70.5zM494.1 64.4c-.4 0-.8-.2-1-.5-.4-.6-.3-1.4.2-1.8 1.8-1.4 3.7-2.6 5.8-3.6.6-.3 1.4 0 1.7.6.3.6 0 1.4-.6 1.7-1.9.9-3.7 2-5.3 3.3C494.7 64.3 494.4 64.4 494.1 64.4zM500.5 55.3c-.5 0-.9-.3-1.2-.7-.5-1-1.2-1.9-2.4-3.4-.3-.4-.7-.9-1.1-1.4-.4-.6-.3-1.4.2-1.8.6-.4 1.4-.3 1.8.2.4.5.8 1 1.1 1.4 1.3 1.6 2.1 2.6 2.7 3.9.3.6 0 1.4-.6 1.7C500.9 55.3 500.7 55.3 500.5 55.3zM506.7 55c-.3 0-.5-.1-.8-.2-.6-.4-.7-1.2-.3-1.8 1.2-1.7 2.3-3.4 3.3-5.2.3-.6 1.1-.9 1.7-.5.6.3.9 1.1.5 1.7-1 1.9-2.2 3.8-3.5 5.6C507.4 54.8 507.1 55 506.7 55zM1029.3 382.8c-.1 0-.2 0-.4-.1-2.4-.7-4-.9-6.7-.7-.7 0-1.3-.5-1.4-1.2 0-.7.5-1.3 1.2-1.4 3.1-.2 4.9 0 7.6.8.7.2 1.1.9.9 1.6C1030.3 382.4 1029.8 382.8 1029.3 382.8zM1019.1 392.5c-.5 0-1-.3-1.2-.8-.8-2.1-1.2-4.3-1.3-6.6 0-.7.5-1.3 1.2-1.3.7 0 1.3.5 1.3 1.2.1 2 .5 3.9 1.1 5.8.2.7-.1 1.4-.8 1.6C1019.4 392.5 1019.2 392.5 1019.1 392.5zM1007.1 386.4c-.4 0-.8-.2-1-.5-.4-.6-.3-1.4.2-1.8 1.8-1.4 3.7-2.6 5.8-3.6.6-.3 1.4 0 1.7.6.3.6 0 1.4-.6 1.7-1.9.9-3.7 2-5.3 3.3C1007.7 386.3 1007.4 386.4 1007.1 386.4zM1013.5 377.3c-.5 0-.9-.3-1.2-.7-.5-1-1.2-1.9-2.4-3.4-.3-.4-.7-.9-1.1-1.4-.4-.6-.3-1.4.2-1.8.6-.4 1.4-.3 1.8.2.4.5.8 1 1.1 1.4 1.3 1.6 2.1 2.6 2.7 3.9.3.6 0 1.4-.6 1.7C1013.9 377.3 1013.7 377.3 1013.5 377.3zM1019.7 377c-.3 0-.5-.1-.8-.2-.6-.4-.7-1.2-.3-1.8 1.2-1.7 2.3-3.4 3.3-5.2.3-.6 1.1-.9 1.7-.5.6.3.9 1.1.5 1.7-1 1.9-2.2 3.8-3.5 5.6C1020.4 376.8 1020.1 377 1019.7 377zM1329.7 573.4c-1.4 0-2.9-.2-4.5-.7-8.4-2.7-16.6-12.7-18.7-20-.4-1.4-.7-2.9-.9-4.4-8.1 3.3-15.5 10.6-15.4 21 0 1.5-1.2 2.7-2.7 2.8 0 0 0 0 0 0-1.5 0-2.7-1.2-2.7-2.7-.1-6.7 2.4-12.9 7-18 3.6-4 8.4-7.1 13.7-8.8.5-6.5 3.1-12.9 7.4-17.4 7-7.4 18.2-8.9 27.3-10.1l.7-.1c1.5-.2 2.9.9 3.1 2.3.2 1.5-.9 2.9-2.3 3.1l-.7.1c-8.6 1.2-18.4 2.5-24 8.4-3 3.2-5 7.7-5.7 12.4 7.9-1 17.7 1.3 24.3 5.7 4.3 2.9 7.1 7.8 7.2 12.7.2 4.3-1.7 8.3-5.2 11.1C1335.2 572.4 1332.6 573.4 1329.7 573.4zM1311 546.7c.1 1.5.4 3 .8 4.4 1.7 5.8 8.7 14.2 15.1 16.3 2.8.9 5.1.5 7.2-1.1 2.7-2.1 3.2-4.8 3.1-6.6-.1-3.2-2-6.4-4.8-8.3C1326.7 547.5 1317.7 545.6 1311 546.7z'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+ font-family: var(--body-font);
+ color: var(--body-color);
+ font-weight: 400;
+ margin: 0;
+}
+
+%display {
+ display: flex;
+ align-items: center;
+}
+
+.book-store {
+ display: flex;
+ flex-direction: column;
+ max-width: 1400px;
+ height: 100vh;
+ background-color: var(--page-bg-color);
+ margin: 0 auto;
+ overflow: hidden;
+ box-shadow: 0px 2px 50px 10px rgba(0, 0, 0, 0.21);
+}
+
+.header {
+ @extend %display;
+ height: 70px;
+ width: 100%;
+ background-color: #ffffff;
+ padding: 0 30px;
+ font-size: 14px;
+ font-weight: 500;
+ color: var(--body-color-light);
+ justify-content: space-between;
+ flex-shrink: 0;
+}
+
+.search-bar {
+ position: relative;
+ input {
+  height: 100%;
+  width: 100%;
+  display: block;
+  background-color: transparent;
+  border: none;
+  font-weight: 600;
+  padding: 0 10px 0 40px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' stroke='%238b939c' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' class='feather feather-search'%3e%3ccircle cx='11' cy='11' r='8'/%3e%3cpath d='M21 21l-4.35-4.35'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: 15px 50%;
+  color: var(--body-color);
+  font-family: var(--body-font);
+  &::placeholder {
+   color: var(--placeholder);
+  }
+ }
+}
+
+.browse {
+ @extend %display;
+ &-category {
+  @extend %display;
+  border-right: 1px solid var(--border-color);
+  white-space: nowrap;
+  svg {
+   width: 16px;
+   margin: 2px 10px 0 8px;
+  }
+ }
+}
+
+.header-title {
+ font-size: 16px;
+ font-weight: 400;
+ margin-right: 120px;
+ span {
+  font-weight: 500;
+  color: var(--body-color);
+ }
+}
+
+.user-img {
+ width: 28px;
+ height: 28px;
+ border-radius: 50%;
+ margin-right: 15px;
+}
+
+.user-profile {
+ position: relative;
+ cursor: pointer;
+ flex-shrink: 0;
+ &:before {
+  content: "";
+  position: absolute;
+  background-color: #f86d72;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: 2px solid var(--theme-bg-color);
+  right: 12px;
+  top: -3px;
+  border: 2px solid #fff;
+ }
+}
+
+.profile {
+ @extend %display;
+ flex-shrink: 0;
+ &-menu {
+  @extend %display;
+  border-left: 1px solid var(--border-color);
+ }
+ svg {
+  width: 16px;
+  margin: 0 8px 0 15px;
+  flex-shrink: 0;
+ }
+}
+
+.book-slide {
+ width: 100%;
+}
+
+.book {
+ background: #fff;
+}
+
+.book-cell {
+ position: relative;
+ display: flex;
+ padding: 25px;
+ width: 40%;
+ height: 250px;
+ margin-right: 1px;
+ &:nth-child(1) {
+  background-color: #fbadaf;
+ }
+ &:nth-child(2) {
+  background-color: #a4e0eb;
+ }
+ &:nth-child(3) {
+  background-color: #edb9d6;
+ }
+ &:nth-child(4) {
+  background-color: #fdca95;
+ }
+ &:nth-child(5) {
+  background-color: #cbb5e2;
+ }
+}
+
+.flickity-page-dots {
+ display: none;
+}
+
+.flickity-prev-next-button .arrow {
+ fill: #d6d6d6;
+}
+
+.flickity-prev-next-button svg {
+ left: 25%;
+ top: 25%;
+ width: 50%;
+ height: 50%;
+}
+
+.flickity-prev-next-button {
+ &.previous {
+  left: 15px;
+ }
+ &.next {
+  right: 15px;
+ }
+}
+
+.flickity-viewport {
+ overflow: visible;
+}
+
+.book-photo {
+ width: 180px;
+ flex-shrink: 0;
+ bottom: -35px;
+ left: 35px;
+ border-radius: 2px;
+ box-shadow: -2px 6px 19px 0px #7f818e;
+ transition: .3s ease;
+ &:hover {
+  transform: scale(1.03);
+ }
+}
+
+.book-img {
+ flex-shrink: 0;
+}
+
+.book-title {
+ text-overflow: ellipsis;
+ white-space: nowrap;
+ overflow: hidden;
+}
+
+.book-title {
+ color: #ffffff;
+ font-weight: 600;
+}
+
+.book-author {
+ margin-top: 3px;
+ font-size: 14px;
+ text-overflow: ellipsis;
+ white-space: nowrap;
+ overflow: hidden;
+}
+
+.book-content {
+ padding: 0 20px;
+ color: #ffffff;
+ overflow: hidden;
+}
+
+fieldset,
+label {
+ margin: 0;
+ padding: 0;
+ display: inline-block;
+ vertical-align: middle;
+}
+
+h1 {
+ font-size: 0.5em;
+ margin: 10px;
+}
+.rating {
+ border: none;
+}
+
+.rating > input {
+ display: none;
+}
+.rating > label:before {
+ margin-right: 5px;
+ margin-top: 10px;
+ font-size: 0.9em;
+ font-family: FontAwesome;
+ display: inline-block;
+ content: "\f005";
+}
+
+.rating > label {
+ color: #fff;
+ float: right;
+}
+
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+ color: #d85d61;
+}
+.rating > input:checked + label:hover,
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label {
+ color: #d85d61;
+}
+
+.blue > input:checked ~ label,
+.blue:not(:checked) > label:hover,
+.blue:not(:checked) > label:hover ~ label {
+ color: #458997;
+}
+.blue > input:checked + label:hover,
+.blue > input:checked ~ label:hover,
+.blue > label:hover ~ input:checked ~ label,
+.blue > input:checked ~ label:hover ~ label {
+ color: #458997;
+}
+
+.purple > input:checked ~ label,
+.purple:not(:checked) > label:hover,
+.purple:not(:checked) > label:hover ~ label {
+ color: #a76287;
+}
+.purple > input:checked + label:hover,
+.purple > input:checked ~ label:hover,
+.purple > label:hover ~ input:checked ~ label,
+.purple > input:checked ~ label:hover ~ label {
+ color: #a76287;
+}
+
+.yellow > input:checked ~ label,
+.yellow:not(:checked) > label:hover,
+.yellow:not(:checked) > label:hover ~ label {
+ color: #ffad58;
+}
+.yellow > input:checked + label:hover,
+.yellow > input:checked ~ label:hover,
+.yellow > label:hover ~ input:checked ~ label,
+.yellow > input:checked ~ label:hover ~ label {
+ color: #ffad58;
+}
+
+.dark-purp > input:checked ~ label,
+.dark-purp:not(:checked) > label:hover,
+.dark-purp:not(:checked) > label:hover ~ label {
+ color: #905587;
+}
+.dark-purp > input:checked + label:hover,
+.dark-purp > input:checked ~ label:hover,
+.dark-purp > label:hover ~ input:checked ~ label,
+.dark-purp > input:checked ~ label:hover ~ label {
+ color: #905587;
+}
+
+.book-voters {
+ color: #fff;
+ vertical-align: sub;
+ font-size: 13px;
+ margin-left: 7px;
+ white-space: nowrap;
+ margin-top: 7px;
+}
+
+.book-sum {
+ margin-top: 20px;
+ font-size: 14px;
+ overflow: hidden;
+ display: -webkit-box;
+ -webkit-line-clamp: 3;
+ -webkit-box-orient: vertical;
+}
+
+.book-see {
+ margin-top: 25px;
+ text-align: center;
+ background-color: #fff;
+ color: #fbadaf;
+ font-weight: 600;
+ padding: 8px;
+ font-size: 14px;
+ width: 160px;
+ border-radius: 20px;
+ &:hover {
+  color: #ff6e72;
+ }
+ &.book-blue {
+  color: #a4e0eb;
+  &:hover {
+   color: #22cdec;
+  }
+ }
+ &.book-pink {
+  color: #edb9d6;
+  &:hover {
+   color: #ff6dbe;
+  }
+ }
+ &.book-yellow {
+  color: #fdca95;
+  &:hover {
+   color: #fb9124;
+  }
+ }
+ &.book-purple {
+  color: #cbb5e2;
+  &:hover {
+   color: #a764ec;
+  }
+ }
+}
+
+.main-wrapper {
+ width: 100%;
+ display: flex;
+ flex-grow: 1;
+ margin-top: 100px;
+ overflow: hidden;
+}
+
+.books-of {
+ width: 320px;
+ display: flex;
+ flex-direction: column;
+ overflow-y: auto;
+ overflow-x: hidden;
+ flex-shrink: 0;
+}
+
+.popular-books {
+ flex-grow: 1;
+ padding: 0 30px 50px;
+ overflow-y: auto;
+}
+
+.genre {
+ font-weight: 500;
+ font-size: 15px;
+}
+
+.main-menu {
+ @extend %display;
+ white-space: nowrap;
+ padding-bottom: 15px;
+ border-bottom: 1px solid #dcddde;
+ position: sticky;
+ top: 0;
+ right: 0;
+ background-color: var(--page-bg-color);
+ z-index: 2;
+}
+
+.book-types {
+ margin-left: auto;
+ a {
+  text-decoration: none;
+  color: var(--body-color);
+  font-size: 14px;
+ }
+}
+
+.book-type + .book-type {
+ margin-left: 20px;
+}
+
+.book-type {
+ position: relative;
+ transition: 0.2s;
+ &.active,
+ &:hover {
+  -webkit-text-stroke: .3px;
+  &:before {
+   content: "";
+   position: absolute;
+   width: 28px;
+   height: 2px;
+   bottom: -17px;
+   right: 15px;
+   background-color: #67d4ea;
+   box-shadow: 0px -1px 5px 0px #67d4ea;
+  }
+ }
+ &:nth-child(2):before {
+  right: 12px;
+ }
+ &:nth-child(3):before {
+  right: 8px;
+ }
+ &:nth-child(4):before {
+  right: 6px;
+ }
+ &:nth-child(5):before {
+  right: 20px;
+ }
+}
+
+.week {
+ padding: 0 30px;
+}
+
+.author {
+ @extend %display;
+ & + & {
+  margin-top: 20px;
+ }
+ &-name {
+  font-size: 14px;
+ }
+ &:last-child {
+  margin-bottom: 40px;
+ }
+}
+
+.author-title {
+ padding: 0 0 20px;
+ font-weight: 500;
+ font-size: 15px;
+}
+
+.author-img {
+ border-radius: 50%;
+ width: 30px;
+ height: 30px;
+ margin-right: 16px;
+ object-fit: cover;
+ object-position: center;
+}
+
+.year-book {
+ @extend %display;
+ &-img {
+  width: 45px;
+  margin-right: 16px;
+ }
+ &-name {
+  margin-bottom: 15px;
+  font-weight: 500;
+ }
+ &-author {
+  font-size: 13px;
+ }
+ & + & {
+  margin-top: 20px;
+ }
+}
+
+.year-book-content {
+ display: flex;
+ flex-direction: column;
+ font-size: 14px;
+}
+
+.overlay {
+ position: sticky;
+ bottom: 0;
+ left: 0;
+ width: 340px;
+ flex-shrink: 0;
+ background: linear-gradient(
+  to bottom,
+  rgba(255, 255, 255, 0) 0%,
+  #f2f5f7 65%,
+  #f2f5f7 100%
+ );
+ height: 60px;
+ margin-left: -35px;
+}
+
+.book-cards {
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ grid-column-gap: 40px;
+ grid-row-gap: 40px;
+ padding-top: 40px;
+ position: relative;
+}
+
+.book-card {
+ margin-top: 20px;
+ background-color: #fff;
+ height: 270px;
+ box-shadow: -1px 3px 8px -1px rgba(0, 0, 0, 0.1);
+ border-radius: 4px;
+ display: flex;
+ flex-direction: column;
+ cursor: pointer;
+ padding: 0 0 20px 20px;
+ color: var(--body-color-light);
+}
+
+.book-card-img {
+ width: 160px;
+ margin-top: -35px;
+ border-radius: 2px;
+ box-shadow: 0px 1px 7px 2px #c7c9d3;
+ border-bottom: 1px solid #dcddde;
+ object-fit: cover;
+ margin-bottom: 20px;
+ transition: .3s ease;
+ &:hover {
+  transform: scale(1.04);
+ }
+}
+
+
+.card-content {
+ color: var(--body-color);
+ padding: 30px;
+ overflow: hidden;
+ position: relative;
+}
+
+.book-name {
+ font-weight: 500;
+ text-overflow: ellipsis;
+ overflow: hidden;
+ white-space: nowrap;
+}
+
+.book-by {
+ font-size: 13px;
+ color: var(--body-color-light);
+ margin-top: 4px;
+ text-overflow: ellipsis;
+ overflow: hidden;
+ white-space: nowrap;
+}
+
+.book-rate > label {
+ color: #cccccc;
+}
+
+.rate {
+ display: inline-block;
+ white-space: nowrap;
+}
+
+.book-rate > input:checked ~ label,
+.book-rate:not(:checked) > label:hover,
+.book-rate:not(:checked) > label:hover ~ label {
+ color: #ff9700;
+}
+.book-rate > input:checked + label:hover,
+.book-rate > input:checked ~ label:hover,
+.book-rate > label:hover ~ input:checked ~ label,
+.book-rate > input:checked ~ label:hover ~ label {
+ color: #ff9700;
+}
+
+.card-vote {
+ color: var(--body-color-light);
+}
+
+.card-sum {
+ color: var(--body-color-light);
+ font-size: 13px;
+ line-height: 1.6em;
+ -webkit-line-clamp: 4;
+ margin-top: 15px;
+}
+
+.content-wrapper {
+ display: flex;
+ border-bottom: 1px solid #ebedef;
+ position: relative;
+ &:before {
+  content: "";
+  position: absolute;
+  background-color: #8f98a9;
+        background-color: #aaaebc;
+    box-shadow: 0 -6px 0 0 #aaaebc, 0 6px 0 0 #aaaebc;
+    width: 4px;
+    height: 4px;
+    border: 0;
+    padding: 0;
+    right: 12px;
+    top: 17px;
+    border-radius: 50%;
+    margin-left: auto; 
+ }
+}
+
+.like-profile {
+ margin-top: 8px;
+ & + & {
+  margin-left: -5px;
+ }
+}
+
+.like-img {
+ border-radius: 50%;
+ width: 28px;
+ object-fit: cover;
+ border: 2px solid #fff;
+}
+
+.like-name {
+ font-size: 13px;
+ margin-left: 15px;
+ text-overflow: ellipsis;
+ overflow: hidden;
+ white-space: nowrap;
+ span {
+  font-weight: 600;
+ }
+}
+
+.likes {
+ @extend %display;
+}
+
+
+@media (max-width: 1103px) {
+ .book-cell {
+  width: 60%;
+ }
+}
+
+@media (max-width: 765px) {
+ .book-cell {
+  width: 80%;
+ }
+}
+
+@media (max-width: 575px) {
+ .book-cell {
+  width: 100%;
+ }
+}
+
+@media (max-width: 458px) {
+ .book-photo {
+  width: 180px;
+ }
+ .book-voters {
+  display: none;
+ }
+}
+
+@media (max-width: 420px) {
+ .book-see {
+  width: 120px;
+  font-size: 13px;
+ }
+ .book-photo {
+  width: 130px;
+ }
+ .main-wrapper {
+  margin-top: 50px;
+ }
+}
+
+@media (max-width: 360px) {
+ .rating > label:before {
+  font-size: 0.8em;
+ }
+}
+
+@media (max-width: 1220px) {
+ .card-vote {
+  display: none;
+ }
+}
+
+@media (max-width: 1085px) {
+ .book-rate > label {
+  font-size: .7em;
+}
+}
+
+@media (max-width: 1045px) {
+ .books-of {
+  display: none;
+}
+}
+
+@media (max-width: 725px) {
+ .browse-category, .search-bar {
+  display: none;
+}
+ .header-title {
+  margin-right: auto;
+ }
+ .book-cards {
+  grid-template-columns: 1fr;
+ }
+ .book-types {
+  display: none;
+ }
+}
+
+@media (max-width: 372px)  {
+ .card-content {
+  padding: 20px;
+ }
+}
+=========
