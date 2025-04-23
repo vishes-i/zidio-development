@@ -1,0 +1,3268 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="https://www.youtube.com/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css"> <!-- Your custom styles -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  <title>YouTube</title>
+</head>
+<body>
+<div class="nav">
+  <div class="nav-start" >
+
+
+
+    <i class="fa-solid fa-bars"></i>
+    <img src="https://media.tenor.com/hZy9ORpOKdQAAAAC/you-tube-logo.gif" alt="YouTube Logo">
+  </div>
+  <div class="search-box">
+    <input type="text" placeholder="Search" class="search-place" >
+    <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    <button class="search-mic"><i class="fa-solid fa-microphone"></i></button>
+  </div>
+  <div class="nav-button">
+    <button class="camera"><i class="fa-solid fa-camera"></i></button>
+    <button class="bell"><i class="fa-solid fa-bell"></i></button>
+    <img class="profile" src="https://cdn-icons-png.flaticon.com/128/9856/9856537.png" style="height: 2rem; width: 2rem;">
+  </div></div>
+
+<div class="sidebar">
+
+  <div class="sidebar-card">
+    <a href="/index.html"><img style="width: 1.2rem; height: 1.5rem;" src=" https://cdn-icons-png.flaticon.com/128/9243/9243863.png ">
+      <p>Home</p></a>
+  </div>
+
+  <div class="sidebar-card">
+    <a href="/reelshorts.html">
+      <img src="https://cdn-icons-png.flaticon.com/128/3914/3914629.png" style="height: 2.4rem; width: 2.2rem;">
+      <p>Shorts</p>
+    </a>
+  </div>
+
+
+
+  <div class="sidebar-card">
+    <a href="/your_channel.html"><img style="width: 1.2rem; height: 1.2rem;" src="https://cdn-icons-png.flaticon.com/128/10435/10435501.png">
+      <p>Your channel</p></a>
+  </div>
+
+
+  <div class="sidebar-card">
+    <a href="/youtubehistory.html"><i class="fa-solid fa-clock-rotate-left" style="opacity: 0.7; font-size: 1.2rem;"></i>
+      <p>History</p></a>
+  </div>
+</div>
+
+
+<div class="chips">
+  <div class="chips-tags">
+    <button style="background-color: white; color: black;">All</button>
+    <button>Dreamed</button>
+    <button>Software Engineering</button>
+    <button>Music</button>
+    <button>Astrophysics</button>
+    <button>Comedy</button>
+    <button>Mixed Songs</button>
+    <button>Indian pop music</button>
+    <button>T-Series</button>
+    <button>Web development</button>
+    <button>Shiv Shakti  Song</button>
+    <button>Mixed Songs</button>
+    <button>Mixed Songs</button>
+  </div>
+</div>
+
+
+
+<div class="main">
+
+  <div class="row  row1">
+    <div class="video-card">
+      <div class="time-stamp"><span>21:22</span></div>
+      <img src="https://c.tenor.com/oZp1QzbgX4AAAAAM/dance.gif" >
+      <div class="channel-logo">
+        <img src="https://cdn.dribbble.com/users/2203129/screenshots/4945580/media/a94cf6e47996b6412e4ce4cfc2f337dd.gif">
+      </div>
+      <h3 src="video-title" ><a>Taarak Mehta Ka Ooltah Chashmah - Episode 44</a></h3>
+
+      <div class="veri">
+        <p>Sony SAB</p> <i class="fa-solid fa-circle-check"></i>
+      </div>
+      <div class="views">
+        <span>25M views</span>
+        <span class="circle-in" >.</span>
+        <span>2 years ago</span>
+      </div>
+    </div>
+    <div class="video-card">
+      <div class="time-stamp"><span>11:22</span></div>
+      <img src="https://media.tenor.com/LKFpht6qjZQAAAAM/taarak-mehta-ka-ooltah-chashmah-jethalal.gif" >
+      <div class="channel-logo">
+        <img src="https://data.textstudio.com/output/sample/animated/5/9/5/6/sony-5-16595.gif">
+      </div>
+      <h3 src="video-title" ><a> Taarak Mehta Ka Ooltah Chashmah - Episode 55 </a></h3>
+
+      <div class="veri">
+        <p>Sony-Comedy</p> <i class="fa-solid fa-circle-check"></i>
+      </div>
+      <div class="views">
+        <span>6.1M views</span>
+        <span class="circle-in" >.</span>
+        <span>1 years ago</span>
+      </div>
+    </div>
+    <div class="video-card">
+      <div class="time-stamp"><span>55:10</span></div>
+      <img src="https://media.tenor.com/vhi5SrJczPEAAAAM/mera-bulbul.gif" >
+      <div class="channel-logo">
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/71851c89272683.5defc250dc717.jpg">
+      </div>
+      <h3 src="video-title" ><a> Taarak Mehta Ka Ooltah Chashmah - Episode 155 </a></h3>
+
+      <div class="veri">
+        <p>SONY -TV</p> <i class="fa-solid fa-circle-check"></i>
+      </div>
+      <div class="views">
+        <span>89M views</span>
+        <span class="circle-in" >.</span>
+        <span>7 days ago</span>
+      </div>
+    </div>
+    <div class="video-card">
+      <div class="time-stamp"><span>41:22</span></div>
+      <img src=" https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmRqYXdoejdqY3B3Z3RneDNlNWxlcG5oNndnbjNmcm1ib3Q1Zm96dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bpWWa5XyX0hrK0aYzN/giphy.gif" >
+      <div class="channel-logo">
+        <img src="https://i.ytimg.com/vi/uEziGol-N80/maxresdefault.jpg">
+      </div>
+      <h3 src="video-title" ><a>  Taarak Mehta Ka Ooltah Chashmah - Episode 195 </a></h3>
+
+      <div class="veri">
+        <p>Sony Hub</p> <i class="fa-solid fa-circle-check"></i>
+      </div>
+      <div class="views">
+        <span>82k views</span>
+        <span class="circle-in" >.</span>
+        <span>7 days ago</span>
+      </div>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="video-card">
+      <div class="time-stamp"><span>14:42</span></div>
+      <img src="https://media1.tenor.com/images/bb4ed0f6fc66ad7e487d13c338e928e5/tenor.gif?itemid=16228617" >
+      <div class="channel-logo">
+        <img src="https://phoneky.co.uk/thumbs/screensavers/down/fcelebs/bigboss_jzau9cdf.gif">
+      </div>
+      <h3 src="video-title" ><a>Big Boss13 Siddhartha Shukla- Winner  || BigBoss13 SiddharthaShukla- Clip Argument with paras.....Kuch Bhi .</a></h3>
+
+      <div class="veri">
+        <p>Colors</p>
+        <i class="fa-solid fa-circle-check"></i>
+      </div>
+      <div class="views">
+        <span>156k views</span>
+        <span class="circle-in" >.</span>
+        <span>8 days ago</span>
+      </div>
+
+    </div>
+    <div class="video-card">
+      <div class="time-stamp"><span>02:28</span></div>
+      <img src="https://c.tenor.com/xI3ksJhn-PYAAAAC/sidharth-shukla-bb13.gif" >
+      <div class="channel-logo">
+        <img src="https://cdn.textstudio.com/output/sample/normal/2/4/7/4/boss-logo-275-14742.webp">
+      </div>
+      <h3 src="video-title" ><a>Big Boss13 Siddhartha Shukla -Winner||smiled with the toughest condition in big boss .house he is underrated player.</a></h3>
+
+      <div class="veri">
+        <p>BigBoss-13</p> <i class="fa-solid fa-circle-check"></i>
+      </div>
+      <div class="views">
+        <span>42M views</span>
+        <span class="circle-in" >.</span>
+        <span>5 years ago</span>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="time-stamp"><span>02:28</span></div>
+      <img src="https://c.tenor.com/DSmp0uQQ6P4AAAAC/sidharth-shukla-sidharth.gif" >
+      <div class="channel-logo">
+        <img src="https://www.newznew.com/wp-content/uploads/2021/07/Big-Boss-Telugu-Season-5-Confirmed-Contestant-List-Male-And-Female-1068x712.jpg">
+      </div>
+      <h3 src="video-title" ><a> Reportedly, back in the year 2014, Sidharth Shukla signed a 3-film deal with Dharma Productions.</a></h3>
+
+      <div class="veri">
+        <p>Big boss Ott</p> <i class="fa-solid fa-circle-check"></i>
+      </div>
+      <div class="views">
+        <span>2M views</span>
+        <span class="circle-in" >.</span>
+        <span>9 months ago</span>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="time-stamp"><span>02:28</span></div>
+      <img src="https://c.tenor.com/18INNy9QD0kAAAAC/bigg-boss.gif" >
+      <div class="channel-logo">
+        <img src="https://th.bing.com/th/id/OIP.db0lyhql7tYCWDOhreRFkQHaE8?w=1068&h=712&rs=1&pid=ImgDetMain">
+      </div>
+      <h3 src="video-title" ><a>It was a treat for all Sidharth Shukla fans when they got to know about his entry to the silver screen.</a></h3>
+
+      <div class="veri">
+        <p>Sarama Music</p> <i class="fa-solid fa-circle-check"></i>
+      </div>
+      <div class="views">
+        <span>20M views</span>
+        <span class="circle-in" >.</span>
+        <span>4 years ago</span>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="row-shorts">
+    <div class="shorts-top">
+      <div class="shorts-left">
+        <div class="shorts-logo"><img src="https://static.vecteezy.com/system/resources/previews/042/127/187/non_2x/youtube-shorts-logo-red-and-white-with-long-shadow-on-a-transparent-background-icon-free-png.png" alt=""></div>
+        <span class="Shorts-text">Shorts</span>
+      </div></div>
+    <div class="shorts-row"><div class="shorts-card">
+      <img src="https://media1.tenor.com/m/qv-S1_RH-ccAAAAC/title-card-bigg-boss.gif" alt="">
+      <span><h4>Big boss ott live-streaming on disnep+hotstar</h4></span>
+      <span><p>10M views</p></span> </div>
+      <div class="shorts-card">
+        <img src="https://media.giphy.com/media/xTiTnJ5yGqtyIJzRsI/giphy.gif" alt="">
+        <span><h4>child playing with ...... 💘</h4></span>
+        <span><p>3.6M views</p></span> </div>
+      <div class="shorts-card">
+        <img src="https://media.tenor.com/images/cf8cd9b1e8d3c8fd3443b1c63ce5ae9d/tenor.gif" alt="">
+        <span><h4>Children just kidding yourself!😁😁</h4></span>
+        <span><p>4.8M views</p></span> </div>
+      <div class="shorts-card">
+        <img src="https://i.redd.it/qt1wvszpn3x11.gif" alt="">
+        <span><h4>Mumbai red carpet me bhi haryana base 🦍</h4></span>
+        <span><p>156k views</p></span> </div>
+      <div class="shorts-card">
+        <img src="" alt="">
+        <span><h4>Comment if relatable🥲🤣  </h4></span>
+        <span><p>963k views</p></span> </div>
+      <div class="shorts-card">
+        <img src="" alt="">
+        <span><h4>HAIRCUT IN A PARALLEL UNIVERSE 💇🏻‍♂️  </h4></span>
+        <span><p>93k views</p></span> </div>
+    </div>
+  </div>
+  <div class="shorts-last"><button class="showmore">Show more <i class="fa-solid fa-chevron-down"></i></button>
+  </div>
+
+  <!-- #END-SHORTS -->
+
+  <section style="background-color: rgb(113, 138, 129);;margin-top: 100px;margin-bottom: 100px">
+    <video src="C:\Users\adity\Videos\2025-02-09\18-01-14.mp4" controls loop width="500px" height="500px"></video>
+    <video src="" controls loop width="500px" height="500px"></video>
+    <video src="" controls  loop width="500px" height="500px"></video>
+    <video src="" controls loop width="500px" height="500px"></video>
+    <video src="" controls loop width="500px" height="500px"></video>
+    <video src="" controls  loop width="500px" height="500px"></video>
+    <video src="" controls loop width="500px" height="500px"></video>
+    <video src="" controls loop width="500px" height="500px"></video>
+    <video src="" controls  loop width="500px" height="500px"></video>
+  </section>
+  <!-- #3rd -->
+
+  <div class="row">
+    <div class="video-card">
+      <div class="time-stamp"><span>22:38</span></div>
+      <img src="/assets/thumbnail/9.jpg" >
+      <div class="channel-logo">
+        <img src="/assets/channel/Khooni Monday.jpg">
+      </div>
+      <h3 src="video-title" ><a>Holi Horror Stories - Playlist Compilation | Holi 2024 Special | सच्ची कहानी🔥🔥🔥</a></h3>
+
+      <div class="veri">
+        <p>Khooni Monday</p> <i class="fa-solid fa-circle-check"></i>
+      </div>
+      <div class="views">
+        <span>68K views</span>
+        <span class="circle-in" >.</span>
+        <span>14 hours ago</span>
+      </div>
+    </div>
+    <div class="video-card">
+      <div class="time-stamp"><span>47:31</span></div>
+      <img src="/assets/thumbnail/10.jpg" >
+      <div class="channel-logo">
+        <img src="/assets/channel/Shemaro.jpg">
+      </div>
+      <h3 src="video-title" ><a>मल्टी-स्टारर कॉमेडी फिॅल्म - Golmaal Fun Unlimited - Ajay Devgan, Arshad </a></h3>
+
+      <div class="veri">
+        <p>Shemaroo Comedy</p> <i class="fa-solid fa-circle-check"></i>
+      </div>
+      <div class="views">
+        <span>1M views</span>
+        <span class="circle-in" >.</span>
+        <span>56 minutes ago</span>
+      </div>
+    </div>
+    <div class="video-card">
+      <div class="time-stamp"><span>28:10</span></div>
+      <img src="/assets/thumbnail/11.jpg" >
+      <div class="channel-logo">
+        <img src="/assets/channel/Dhruv Rathee.jpg">
+      </div>
+      <h3 src="video-title" ><a>Stop This Train, Win a Lamborghini</a></h3>
+
+      <div class="veri">
+        <p>Dhruv Rathee</p> <i class="fa-solid fa-circle-check"></i>
+      </div>
+      <div class="views">
+        <span>1.4M views</span>
+        <span class="circle-in" >.</span>
+        <span>11 hours ago</span>
+      </div>
+    </div>
+    <div class="video-card">
+      <div class="time-stamp"><span>41:22</span></div>
+      <img src="/assets/thumbnail/12.jpg" >
+      <div class="channel-logo">
+        <img src="/assets/channel/Hakan Karahan Doğada.jpg">
+      </div>
+      <h3 src="video-title" ><a>7 Days SURVIVAL Camping In RAIN Forest</a></h3>
+
+      <div class="veri">
+        <p>Hakan Karahan Doğada</p>
+      </div>
+      <div class="views">
+        <span>242k views</span>
+        <span class="circle-in" >.</span>
+        <span>30 minutes ago</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="video-card">
+      <div class="time-stamp"><span>21:22</span></div>
+      <img src="/assets/thumbnail/13.jpg" >
+      <div class="channel-logo">
+        <img src="/assets/channel/Swagger Sharma.jpg">
+      </div>
+      <h3 src="video-title" ><a>Judge recognizes Murderer as Schoolfriend ||inspired by true event</a></h3>
+
+      <div class="veri">
+        <p>Swagger Sharma</p> <i class="fa-solid fa-circle-check"></i>
+      </div>
+      <div class="views">
+        <span>14.1M views</span>
+        <span class="circle-in" >.</span>
+        <span>4 years ago</span>
+      </div>
+    </div>
+    <div class="video-card">
+      <div class="time-stamp"><span>17:01</span></div>
+      <img src="/assets/thumbnail/14.jpg" >
+      <div class="channel-logo">
+        <img src="/assets/channel/Anubhav Singh Bassi.jpg">
+      </div>
+      <h3 src="video-title" ><a>Hostel - Stand Up Comedy ft. Anubhav Singh Bassi</a></h3>
+
+      <div class="veri">
+        <p>Anubhav Singh Bassi</p>
+      </div>
+      <div class="views">
+        <span>74M views</span>
+        <span class="circle-in" >.</span>
+        <span>4 years ago</span>
+      </div>
+    </div>
+    <div class="video-card">
+      <div class="time-stamp"><span>20:10</span></div>
+      <img src="/assets/thumbnail/15.jpg" >
+      <div class="channel-logo">
+        <img src="/assets/channel/Monkey Magic.jpg">
+      </div>
+      <h3 src="video-title" ><a>Second Class with Monkey Magic </a></h3>
+
+      <div class="veri">
+        <p>Monkey Magic</p> <i class="fa-solid fa-circle-check"></i>
+      </div>
+      <div class="views">
+        <span>9M views</span>
+        <span class="circle-in" >.</span>
+        <span>8 months ago</span>
+      </div>
+    </div>
+    <div class="video-card">
+      <div class="time-stamp"><span>41:22</span></div>
+      <img src="/assets/thumbnail/16.jpg" >
+      <div class="channel-logo">
+        <img src="/assets/channel/Mirchi Marathi.jpg">
+      </div>
+      <h3 src="video-title" ><a>Aani Kay Hava | Season 1 All Episodes | Marathi Web Series</a></h3>
+
+      <div class="veri">
+        <p>Mirchi Marathi</p> <i class="fa-solid fa-circle-check"></i>
+      </div>
+      <div class="views">
+        <span>148k views</span>
+        <span class="circle-in" >.</span>
+        <span>2 weeks ago</span>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div class="row">
+    <div class="video-card">
+      <div class="time-stamp"><span>9:39</span></div>
+      <img src="/assets/thumbnail/17.jpg" >
+      <div class="channel-logo">
+        <img src="/assets/channel/ashish chanchlani vines.jpg">
+      </div>
+      <h3 src="video-title" ><a>The Mummy | Ashish Chanchlani</a></h3>
+
+      <div class="veri">
+        <p>ashish chanchlani vines</p> <i class="fa-solid fa-circle-check"></i>
+      </div>
+      <div class="views">
+        <span>56M views</span>
+        <span class="circle-in" >.</span>
+        <span>4 years ago</span>
+      </div>
+    </div>
+    <div class="video-card">
+      <div class="time-stamp"><span>5:13</span></div>
+      <img src="/assets/thumbnail/18.jpg" >
+      <div class="channel-logo">
+        <img src="/assets/channel/Saregama Music.jpg">
+      </div>
+      <h3 src="video-title" ><a>Kalaavathi - Video Song | Sarkaru Vaari Paata | Mahesh Babu  </a></h3>
+
+      <div class="veri">
+        <p>Saregama Telugu</p> <i class="fa-solid fa-circle-check"></i>
+      </div>
+      <div class="views">
+        <span>6.1M views</span>
+        <span class="circle-in" >.</span>
+        <span>1 year ago</span>
+      </div>
+    </div>
+    <div class="video-card">
+      <div class="time-stamp"><span>21:15</span></div>
+      <img src="/assets/thumbnail/19.jpg" >
+      <div class="channel-logo">
+        <img src="/assets/channel/And TV.jpg">
+      </div>
+      <h3 src="video-title" ><a>Bhabi Ji Ghar Par Hai - Episode 315 - Indian Romantic Comedy Serial</a></h3>
+
+      <div class="veri">
+        <p>And TV</p> <i class="fa-solid fa-circle-check"></i>
+      </div>
+      <div class="views">
+        <span>4.8M views</span>
+        <span class="circle-in" >.</span>
+        <span>4 days ago</span>
+      </div>
+    </div>
+    <div class="video-card">
+      <div class="time-stamp"><span>41:22</span></div>
+      <img src="/assets/thumbnail/20.jpg" >
+      <div class="channel-logo">
+        <img src="/assets/channel/Prime Video India.jpg">
+      </div>
+      <h3 src="video-title" ><a>Lie Detector for Every Family | The Family Man | Manoj Bajpayee, Sharib Hashmi, Priyamani </a></h3>
+
+      <div class="veri">
+        <p>Prime Video India</p> <i class="fa-solid fa-circle-check"></i>
+      </div>
+      <div class="views">
+        <span>1.8M views</span>
+        <span class="circle-in" >.</span>
+        <span>4 years ago</span>
+      </div></div></div>
+
+
+
+
+
+  <div class="row-shorts">
+    <div class="shorts-top">
+      <div class="shorts-left">
+        <div class="shorts-logo"><img src="/assets/youtube-shorts-icon.png"></div>
+        <span class="Shorts-text">Shorts</span>
+      </div></div>
+    <div class="shorts-row"><div class="shorts-card">
+      <img src="/assets/thumbnail/shorts/7.jpg">
+      <span><h4>#html #css #programming #ezsnippet</h4></span>
+      <span><p>13.4K views</p></span> </div>
+      <div class="shorts-card">
+        <img src="/assets/thumbnail/shorts/8.jpg">
+        <span><h4>When your mom watches Anupama #comedy</h4></span>
+        <span><p>5.4M views</p></span> </div>
+      <div class="shorts-card">
+        <img src="/assets/thumbnail/shorts/9.jpg">
+        <span><h4>Babita ki special variety!!😁😁</h4></span>
+        <span><p>4.8M views</p></span> </div>
+      <div class="shorts-card">
+        <img src="/assets/thumbnail/shorts/10.jpg">
+        <span><h4>Saxena ko pada thappad!! #bhabijigharparhain  #hipikaromorekaro #hipi</h4></span>
+        <span><p>K views</p></span> </div>
+      <div class="shorts-card">
+        <img src="/assets/thumbnail/shorts/11.jpg">
+        <span><h4>Happy Holi 🎉 #programming #ezsnippet #coder #coading</h4></span>
+        <span><p>663k views</p></span> </div>
+      <div class="shorts-card">
+        <img src="/assets/thumbnail/shorts/12.jpg">
+        <span><h4>Apple का करिश्मा Vision Pro 😳 #shorts #apple</h4></span>
+        <span><p>1M views</p></span> </div>
+    </div>
+  </div>
+  <div class="shorts-last"><button class="showmore">Show more <i class="fa-solid fa-chevron-down"></i></button>
+  </div>
+
+</div>
+
+</body>
+</html>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.nav {
+    height: 3.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    text-align: center;
+    position: fixed;
+    z-index:500;
+    margin-top: -2.3rem;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ .slider-bar  {
+    left: -150%;
+
+}
+
+#check:checked ~ .sidebar-card {
+    display: none;
+}
+
+.sidebar {
+    position: fixed;
+    width: 4rem;
+    height: 100vh;
+    left: 0;
+    top: 3rem;
+    z-index: 10000;
+    transition: 0.5s;
+
+}
+
+
+
+.main {
+    width: 100%;
+    height: 100vh;
+    margin-left: 4rem;
+
+}
+
+.chips {
+    height: 3.5rem;
+    width: 192rem;
+    position: fixed;
+    z-index: 400;
+    margin-top: -0.1rem;
+    justify-content: center;
+}
+
+
+.nav img {                                                                        /*   The youtube animaction logo */
+    width: 7.625rem;
+    height: 3.5rem;
+
+}
+
+.nav-start{
+    margin-left: 2rem;
+    display: flex;
+    text-align: center;
+
+}
+
+.nav-start i{
+    margin-top: 1rem;
+    color: #333037;
+    height: 2.5rem;
+    width: 2.5rem;
+
+}
+
+.nav-start i:hover{
+    opacity: 1;
+    font-size: 1.1rem;
+}
+
+/* #check {
+    display: none;
+  } */
+
+
+.search-box{
+    width: 32.475rem ;
+    height: 2.5rem;
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+
+
+}
+
+.search-place{
+    width: 28.175rem;
+    height: 2.3rem;
+    background-color: rgba(255, 255, 255, 0.041);
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border-width: 0px;
+    border: 0.5px solid rgba(255, 255, 255, 0.234);
+    text-indent: 10px;
+}
+
+.search-btn{
+
+    height: 2.3rem;
+    width: 3rem;
+    font-size: 1.1rem;
+    background-color: rgba(255, 255, 255, 0.121);
+    color: #333037;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    border: 0.5px solid rgba(255, 255, 255, 0.234);
+    border-left-width: 0.1px ;
+    cursor: pointer;
+
+}
+
+.search-mic{
+    height: 2.3rem;
+    width: 2.5rem;
+    background-color: rgba(255, 255, 255, 0.121);
+    color: #333037;
+    border-radius: 50%;
+    border: 0.5px solid rgba(255, 255, 255, 0.234);
+    border-left-width: 0.1px ;
+    cursor: pointer;
+    margin-left: 1.5rem;
+}
+
+.search-mic:hover{
+    background-color: rgba(255, 255, 255, 0.185);
+}
+
+.nav-button{
+    width: 14.063rem;
+    height: 2.5rem;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.nav-button button{
+    color: #333037;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-width: 0;
+    border-radius: 2rem;
+}
+
+.nav-button i {
+    font-size: 1.1rem;
+}
+
+.nav-button button:hover{
+    background-color: rgba(255, 255, 255, 0.185);
+}
+
+.profile{
+    border-radius: 2rem;
+    margin-right: 2rem;
+}
+
+
+.sidebar-card{
+    color: #333037;
+    height: 4.625rem;
+    width: 3.8rem;
+    text-align: center;
+    justify-content: center;
+    border-radius: 0.7rem;
+}
+
+.sidebar-card:hover{
+    background-color: rgba(255, 255, 255, 0.342);
+}
+
+.sidebar-card a{
+    background-color: transparent;
+    color: #333037;
+    text-decoration: none;
+}
+
+.sidebar-card i{
+    background-color: transparent;
+    margin-top: 1rem;
+    font-size: 1rem;
+    padding: 0.3rem;
+}
+
+.sidebar-card p{
+    font-size: 0.6rem;
+    font-weight: 100;
+    background-color: transparent;
+}
+
+.sidebar-card img{
+    margin-top: 0.9rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: transparent;
+
+}
+
+.chips-tags{
+    display: flex;
+    justify-content:start;
+    padding-left: 3.5rem;
+    margin-top: 1.5rem;
+    padding-bottom: 1.2rem;
+
+
+}
+
+.chips-tags button{
+    color: #333037;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.149);
+    border-width: 0;
+    border-radius: 0.5rem;
+    padding: 5px 15px ;
+    margin-left: 1rem;
+
+}
+.chips-tags button:hover{
+    background-color: rgba(255, 255, 255, 0.405) ;
+}
+
+.video-card{
+    width: 23.266rem;
+    height: 20rem;
+    position: relative ;
+    margin-left: 1rem;
+
+}
+
+.video-card img {
+    width: 100%;
+    height: 60%;
+    border-radius: 1.2rem;
+    transition: 0.5s;
+}
+
+.video-card img:hover{
+    border-radius: 0;
+}
+
+.channel-logo{
+    width: 3rem;
+    height: 6rem;
+    position: absolute;
+}
+
+.channel-logo img{
+    height: 2.25rem;
+    width: 2.25rem;
+}
+
+.video-card h3{
+    padding-left: 3.2rem;
+    color: #333037;
+}
+
+.veri{
+    margin-top: 0.5rem;
+    height: px;
+    width: 80%;
+    margin-left: 3.1rem;
+    display: flex;
+}
+
+.veri p{
+    opacity: 0.7;
+    font-weight: 200;
+    color: #333037;
+}
+
+.veri p:hover{
+    opacity: 1;
+}
+
+.veri i {
+    padding-left: 0.4rem;
+    padding-top: 0.2rem;
+    color: rgb(51, 48, 55);
+}
+
+.views{
+    margin-left: 3.1rem;
+    color: #333037;
+    opacity: 0.7;
+
+}
+
+.circle-in{
+    height: 3px;
+    width: 3px;
+    font-size: 2rem;
+}
+
+.video-card {
+    width: 23.266rem;
+    height: 20rem;
+    position: relative;
+    margin-left: 1rem;
+}
+
+.time-stamp {
+    width: 2rem;
+    height: 0.75rem;
+    font-size: 0.8rem;
+    position: absolute;
+    background-color: transparent;
+    bottom: 9rem; /* Adjust bottom spacing as needed */
+    right: 1rem; /* Adjust right spacing as needed */
+}
+
+.time-stamp span {
+    color: #333037;
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.548);
+}
+
+
+.row{
+    height: 319.19px;
+    width: 192rem;
+    justify-content: start;
+    margin-top: 2rem;
+    display: flex;
+}
+
+
+
+.row-shorts{
+    height: 650.56px;
+    width: 192rem;
+    justify-content: start;
+    margin-top: 2rem;
+
+
+}
+
+.shorts-row{
+
+    height: 75%;
+    display: flex;
+}
+.shorts-top{
+    height: 40px;
+    width: 100%;
+    justify-content: start;
+    display: flex;
+    text-align: center;
+    position: relative;
+}
+.shorts-logo img {
+    height: 3rem;
+    width: 2.5rem;
+}
+
+.Shorts-text{
+    color: #333037;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+}
+
+.shorts-top button{
+    color: #333037;
+    background-color: transparent;
+    font-size: 2rem;
+    text-align: center;
+    margin-left: 50rem;
+    position: absolute;
+    justify-content: space-between;
+    width: 3rem;
+    border-radius: 50%;
+    border-width: 0;
+    padding-bottom: 0.5;
+    transition: 0.1s;
+}
+
+.shorts-top button:hover{
+    background-color: rgba(255, 255, 255, 0.192) ;
+}
+
+.shorts-top button i{
+    background-color: transparent;
+}
+
+.shorts-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shorts-left {
+    display: flex;
+    align-items: center;
+}
+
+.shorts-right {
+    margin-top: -3rem;
+    margin-left: auto;
+}
+
+.shorts-card{
+    margin-top: 0.4rem;
+    height: 75%;
+    width: 14.787rem;
+    margin-left: 1rem;
+}
+
+.shorts-card img{
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+    transition: 1.4s;
+}
+
+.shorts-card img:hover{
+    border-radius: 0;
+}
+
+.shorts-card span h4{
+    margin-top: 0rem;
+    background-color: transparent;
+    color: #333037;
+}
+
+.shorts-card p {
+    color: #333037;
+    background-color: transparent;
+    opacity: 0.5;
+    margin-top: 0.8rem;
+}
+
+.shorts-last{
+    height: 50px;
+    display: flex;
+
+}
+
+.row-shorts i{
+    background-color: transparent;
+}
+.showmore{
+    font-size: large;
+    margin-left: 30rem ;
+    height: 2.5rem;
+    width: 28rem;
+    border-width: 0.2px;
+    border-radius: 2rem;
+    color: #333037;
+    border-color: rgba(255, 255, 255, 0.373);
+
+}
+
+.showmore:hover{
+    background-color: rgba(255, 255, 255, 0.095);
+}
+
+.row1{
+    padding-top: 5rem;
+    padding-bottom: 19rem;
+}
+
+@media screen and (max-width: 530px) {
+    .row {
+        display: block; /* Change to column layout on smaller screens */
+        align-items: center;
+        height: 85rem;;/* Align items in the center */
+    }
+
+    .row1 {
+        display: block;
+    }
+
+    .row-shorts{
+        display: none;
+    }
+    .showmore{
+        display: none;
+    }
+
+    .shorts-last{
+        display: none;
+    }
+
+    .video-card {
+        width: 13.266rem;
+        height: 20rem;
+        padding-bottom: 10rem;
+    }
+
+    .video-title{
+        font-size: 1rem;
+    }
+
+    .time-stamp{
+        z-index: 500;
+        bottom: 15rem; /* Adjust bottom spacing as needed */
+        right: 1rem;
+    }
+
+
+    .nav{
+        width: 20px;
+    }
+    .nav-button{
+        display: none;
+    }
+
+    .search-box{
+        margin-left: 2rem;
+
+    }
+
+    .sidebar{
+        margin-left: -50rem;
+    }
+
+}
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="https://www.youtube.com/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/your_channel.css"> <!-- Your custom styles -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Clone</title>
+
+    <link rel="stylesheet" href="style2.css">
+
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="toggle-btn">
+        <span style="color: #242424;font-weight: bolder"></span>
+        <span style="color: #242424;font-weight: bolder"></span>
+        <span style="color: #242424;font-weight: bolder"></span>
+    </div>
+    <img src="https://media.tenor.com/hZy9ORpOKdQAAAAC/you-tube-logo.gif" class="logo" alt="">
+    <div class="search-box">
+        <input type="text" class="search-bar" placeholder="search">
+        <button class="search-btn"><img src="https://cdn-icons-png.flaticon.com/128/12436/12436433.png" alt=""></button>
+    </div>
+    <div class="user-options">
+        <img src="https://cdn-icons-png.flaticon.com/128/7931/7931156.png" class="icon" alt="">
+        <img src=" https://cdn-icons-png.flaticon.com/128/3917/3917790.png" class="icon" alt="">
+        <img src="https://cdn-icons-png.flaticon.com/128/10506/10506532.png" class="icon" alt="">
+        <div class="user-dp">
+            <img src="https://dvqlxo2m2q99q.cloudfront.net/000_clients/810528/page/810528Txcuexso.gif" alt="">
+        </div>
+    </div>
+</nav>
+
+<!-- sidebar -->
+<div class="side-bar">
+    <a href="#" class="links active"><img src="https://cdn-icons-png.flaticon.com/128/9243/9243863.png" alt="">home</a>
+    <a href="#" class="links"><img src="https://cdn-icons-png.flaticon.com/128/10801/10801859.png" alt="">explore</a>
+    <a href="#" class="links"><img src=" https://cdn-icons-png.flaticon.com/128/17698/17698359.png" alt="">subscription</a>
+    <hr class="seperator">
+    <a href="#" class="links"><img src="https://cdn-icons-png.flaticon.com/128/9856/9856472.png" alt="">library</a>
+    <a href="#" class="links"><img src="https://cdn-icons-png.flaticon.com/128/13727/13727518.png" alt="">history</a>
+    <a href="#" class="links"><img src="https://cdn-icons-png.flaticon.com/128/3914/3914351.png" alt="">your video</a>
+    <a href="#" class="links"><img src="https://cdn-icons-png.flaticon.com/128/15859/15859210.png" alt="">watch later</a>
+    <a href="#" class="links"><img src="https://cdn-icons-png.flaticon.com/128/9292/9292485.png" alt="">like video</a>
+    <a href="#" class="links"><img src=" https://cdn-icons-png.flaticon.com/128/15354/15354856.png" alt="">show more</a>
+</div>
+
+<!-- filters -->
+<div class="filters">
+    <button class="filter-options active">all</button>
+    <button class="filter-options">App development</button>
+    <button class="filter-options">web development</button>
+    <button class="filter-options">python</button>
+    <button class="filter-options">entertainment</button>
+    <button class="filter-options">Spiritual Song</button>
+    <button class="filter-options">javascript</button>
+    <button class="filter-options">artificial intelligence</button>
+    <button class="filter-options">machine learning</button>
+    <button class="filter-options">trending</button>
+</div>
+
+<div class="video-container">
+<div class="video">
+        <img src="https://cdn.dribbble.com/users/760347/screenshots/7341673/media/b5af68cdf397db3063f89e5b466aab11.gif" class="thumbnail" alt="">
+        <div class="content">
+            <img src="https://cdn-icons-png.flaticon.com/256/4825/4825044.png" class="channel-icon" alt="">
+            <div class="info">
+                <h4 class="title">you-tube clone 2025 | create working you-tube clone</h4>
+                <p class="channel-name">vishesh kumar prajapati</p>
+            </div>
+        </div>
+    </div>
+    <div class="video">
+        <img src="https://slm-assets.secondlife.com/assets/24872504/original/Wildfire-Barrel-Animation.gif?1572103137" class="thumbnail" alt="">
+        <div class="content">
+            <img src="https://cdn-icons-png.flaticon.com/256/4825/4825044.png" class="channel-icon" alt="">
+            <div class="info">
+                <h4 class="title">the Exploding Wildfire Barrel, I hope it will be useful for you to enhance your roleplay! I originally made it for myself, then improved it over time. Although I made this to look like wildfire, you could use it for toxic waste as well.</h4>
+                <p class="channel-name">vishesh kumar prajapati</p>
+            </div>
+        </div>
+    </div>
+    <div class="video">
+        <img src="https://media.tenor.com/aTZYufB6AFQAAAAM/black-karina.gif" class="thumbnail" alt="">
+        <div class="content">
+            <img src="https://cdn-icons-png.flaticon.com/256/4825/4825044.png" class="channel-icon" alt="">
+            <div class="info">
+                <h4 class="title">a group of women is dancing on a stage |Black Karina</h4>
+                <p class="channel-name">vishesh kumar prajapati</p>
+            </div>
+        </div>
+    </div>
+    <div class="video">
+        <img src="https://media2.giphy.com/media/TdpGmKCycN4zHma9VY/giphy.gif" class="thumbnail" alt="">
+        <div class="content">
+            <img src="https://cdn-icons-png.flaticon.com/256/4825/4825044.png" class="channel-icon" alt="">
+            <div class="info">
+                <h4 class="title">Dance Competition Program at Hyderabad 2025 | Music Video Hip Pop</h4>
+                <p class="channel-name">vishesh kumar prajapati</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="video-container">
+    <div class="video">
+        <img src=" https://c.tenor.com/ldzlrZ2pcoEAAAAC/shining-lights-a-league-of-their-own.gif" class="thumbnail" alt="">
+        <div class="content">
+            <img src="https://cdn-icons-png.flaticon.com/256/4825/4825044.png" class="channel-icon" alt="">
+            <div class="info">
+                <h4 class="title">Hackathon Winner Celebration | Shining Lights A League Of Their Own life</h4>
+                <p class="channel-name">vishesh kumar prajapati</p>
+            </div>
+        </div>
+    </div>
+    <div class="video">
+        <img src="https://c.tenor.com/fumOdgTp_pwAAAAC/throw-colored-powder-in-the-air-gifkaro.gif" class="thumbnail" alt="">
+        <div class="content">
+            <img src="https://cdn-icons-png.flaticon.com/256/4825/4825044.png" class="channel-icon" alt="">
+            <div class="info">
+                <h4 class="title">Holi celebration 2025 |Happy Holi all of you </h4>
+                <p class="channel-name">vishesh kumar prajapati</p>
+            </div>
+        </div>
+    </div>
+    <div class="video">
+        <img src="https://c.tenor.com/hRBZHp-kE0MAAAAC/loading-circle-loading.gif" class="thumbnail" alt="">
+        <div class="content">
+            <img src="https://cdn-icons-png.flaticon.com/256/4825/4825044.png" class="channel-icon" alt="">
+            <div class="info">
+                <h4 class="title">whatsapp clone 2025 | create working whatsapp clone</h4>
+                <p class="channel-name">vishesh kumar prajapati</p>
+            </div>
+        </div>
+    </div>
+    <div class="video">
+        <img src="https://i.pinimg.com/originals/f5/07/d6/f507d6e50d3b4777aac04501bed45a13.gif" class="thumbnail" alt="">
+        <div class="content">
+            <img src="https://cdn-icons-png.flaticon.com/256/4825/4825044.png" class="channel-icon" alt="">
+            <div class="info">
+                <h4 class="title">twitter clone 2025 | create working twitter clone</h4>
+                <p class="channel-name">vishesh kumar prajapati</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://apis.google.com/js/api.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
+
+const videoCardContainer = document.querySelector('.video-container');
+
+let api_key = "your api key";
+let video_http = "https://www.googleapis.com/youtube/v3/videos?";
+let channel_http = "https://www.googleapis.com/youtube/v3/channels?";
+
+fetch(video_http + new URLSearchParams({
+    key: api_key,
+    part: 'snippet',
+    chart: 'mostPopular',
+    maxResults: 50,
+    regionCode: 'IN'
+}))
+    .then(res => res.json())
+    .then(data => {
+        // console.log(data);
+        data.items.forEach(item => {
+            getChannelIcon(item);
+        })
+    })
+    .catch(err => console.log(err));
+
+const getChannelIcon = (video_data) => {
+    fetch(channel_http + new URLSearchParams({
+        key: api_key,
+        part: 'snippet',
+        id: video_data.snippet.channelId
+    }))
+        .then(res => res.json())
+        .then(data => {
+            video_data.channelThumbnail = data.items[0].snippet.thumbnails.default.url;
+            makeVideoCard(video_data);
+        })
+}
+
+const makeVideoCard = (data) => {
+    videoCardContainer.innerHTML += `
+    <div class="video" onclick="location.href = 'https://youtube.com/watch?v=${data.id}'">
+        <img src="${data.snippet.thumbnails.high.url}" class="thumbnail" alt="">
+        <div class="content">
+            <img src="${data.channelThumbnail}" class="channel-icon" alt="">
+            <div class="info">
+                <h4 class="title">${data.snippet.title}</h4>
+                <p class="channel-name">${data.snippet.channelTitle}</p>
+            </div>
+        </div>
+    </div>
+    `;
+}
+
+// search bar
+
+const searchInput = document.querySelector('.search-bar');
+const searchBtn = document.querySelector('.search-btn');
+let searchLink = "https://www.youtube.com/results?search_query=";
+
+searchBtn.addEventListener('click', () => {
+    if(searchInput.value.length){
+        location.href = searchLink + searchInput.value;
+    }
+})
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus{
+    outline: none;
+}
+
+body{
+    position: relative;
+    background: rgba(244, 243, 246, 0.33);
+    font-family: 'roboto', sans-serif;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #333037;
+    display: flex;
+    align-items: center;
+    padding: 0 2.5vw;
+}
+
+.toggle-btn{
+    width: 20px;
+    height: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.toggle-btn span{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #10a3d3;
+}
+
+.toggle-btn span:nth-child(1){
+    top: 0;
+}
+
+.toggle-btn span:nth-child(3){
+    top: 100%;
+}
+
+.logo{
+    height: 30px;
+    margin: -10px 30px 0;
+}
+
+.search-box{
+    position: relative;
+    max-width: 500px;
+    width: 50%;
+    height: 35px;
+    display: flex;
+}
+
+.search-bar{
+    width: 85%;
+    height: 100%;
+    border: 2px solid #dbdbdb;
+    padding: 0 20px;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.search-btn{
+    width: 15%;
+    height: 100%;
+    background: #ffffff;
+    border: 2px solid #dbdbdb;
+    padding: 5px 0;
+    border-left: none;
+}
+
+.search-btn img{
+    height: 100%;
+}
+
+.user-options{
+    height: 35px;
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.user-options .icon{
+    height: 80%;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.user-dp{
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.user-dp img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* side-bar */
+
+.side-bar{
+    position: fixed;
+    top: 60px;
+    left: 0;
+    min-width: 250px;
+    width: 250px;
+    height: calc(100vh - 60px);
+    background: #333037;
+    padding-right: 10px;
+    color: #dbdbdb;
+}
+
+.links{
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.links img{
+    height: 25px;
+    margin-right: 20px;
+}
+
+.links:hover,
+.links.active{
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.seperator{
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+/* filter */
+
+.filters{
+    position: fixed;
+    left: 250px;
+    top: 60px;
+    width: calc(100% - 250px);
+    height: 60px;
+    background: rgba(95, 91, 104, 0.33);
+    border-top: 1px solid #10a3d3;
+    border-bottom: 1px solid #099f85;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.filters::-webkit-scrollbar{
+    display: none;
+}
+
+.filter-options{
+    flex: 0 0 auto;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: #83a8ff;
+    border: 1px solid #dbdbdb;
+    text-transform: capitalize;
+    margin-right: 10px;
+    color: #242424;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.filter-options.active{
+    color: #fff;
+    background: #242424;
+}
+
+/* video */
+
+.video-container{
+    width: calc(100% - 250px);
+    margin-top: 120px;
+    margin-left: 250px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-gap: 20px 5px;
+    overflow-x: hidden;
+}
+
+.video{
+    min-height: 250px;
+    height: auto;
+}
+
+.thumbnail{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.content{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.channel-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.title{
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+}
+
+.channel-name{
+    font-size: 14px;
+    margin: 2px 0;
+    color: #979797;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.nav {
+    height: 3.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    text-align: center;
+    position: fixed;
+    z-index:500;
+}
+
+.sidebar {
+    position: fixed;
+    width: 4rem;
+    height: 10000vh;
+    left: 0;
+    top: 3rem;
+    z-index: 10000;
+    transition: 0.5s;
+
+}
+.main {
+    width: 100%;
+    height: 100vh;
+    margin-left: 4rem;
+}
+
+.nav img {                                                                        /*   The youtube animaction logo */
+    width: 7.625rem;
+    height: 3.5rem;
+
+}
+.nav-start{
+    margin-left: 2rem;
+    display: flex;
+    text-align: center;
+
+}
+.nav-start i{
+    margin-top: 1rem;
+    color: white;
+    height: 2.5rem;
+    width: 2.5rem;
+
+}
+
+.nav-start i:hover{
+    opacity: 1;
+    font-size: 1.1rem;
+}
+
+
+.search-box{
+    width: 32.475rem ;
+    height: 2.5rem;
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+
+}
+
+.search-place{
+    width: 28.175rem;
+    height: 2.3rem;
+    background-color: rgba(255, 255, 255, 0.041);
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border-width: 0px;
+    border: 0.5px solid rgba(255, 255, 255, 0.234);
+    text-indent: 10px;
+}
+
+.search-btn{
+
+    height: 2.3rem;
+    width: 3rem;
+    font-size: 1.1rem;
+    background-color: rgba(255, 255, 255, 0.121);
+    color: white;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    border: 0.5px solid rgba(255, 255, 255, 0.234);
+    border-left-width: 0.1px ;
+    cursor: pointer;
+
+}
+
+.search-mic{
+    height: 2.3rem;
+    width: 2.5rem;
+    background-color: rgba(255, 255, 255, 0.121);
+    color: white;
+    border-radius: 50%;
+    border: 0.5px solid rgba(255, 255, 255, 0.234);
+    border-left-width: 0.1px ;
+    cursor: pointer;
+    margin-left: 1.5rem;
+}
+
+.search-mic:hover{
+    background-color: rgba(255, 255, 255, 0.185);
+}
+
+.nav-button{
+    width: 14.063rem;
+    height: 2.5rem;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.nav-button button{
+    color: white;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-width: 0;
+    border-radius: 2rem;
+}
+
+.nav-button i {
+    font-size: 1.1rem;
+}
+
+.nav-button button:hover{
+    background-color: rgba(255, 255, 255, 0.185);
+}
+
+.profile{
+    border-radius: 2rem;
+    margin-right: 2rem;
+}
+
+
+.sidebar-card{
+    color: white;
+    height: 4.625rem;
+    width: 3.8rem;
+    text-align: center;
+    justify-content: center;
+    border-radius: 0.7rem;
+}
+
+.sidebar-card:hover{
+    background-color: rgba(255, 255, 255, 0.342);
+}
+
+.sidebar-card a{
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar-card i{
+    background-color: transparent;
+    margin-top: 1rem;
+    font-size: 1rem;
+    padding: 0.3rem;
+}
+
+.sidebar-card p{
+    font-size: 0.6rem;
+    font-weight: 100;
+    background-color: transparent;
+}
+
+.sidebar-card img{
+    margin-top: 0.9rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: transparent;
+
+}
+
+@media screen and (max-width: 530px) {
+
+    .nav{
+        width: 20px;
+    }
+    .nav-button{
+        display: none;
+    }
+
+    .search-box{
+        margin-left: 2rem;
+
+    }
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed */
+    background-color: lightgray;
+}
+
+.channel-info-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 37.311rem;
+}
+
+.youtube_banner {
+    margin-top: 4rem;
+    width: 80rem;
+    border-radius: 1rem;
+}
+
+.channel-info-text {
+    margin-top: 0.5rem;
+    width: 80rem;
+    height: 15rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dp{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    margin-top: 1.4rem;
+    margin-left: 1rem;
+}
+
+.channel-info-about{
+    width: 85%;
+    height: 100%;
+}
+
+.channel-info-about h1{
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+}
+.channel-chips{
+    height: 6rem;
+    width: 85%;
+}
+
+.channel-info-text-sub{
+    color: rgba(255, 255, 255, 0.63);
+    font-weight: 100;
+    margin-top: 0.6rem;
+}
+
+.instagram-top-link{
+    display: flex;
+    margin-top: 0.5rem;
+}
+
+.instagram-top-link1{
+    color: #3EA6FF;
+    opacity: 1;
+}
+
+.instagram-top-link2{
+    color: white;
+    margin-left: 0.4rem;
+    font-weight: bold;
+
+}
+
+.channel-info-main button{
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    border-width: 0;
+    border-radius: 2rem;
+    color: white;
+    margin-top: 2rem;
+    font-size: large;
+    background-color: rgba(255, 255, 255, 0.265);
+}
+
+.channel-info-main button:hover{
+    background-color: rgba(255, 255, 255, 0.411);
+}
+
+.channel-chips{
+    justify-content: start;
+    gap: 1rem;
+    display: flex;
+    width: 80rem;
+}
+
+.channel-chips p{
+    margin-top: 2rem;
+    margin-left: 1rem;
+    color: rgba(255, 255, 255, 0.642);
+}
+
+.channel-chips p:hover{
+    text-decoration: underline;
+}
+
+.all-main-content {
+
+
+    height: 200rem;
+    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.runnung-mian-video {
+    width: 80rem;
+    height: 17.875rem;
+
+    display: flex;
+}
+
+.run-vid{
+    margin-top: 1.4rem;
+    width: 26.5rem;
+    height: 14.875rem;
+    position: relative;
+
+}
+
+
+.run-vid img{
+
+    border-radius: 1.5rem;
+}
+
+.run-vid-controls{
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 500;
+    cursor: pointer;
+    border-radius: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.201);
+}
+
+.run-vid-controls:hover{
+    background-color: rgba(0, 0, 0, 0.274);
+}
+
+.run-vid-upper{
+    margin-top: 2%;
+    margin-left: 2rem;
+    background-color: transparent;
+    color:white;
+
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+
+}
+
+.run-vid-upper h4{
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.run-vid-upper i {
+    background-color: transparent;
+    color: white;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+
+}
+
+.run-vid-controls input{
+    width: 90%;
+    margin-left: 1.4rem;
+    margin-top: 9.4rem;
+
+}
+
+.run-vid-depper{
+    display: flex;
+    color: white;
+    gap: 20px;
+    background-color: transparent;
+
+}
+
+.run-vid-depper i{
+    background-color: transparent;
+}
+
+.run-vid-depper i:hover{
+    color: rgba(255, 255, 255, 0.539);
+}
+
+#pause-btn{
+    margin-left: 1rem;
+}
+
+#capc-btn{
+    margin-left: 14rem;
+}
+.progress-bar::-webkit-slider-runnable-track {
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.3rem;
+}
+
+.progress-bar::-webkit-slider-runnable-track:hover{
+    background-color: #ff0000;
+}
+
+.progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    margin-top: -6px;
+
+}
+
+.runnung-mian-video-info{
+    width: 100%;
+    height: 15rem;
+    color: white;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+.runnung-mian-video-info a{
+    font-weight: bold;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+.runnung-mian-video-info-views{
+    margin-top: 1rem;
+    color: rgba(255, 255, 255, 0.603);
+}
+
+.runnung-mian-video-info p{
+    margin-top: 1rem;
+
+}
+
+.runnung-mian-video-info span{
+    display: flex;
+
+}
+
+.for-you{
+    width: 80rem;
+    height: 24.875rem;
+
+}
+
+.row{
+    height: 319.19px;
+    width: 100%;
+    justify-content: start;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.video-card{
+    width: 23.266rem;
+    height: 20rem;
+    position: relative ;
+    margin-left: 1rem;
+
+}
+
+.video-card img {
+    width: 100%;
+    height: 60%;
+    border-radius: 1.2rem;
+    transition: 0.5s;
+}
+
+.video-card img:hover{
+    border-radius: 0;
+}
+
+.channel-logo{
+    width: 3rem;
+    height: 6rem;
+    position: absolute;
+}
+
+.channel-logo img{
+    height: 2.25rem;
+    width: 2.25rem;
+}
+
+.video-card h3{
+
+    color: white;
+}
+
+
+.views{
+    color: white;
+    opacity: 0.7;
+
+}
+
+.circle-in{
+    height: 3px;
+    width: 3px;
+    font-size: 2rem;
+}
+
+.video-card {
+    width: 23.266rem;
+    height: 20rem;
+    position: relative;
+
+}
+
+.time-stamp {
+    width: 2rem;
+    height: 0.75rem;
+    font-size: 0.8rem;
+    position: absolute;
+    background-color: transparent;
+    bottom: 9rem; /* Adjust bottom spacing as needed */
+    right: 1rem; /* Adjust right spacing as needed */
+}
+
+.time-stamp span {
+    color: white;
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.548);
+}
+
+.for-you h1{
+    color: white;
+    font-weight: bold;
+    margin-left: 2.4rem;
+}
+
+
+.row-shorts{
+    height: 650.56px;
+    width: 100%;
+    justify-content: start;
+    margin-top: 2rem;
+
+
+}
+
+.shorts-row{
+
+    height: 75%;
+
+    display: flex;
+}
+.shorts-top{
+    height: 40px;
+    width: 100%;
+    justify-content: start;
+    display: flex;
+    text-align: center;
+    position: relative;
+}
+.shorts-logo img {
+    height: 3rem;
+    width: 2.5rem;
+}
+
+.Shorts-text{
+    color: white;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+}
+
+.shorts-top button{
+    color: white;
+    background-color: transparent;
+    font-size: 2rem;
+    text-align: center;
+    margin-left: 50rem;
+    position: absolute;
+    justify-content: space-between;
+    width: 3rem;
+    border-radius: 50%;
+    border-width: 0;
+    padding-bottom: 0.5;
+    transition: 0.1s;
+}
+
+.shorts-top button:hover{
+    background-color: rgba(255, 255, 255, 0.192) ;
+}
+
+.shorts-top button i{
+    background-color: transparent;
+}
+
+.shorts-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shorts-left {
+    display: flex;
+    align-items: center;
+}
+
+.shorts-right {
+    margin-top: -3rem;
+    margin-left: auto;
+}
+
+.shorts-card{
+    margin-top: 0.4rem;
+    height: 75%;
+    width: 14.787rem;
+    margin-left: 1rem;
+}
+
+.shorts-card img{
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+    transition: 1.4s;
+}
+
+.shorts-card img:hover{
+    border-radius: 0;
+}
+
+.shorts-card span h4{
+    margin-top: 0rem;
+    background-color: transparent;
+    color: white;
+}
+
+.shorts-card p {
+    color: white;
+    background-color: transparent;
+    opacity: 0.5;
+    margin-top: 0.8rem;
+}
+
+.shorts-last{
+    height: 50px;
+    display: flex;
+
+}
+
+.row-shorts i{
+    background-color: transparent;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="https://www.youtube.com/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/yputibehistory.css"> <!-- Your custom styles -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <title>YouTube</title>
+</head>
+<body>
+<div class="nav">
+    <div class="nav-start" >
+        <i class="fa-solid fa-bars"></i>
+        <img src="/assets/youtube logo ani.webp" alt="YouTube Logo">
+    </div>
+    <div class="search-box">
+        <input type="text" placeholder="Search" class="search-place">
+        <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="search-mic"><i class="fa-solid fa-microphone"></i></button>
+    </div>
+    <div class="nav-button">
+        <button class="camera"><i class="fa-solid fa-camera"></i></button>
+        <button class="bell"><i class="fa-solid fa-bell"></i></button>
+        <img class="profile" src="/assets/youtube profile.jpg" style="height: 2rem; width: 2rem;">
+    </div></div>
+
+<div class="sidebar">
+
+    <div class="sidebar-card">
+        <a href="/index.html"><img style="width: 1.2rem; height: 1.5rem;" src="/assets/Home.png">
+            <p>Home</p></a>
+    </div>
+
+    <div class="sidebar-card">
+        <a href="/reelshorts.html">
+            <img src="/assets/Shorts.png" style="height: 2.4rem; width: 2.2rem;">
+            <p>Shorts</p>
+        </a>
+    </div>
+
+
+
+    <div class="sidebar-card">
+        <a href="/your_channel.html"><img style="width: 1.2rem; height: 1.2rem;" src="/assets/Your Videos.png">
+            <p>Your channel</p></a>
+    </div>
+
+
+    <div class="sidebar-card">
+        <a href="/history.html"><i class="fa-solid fa-clock-rotate-left" style="opacity: 0.7; font-size: 1.2rem;"></i>
+            <p>History</p></a>
+    </div>
+</div>
+
+<div class="history-section">
+    <div class="history-colum">
+        <h2>Watch history</h2>
+        <h4>Today</h4>
+
+
+        <div class="video-history-card"><img src="/assets/thumbnail/24.jpg">
+
+            <div class="history-info"> <div class="video-history-card-title">
+                <h3>Bhabi Ji Ghar Par Hai - Episode 689 - Indian Romantic Comedy Serial </h3>
+                <button class="video-history-card-title-btn"><i style="background-color: transparent;" class="fa-solid fa-x"></i></button>
+            </div>
+                <div class="channel-name-vs">
+                    <p>And TV <i style="background-color: transparent; font-size: 0.7rem; padding: 0.5rem;" class="fa-solid fa-circle-check"> </i>286K views</p>
+
+                    <div class="lastofinfo">
+                        <p>Watch Full Episode click here ►
+                            Get notified about...</p>
+                    </div></div>
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+
+        <div class="video-history-card"><img src="/assets/thumbnail/25.jpg">
+
+            <div class="history-info"> <div class="video-history-card-title">
+                <h3>कौवा बिरयानी.. सिर्फ ५ रुपये में 😂 | Vijay Raaz Comedy </h3>
+                <button class="video-history-card-title-btn"><i style="background-color: transparent;" class="fa-solid fa-x"></i></button>
+            </div>
+                <div class="channel-name-vs">
+                    <p>Rapid Music <i style="background-color: transparent; font-size: 0.7rem; padding: 0.5rem;" class="fa-solid fa-circle-check"> </i>8.1M views</p>
+
+                    <div class="lastofinfo">
+                        <p>kauwa biryani
+                            kauwa biryani movie name
+                            kauwa biryani full movie
+                            kauwa biryani actor name
+                            kauwa biryani comedy</p>
+                    </div></div>
+            </div>
+
+
+        </div>
+        <div class="video-history-card"><img src="/assets/thumbnail/26.jpg">
+
+            <div class="history-info"> <div class="video-history-card-title">
+                <h3>Taeri Baaton Mein Aisa Uljha Jiya (2024) </h3>
+                <button class="video-history-card-title-btn"><i style="background-color: transparent;" class="fa-solid fa-x"></i></button>
+            </div>
+                <div class="channel-name-vs">
+                    <p>Zee TV <i style="background-color: transparent; font-size: 0.7rem; padding: 0.5rem;" class="fa-solid fa-circle-check"> </i>886K views</p>
+
+                    <div class="lastofinfo">
+                        <p>New HIndi Bollywood Movies 2024
+                            Latest New Hindi Movies 2024
+                            Sahid Kapoor New mOvies
+                            latest superhit movies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video-history-card"><img src="/assets/thumbnail/27.jpg">
+
+            <div class="history-info"> <div class="video-history-card-title">
+                <h3>Akshay Kumar - Johnny Lever - Back To Back Comedy Scenes </h3>
+                <button class="video-history-card-title-btn"><i style="background-color: transparent;" class="fa-solid fa-x"></i></button>
+            </div>
+                <div class="channel-name-vs">
+                    <p>Pen Multiplex <i style="background-color: transparent; font-size: 0.7rem; padding: 0.5rem;" class="fa-solid fa-circle-check"> </i>106K views</p>
+
+                    <div class="lastofinfo">
+                        <p>Enjoy Super Hit 4K Movies Collection :-
+                            Yeh Saali Aashiqui:
+
+                            • Yeh Saali Aashiqui (4K) | Vardhan Pur...
+                            Entertainment:
+
+                        </p>
+                    </div></div>
+            </div>
+        </div>
+        <div class="video-history-card"><img src="/assets/thumbnail/28.jpg">
+
+            <div class="history-info"> <div class="video-history-card-title">
+                <h3>Nana Patekar Birthday Special | Best of Comedy Scenes</h3>
+                <button class="video-history-card-title-btn"><i style="background-color: transparent;" class="fa-solid fa-x"></i></button>
+            </div>
+                <div class="channel-name-vs">
+                    <p>Shemaroo <i style="background-color: transparent; font-size: 0.7rem; padding: 0.5rem;" class="fa-solid fa-circle-check"> </i>716K views</p>
+
+                    <div class="lastofinfo">
+                        <p>Two thugs meet Rajeev, who belongs to a respectable family, and want to fix their sister's wedding </p>
+                    </div></div>
+            </div></div>
+        <div class="video-history-card"><img src="/assets/thumbnail/29.jpg">
+
+            <div class="history-info"> <div class="video-history-card-title">
+                <h3>BB Ki Vines- | Ghar Kalesh |
+                </h3>
+                <button class="video-history-card-title-btn"><i style="background-color: transparent;" class="fa-solid fa-x"></i></button>
+            </div>
+                <div class="channel-name-vs">
+                    <p>BB Ki Vines <i style="background-color: transparent; font-size: 0.7rem; padding: 0.5rem;" class="fa-solid fa-circle-check"> </i>1.4M views</p>
+
+                    <div class="lastofinfo">
+                        <p>Titu Mama comes rushing to Bhuvan's house after Janki's sudden phone call.
+                            VOTE for Taaza Khabar....</p>
+                    </div></div>
+            </div></div>
+        <div class="video-history-card"><img src="/assets/thumbnail/30.jpg">
+
+            <div class="history-info"> <div class="video-history-card-title">
+                <h3>Tuition Classes aur Bache | Ashish Chanchlani</h3>
+                <button class="video-history-card-title-btn"><i style="background-color: transparent;" class="fa-solid fa-x"></i></button>
+            </div>
+                <div class="channel-name-vs">
+                    <p>ashish chanchalani vines<i style="background-color: transparent; font-size: 0.7rem; padding: 0.5rem;" class="fa-solid fa-circle-check"> </i>34K views</p>
+
+                    <div class="lastofinfo">
+                        <p>Here it is the last video of 2018 from us
+                            TUITION, CLASSES favourite scene and dialogue now!...</p>
+                    </div></div>
+            </div></div>
+        <div class="video-history-card"><img src="/assets/thumbnail/31.jpg">
+
+            <div class="history-info"> <div class="video-history-card-title">
+                <h3>Sasta Biig Bosss 2 | Parody | Ashish Chanchlani</h3>
+                <button class="video-history-card-title-btn"><i style="background-color: transparent;" class="fa-solid fa-x"></i></button>
+            </div>
+                <div class="channel-name-vs">
+                    <p>ashish chanchalani vines<i style="background-color: transparent; font-size: 0.7rem; padding: 0.5rem;" class="fa-solid fa-circle-check"> </i>181K views</p>
+
+                    <div class="lastofinfo">
+                        <p>Acv  of “SASTA BIIG BOSSS”
+                            Chalobecause PAISAAAA ...</p>
+                    </div></div>
+            </div></div>
+        <div class="video-history-card"><img src="/assets/thumbnail/32.jpg">
+
+            <div class="history-info"> <div class="video-history-card-title">
+                <h3>I AM BACK🔥</h3>
+                <button class="video-history-card-title-btn"><i style="background-color: transparent;" class="fa-solid fa-x"></i></button>
+            </div>
+                <div class="channel-name-vs">
+                    <p>Elvish Yadav Vlogs<i style="background-color: transparent; font-size: 0.7rem; padding: 0.5rem;" class="fa-solid fa-circle-check"> </i>416K views</p>
+
+                    <div class="lastofinfo">
+                        <p>
+                            Shop My Systumm Clothing- https://systumm.com/shop/</p>
+                    </div></div>
+            </div></div>
+        <div class="video-history-card"><img src="/assets/thumbnail/33.jpg">
+
+            <div class="history-info"> <div class="video-history-card-title">
+                <h3>Badshah - Daaku (Official Music Video)</h3>
+                <button class="video-history-card-title-btn"><i style="background-color: transparent;" class="fa-solid fa-x"></i></button>
+            </div>
+                <div class="channel-name-vs">
+                    <p>Badshah<i style="background-color: transparent; font-size: 0.7rem; padding: 0.5rem;" class="fa-solid fa-circle-check"> </i>145M views</p>
+
+                    <div class="lastofinfo">
+                        <p>ubscribe and click the bell icon to get notified. http://bit.ly/BadshahYT
+                            🎶 Listen 🎧  🎶 Now On 📲 🤳...</p>
+                    </div></div>
+            </div></div>
+        <div class="video-history-card"><img src="/assets/thumbnail/34.jpg">
+
+            <div class="history-info"> <div class="video-history-card-title">
+                <h3></h3>Episode 935 - Taarak Mehta Ka Ooltah Chashmah</h3>
+                <button class="video-history-card-title-btn"><i style="background-color: transparent;" class="fa-solid fa-x"></i></button>
+            </div>
+                <div class="channel-name-vs">
+                    <p>TMKOC<i style="background-color: transparent; font-size: 0.7rem; padding: 0.5rem;" class="fa-solid fa-circle-check"> </i>1.5M views</p>
+
+                    <div class="lastofinfo">
+                        <p>Click here to Subscribe to Official Channel: https:///taarakmehtaka...
+
+                            Click here to watch all yo....</p>
+                    </div></div>
+            </div></div>
+        <div class="video-history-card"><img src="/assets/thumbnail/35.jpg">
+
+            <div class="history-info"> <div class="video-history-card-title">
+                <h3>Balcony से Bhide देख रहा है 'झगड़ा' | Taarak Mehta Ka Ooltah Chashmah</h3>
+                <button class="video-history-card-title-btn"><i style="background-color: transparent;" class="fa-solid fa-x"></i></button>
+            </div>
+                <div class="channel-name-vs">
+                    <p>TMKOC<i style="background-color: transparent; font-size: 0.7rem; padding: 0.5rem;" class="fa-solid fa-circle-check"> </i>88K views</p>
+
+                    <div class="lastofinfo">
+                        <p>Click here to Subscribe to LIV Comedy:
+
+                            Popatlal gets into  with Dr. Hathi. On reaching ...</p>
+                    </div></div>
+            </div></div>
+
+
+
+
+
+
+
+    </div>
+</div>
+
+
+
+
+
+<div class="history-search-section">
+    <input class="history-search-bar" type="text" placeholder="Search watch history">
+    <button><i style="background-color: transparent;" class="fa-solid fa-trash"> </i>Clear all watch history</button>
+    <button><i style="background-color: transparent;" class="fa-solid fa-pause"> </i>Pasuse watch history</button>
+    <button><i style="background-color: transparent;" class="fa-solid fa-gear"> </i>Manage all history</button>
+    <p>Comments</p>
+    <p>Community posts</p>
+    <p>Live chat</p>
+</div>
+
+
+</div>
+
+</body>
+</html>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.nav {
+    height: 3.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    text-align: center;
+    position: fixed;
+    z-index:500;
+}
+
+.sidebar {
+    position: fixed;
+    width: 4rem;
+    height: 100vh;
+    left: 0;
+    top: 3rem;
+    z-index: 10000;
+    transition: 0.5s;
+
+}
+.main {
+    width: 100%;
+    height: 100vh;
+    margin-left: 4rem;
+    background-color: red;
+
+
+}
+
+.nav img {                                                                        /*   The youtube animaction logo */
+    width: 7.625rem;
+    height: 3.5rem;
+
+}
+.nav-start{
+    margin-left: 2rem;
+    display: flex;
+    text-align: center;
+
+}
+.nav-start i{
+    margin-top: 1rem;
+    color: white;
+    height: 2.5rem;
+    width: 2.5rem;
+
+}
+
+.nav-start i:hover{
+    opacity: 1;
+    font-size: 1.1rem;
+}
+
+
+.search-box{
+    width: 32.475rem ;
+    height: 2.5rem;
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+
+}
+
+.search-place{
+    width: 28.175rem;
+    height: 2.3rem;
+    background-color: rgba(255, 255, 255, 0.041);
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border-width: 0px;
+    border: 0.5px solid rgba(255, 255, 255, 0.234);
+    text-indent: 10px;
+}
+
+.search-btn{
+
+    height: 2.3rem;
+    width: 3rem;
+    font-size: 1.1rem;
+    background-color: rgba(255, 255, 255, 0.121);
+    color: white;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    border: 0.5px solid rgba(255, 255, 255, 0.234);
+    border-left-width: 0.1px ;
+    cursor: pointer;
+
+}
+
+.search-mic{
+    height: 2.3rem;
+    width: 2.5rem;
+    background-color: rgba(255, 255, 255, 0.121);
+    color: white;
+    border-radius: 50%;
+    border: 0.5px solid rgba(255, 255, 255, 0.234);
+    border-left-width: 0.1px ;
+    cursor: pointer;
+    margin-left: 1.5rem;
+}
+
+.search-mic:hover{
+    background-color: rgba(255, 255, 255, 0.185);
+}
+
+.nav-button{
+    width: 14.063rem;
+    height: 2.5rem;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.nav-button button{
+    color: white;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-width: 0;
+    border-radius: 2rem;
+}
+
+.nav-button i {
+    font-size: 1.1rem;
+}
+
+.nav-button button:hover{
+    background-color: rgba(255, 255, 255, 0.185);
+}
+
+.profile{
+    border-radius: 2rem;
+    margin-right: 2rem;
+}
+
+
+.sidebar-card{
+    color: white;
+    height: 4.625rem;
+    width: 3.8rem;
+    text-align: center;
+    justify-content: center;
+    border-radius: 0.7rem;
+}
+
+.sidebar-card:hover{
+    background-color: rgba(255, 255, 255, 0.342);
+}
+
+.sidebar-card a{
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar-card i{
+    background-color: transparent;
+    margin-top: 1rem;
+    font-size: 1rem;
+    padding: 0.3rem;
+}
+
+.sidebar-card p{
+    font-size: 0.6rem;
+    font-weight: 100;
+    background-color: transparent;
+}
+
+.sidebar-card img{
+    margin-top: 0.9rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: transparent;
+
+}
+
+@media screen and (max-width: 530px) {
+
+    .nav{
+        width: 20px;
+    }
+    .nav-button{
+        display: none;
+    }
+
+    .search-box{
+        margin-left: 2rem;
+
+    }
+}
+
+/* .all-main-content {
+
+
+    height: 200rem;
+    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+} */
+
+.history-search-section{
+    width: 24rem;
+    height: 21.75rem;
+    position: fixed;
+    right: 0;
+    top: 15rem;
+    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: start;
+    gap: 1rem;
+}
+
+.history-search-bar{
+    margin-top: 0.5rem;
+    width: 15.175rem;
+    height: 2.3rem;
+    background-color: rgba(255, 255, 255, 0.041);
+    border-left-width: 0 ;
+    border-right-width: 0 ;
+    border-top-width: 0 ;
+    border-bottom: solid 2px rgba(255, 255, 255, 0.475);
+    text-indent: 10p;
+    transition: 0.5s;
+
+}
+
+.history-search-bar:hover{
+    border-bottom: solid 2px white;
+}
+
+.history-search-section button{
+    color: white;
+    padding: 0.7rem;
+    border-width: 0;
+    border-radius: 2rem;
+    cursor: pointer;
+
+}
+
+.history-search-section button:hover{
+    background-color: rgba(255, 255, 255, 0.384);
+
+}
+
+.history-search-section p{
+    cursor: pointer;
+    margin-left: 2rem;
+    opacity: 0.7;
+
+}
+
+.history-search-section p:hover{
+    opacity: 1;
+}
+
+.history-section{
+    height: 200rem;
+    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.history-colum{
+    width: 39.25rem;
+    height: 100rem;
+    margin-top: 4rem;
+
+}
+
+.history-colum h2{
+    color: white;
+    font-weight: bold;
+}
+
+
+.history-colum h4{
+    margin-top: 2rem;
+    color: white;
+    font-weight: bold;
+}
+
+.video-history-card{
+    height: 8.6rem;
+    display: flex;
+    margin-top: 1rem;
+}
+
+.video-history-card img{
+    width: 246px;
+    height: 138px;
+    object-fit: cover;
+    border-radius: 1rem;
+    display: flex;
+    transition: 0.4s;
+}
+
+.video-history-card img:hover{
+    border-radius: 0;
+}
+
+.video-history-card-title{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    height: 52px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.video-history-card-title h3{
+    color: white;
+    background-color: transparent;
+}
+
+.video-history-card-title-btn{
+    color: white;
+    height: 40px;
+    width: 60px;
+    border-width: 0;
+    border-radius: 50%;
+}
+
+.video-history-card-title-btn:hover{
+    background-color: rgba(255, 255, 255, 0.256);
+}
+
+.channel-name-vs{
+    margin-top: 0.5rem;
+    height: 10px;
+
+}
+
+.channel-name-vs p{
+    color: rgba(255, 255, 255, 0.521);
+    margin-left: 1rem;
+    font-size: 0.8rem;
+}
+
+.lastofinfo{
+    color: white;
+    font-size: 0.6rem;
+    font-weight: 100;
+}
+
+.history-search-section i{
+    margin-right: 0.5rem;
+}
+
+
+@media screen and (max-width: 1428px){
+    .history-search-section{
+        opacity: 0;
+    }
+
+}
+
+
+
+@media screen and (max-width: 741px){
+
+    .history-info{
+        opacity: 0;
+    }
+
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="https://www.youtube.com/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/reelshorts.css"> <!-- Your custom styles -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <title>YouTube</title>
+</head>
+<body>
+<div class="nav">
+    <div class="nav-start" >
+
+
+
+        <i class="fa-solid fa-bars"></i>
+        <img src="/assets/youtube logo ani.webp" alt="YouTube Logo">
+    </div>
+    <div class="search-box">
+        <input type="text" placeholder="Search" class="search-place">
+        <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="search-mic"><i class="fa-solid fa-microphone"></i></button>
+    </div>
+    <div class="nav-button">
+        <button class="camera"><i class="fa-solid fa-camera"></i></button>
+        <button class="bell"><i class="fa-solid fa-bell"></i></button>
+        <img class="profile" src="/assets/youtube profile.jpg" style="height: 2rem; width: 2rem;">
+    </div></div>
+
+<div class="sidebar">
+
+    <div class="sidebar-card">
+        <a href="/index.html"><img style="width: 1.2rem; height: 1.5rem;" src="/assets/Home.png">
+            <p>Home</p></a>
+    </div>
+
+    <div class="sidebar-card">
+        <a href="/shorts.html">
+            <img src="/assets/Shorts.png" style="height: 2.4rem; width: 2.2rem;">
+            <p>Shorts</p>
+        </a>
+    </div>
+
+
+
+    <div class="sidebar-card">
+        <a href="/your_channel.html"><img style="width: 1.2rem; height: 1.2rem;" src="/assets/Your Videos.png">
+            <p>Your channel</p></a>
+    </div>
+
+
+    <div class="sidebar-card">
+        <a href="/history.html"><i class="fa-solid fa-clock-rotate-left" style="opacity: 0.7; font-size: 1.2rem;"></i>
+            <p>History</p></a>
+    </div>
+</div>
+
+
+<div class="main">
+    <div class="short-row short-row1">
+        <div class="short">
+            <img src="/assets/thumbnail/Shorts Section/1.jpg">
+        </div>
+        <div class="short-info">
+            <div class="short-info-username">
+                <img src="/assets/channel/shorts/fooddilex.jpg">
+                <p>@fooddilex</p>
+                <button>Subscribe</button>
+            </div>
+            <div class="short-info-title">
+                <h4>Fruit cutting skills / Korean street food</h>
+            </div>
+            <div class="short-info-buttons">
+                <div class="short-info-buttons-text"><button><i class="fa-solid fa-thumbs-up"></i></button><p>792</p></div>
+                <div class="short-info-buttons-text"><button><i class="fa-solid fa-thumbs-down"></i></button><p>Dislike</p></div>
+                <div class="short-info-buttons-text"><button><i class="fa-regular fa-comment"></i></button><p>82</p></div>
+                <div class="short-info-buttons-text"><button><i class="fa-solid fa-share"></i></button><p>Share</p></div>
+                <img style="border-radius: 0.4rem; height: 2.5rem; width: 2.5rem;" src="/assets/channel/shorts/fooddilex.jpg">
+            </div>
+        </div>
+        <div class="up-down-btn">
+            <button><i class="fa-solid fa-arrow-up"></i></button>
+            <button id="down-btn" ><i class="fa-solid fa-arrow-down"></i></button>
+        </div>
+    </div>
+
+
+    <div class="short-row short-row1">
+        <div class="short">
+            <img src="/assets/thumbnail/Shorts Section/2.jpg">
+        </div>
+        <div class="short-info">
+            <div class="short-info-username">
+                <img src="/assets/channel/shorts/Funyaasi.jpg">
+                <p>@Funyaasi</p>
+                <button>Subscribe</button>
+            </div>
+            <div class="short-info-title">
+                <h4>Holi CHANGED our SKIN COLORfor a WEEK 😱 | YT </h>
+            </div>
+            <div class="short-info-buttons">
+                <div class="short-info-buttons-text"><button><i class="fa-solid fa-thumbs-up"></i></button><p>971K</p></div>
+                <div class="short-info-buttons-text"><button><i class="fa-solid fa-thumbs-down"></i></button><p>Dislike</p></div>
+                <div class="short-info-buttons-text"><button><i class="fa-regular fa-comment"></i></button><p>12K</p></div>
+                <div class="short-info-buttons-text"><button><i class="fa-solid fa-share"></i></button><p>Share</p></div>
+                <img style="border-radius: 0.4rem; height: 2.5rem; width: 2.5rem;" src="/assets/channel/shorts/Funyaasi.jpg">
+            </div>
+        </div>
+        <div class="up-down-btn">
+            <button><i class="fa-solid fa-arrow-up"></i></button>
+            <button id="down-btn" ><i class="fa-solid fa-arrow-down"></i></button>
+        </div>
+    </div>
+
+    <div class="short-row short-row1">
+        <div class="short">
+            <img src="/assets/thumbnail/Shorts Section/3.jpg">
+        </div>
+        <div class="short-info">
+            <div class="short-info-username">
+                <img src="/assets/channel/shorts/techtonics4.jpg">
+                <p>@techtonics4</p>
+                <button>Subscribe</button>
+            </div>
+            <div class="short-info-title">
+                <h4>Oneplus Ace 3 First Look🔥😱  </h>
+            </div>
+            <div class="short-info-buttons">
+                <div class="short-info-buttons-text"><button><i class="fa-solid fa-thumbs-up"></i></button><p>42K</p></div>
+                <div class="short-info-buttons-text"><button><i class="fa-solid fa-thumbs-down"></i></button><p>Dislike</p></div>
+                <div class="short-info-buttons-text"><button><i class="fa-regular fa-comment"></i></button><p>5582</p></div>
+                <div class="short-info-buttons-text"><button><i class="fa-solid fa-share"></i></button><p>Share</p></div>
+                <img style="border-radius: 0.4rem; height: 2.5rem; width: 2.5rem;" src="/assets/channel/shorts/techtonics4.jpg">
+            </div>
+        </div>
+        <div class="up-down-btn">
+            <button><i class="fa-solid fa-arrow-up"></i></button>
+            <button id="down-btn" ><i class="fa-solid fa-arrow-down"></i></button>
+        </div>
+    </div>
+
+
+    <div class="short-row short-row1">
+        <div class="short">
+            <img src="/assets/thumbnail/Shorts Section/4.jpg">
+        </div>
+        <div class="short-info">
+            <div class="short-info-username">
+                <img src="/assets/channel/shorts/anmoljaiswalvlogs.jpg">
+                <p>@anmoljaiswalvlogs</p>
+                <button>Subscribe</button>
+            </div>
+            <div class="short-info-title">
+                <h4>Final Nepal Border Crossing 🤩 </h>
+            </div>
+            <div class="short-info-buttons">
+                <div class="short-info-buttons-text"><button><i class="fa-solid fa-thumbs-up"></i></button><p>745K</p></div>
+                <div class="short-info-buttons-text"><button><i class="fa-solid fa-thumbs-down"></i></button><p>Dislike</p></div>
+                <div class="short-info-buttons-text"><button><i class="fa-regular fa-comment"></i></button><p>9752</p></div>
+                <div class="short-info-buttons-text"><button><i class="fa-solid fa-share"></i></button><p>Share</p></div>
+                <img style="border-radius: 0.4rem; height: 2.5rem; width: 2.5rem;" src="/assets/channel/shorts/anmoljaiswalvlogs.jpg">
+            </div>
+        </div>
+        <div class="up-down-btn">
+            <button><i class="fa-solid fa-arrow-up"></i></button>
+            <button id="down-btn" ><i class="fa-solid fa-arrow-down"></i></button>
+        </div>
+    </div>
+
+
+
+
+    <div class="short-row short-row1">
+        <div class="short">
+            <img src="/assets/thumbnail/Shorts Section/5.jpg">
+        </div>
+        <div class="short-info">
+            <div class="short-info-username">
+                <img src="/assets/channel/shorts/TaarakMehtaKaOoltahChashmah.jpg">
+                <p>@TaarakMehtaKaOoltahChashmah</p>
+                <button>Subscribe</button>
+            </div>
+            <div class="short-info-title">
+                <h4>Gabbar Singh!😂  #tmkoc #om #avcher </h>
+            </div>
+            <div class="short-info-buttons">
+                <div class="short-info-buttons-text"><button><i class="fa-solid fa-thumbs-up"></i></button><p>75K</p></div>
+                <div class="short-info-buttons-text"><button><i class="fa-solid fa-thumbs-down"></i></button><p>Dislike</p></div>
+                <div class="short-info-buttons-text"><button><i class="fa-regular fa-comment"></i></button><p>582</p></div>
+                <div class="short-info-buttons-text"><button><i class="fa-solid fa-share"></i></button><p>Share</p></div>
+                <img style="border-radius: 0.4rem; height: 2.5rem; width: 2.5rem;" src="/assets/channel/shorts/TaarakMehtaKaOoltahChashmah.jpg">
+            </div>
+        </div>
+        <div class="up-down-btn">
+            <button><i class="fa-solid fa-arrow-up"></i></button>
+            <button id="down-btn" ><i class="fa-solid fa-arrow-down"></i></button>
+        </div>
+    </div>
+
+
+
+    <div class="short-row short-row1">
+        <div class="short">
+            <img src="/assets/thumbnail/Shorts Section/6.jpg">
+        </div>
+        <div class="short-info">
+            <div class="short-info-username">
+                <img src="/assets/channel/shorts/shubhamkidukan56.jpg">
+                <p>@shubhamkidukan56</p>
+                <button>Subscribe</button>
+            </div>
+            <div class="short-info-title">
+                <h4>Happy Holi 😅Day 6/100 Money Saving Challenge </h>
+            </div>
+            <div class="short-info-buttons">
+                <div class="short-info-buttons-text"><button><i class="fa-solid fa-thumbs-up"></i></button><p>8456</p></div>
+                <div class="short-info-buttons-text"><button><i class="fa-solid fa-thumbs-down"></i></button><p>Dislike</p></div>
+                <div class="short-info-buttons-text"><button><i class="fa-regular fa-comment"></i></button><p>181</p></div>
+                <div class="short-info-buttons-text"><button><i class="fa-solid fa-share"></i></button><p>Share</p></div>
+                <img style="border-radius: 0.4rem; height: 2.5rem; width: 2.5rem;" src="/assets/channel/shorts/shubhamkidukan56.jpg">
+            </div>
+        </div>
+        <div class="up-down-btn">
+            <button><i class="fa-solid fa-arrow-up"></i></button>
+            <button id="down-btn" ><i class="fa-solid fa-arrow-down"></i></button>
+        </div>
+    </div>
+
+
+    <div class="short-row short-row1">
+        <div class="short">
+            <img src="/assets/thumbnail/Shorts Section/7.jpg">
+        </div>
+        <div class="short-info">
+            <div class="short-info-username">
+                <img src="/assets/channel/shorts/duduoutmezgine.jpg">
+                <p>@duduoutmezgine</p>
+                <button>Subscribe</button>
+            </div>
+            <div class="short-info-title">
+                <h4>Lemon Cream Meringue Roll 🍋</h>
+            </div>
+            <div class="short-info-buttons">
+                <div class="short-info-buttons-text"><button><i class="fa-solid fa-thumbs-up"></i></button><p>1.2M</p></div>
+                <div class="short-info-buttons-text"><button><i class="fa-solid fa-thumbs-down"></i></button><p>Dislike</p></div>
+                <div class="short-info-buttons-text"><button><i class="fa-regular fa-comment"></i></button><p>48K</p></div>
+                <div class="short-info-buttons-text"><button><i class="fa-solid fa-share"></i></button><p>Share</p></div>
+                <img style="border-radius: 0.4rem; height: 2.5rem; width: 2.5rem;" src="/assets/channel/shorts/duduoutmezgine.jpg">
+            </div>
+        </div>
+        <div class="up-down-btn">
+            <button><i class="fa-solid fa-arrow-up"></i></button>
+            <button id="down-btn" ><i class="fa-solid fa-arrow-down"></i></button>
+        </div>
+    </div>
+
+
+    <div class="short-row short-row1">
+        <div class="short">
+            <img src="/assets/thumbnail/Shorts Section/8.jpg">
+        </div>
+        <div class="short-info">
+            <div class="short-info-username">
+                <img src="/assets/channel/shorts/lifewithinpixels.jpg">
+                <p>@lifewithinpixels</p>
+                <button>Subscribe</button>
+            </div>
+            <div class="short-info-title">
+                <h4>Import any website to figma within seconds 😃</h>
+            </div>
+            <div class="short-info-buttons">
+                <div class="short-info-buttons-text"><button><i class="fa-solid fa-thumbs-up"></i></button><p>78K</p></div>
+                <div class="short-info-buttons-text"><button><i class="fa-solid fa-thumbs-down"></i></button><p>Dislike</p></div>
+                <div class="short-info-buttons-text"><button><i class="fa-regular fa-comment"></i></button><p>758</p></div>
+                <div class="short-info-buttons-text"><button><i class="fa-solid fa-share"></i></button><p>Share</p></div>
+                <img style="border-radius: 0.4rem; height: 2.5rem; width: 2.5rem;" src="/assets/channel/shorts/lifewithinpixels.jpg">
+            </div>
+        </div>
+        <div class="up-down-btn">
+            <button><i class="fa-solid fa-arrow-up"></i></button>
+            <button id="down-btn" ><i class="fa-solid fa-arrow-down"></i></button>
+        </div>
+    </div>
+
+
+    <div class="short-row short-row1">
+        <div class="short">
+            <img src="/assets/thumbnail/Shorts Section/9.jpg">
+        </div>
+        <div class="short-info">
+            <div class="short-info-username">
+                <img src="/assets/channel/shorts/Chemteacherphil.jpg">
+                <p>@Chemteacherphil</p>
+                <button>Subscribe</button>
+            </div>
+            <div class="short-info-title">
+                <h4>Hydrophobic Club Moss Spores</h>
+            </div>
+            <div class="short-info-buttons">
+                <div class="short-info-buttons-text"><button><i class="fa-solid fa-thumbs-up"></i></button><p>198K</p></div>
+                <div class="short-info-buttons-text"><button><i class="fa-solid fa-thumbs-down"></i></button><p>Dislike</p></div>
+                <div class="short-info-buttons-text"><button><i class="fa-regular fa-comment"></i></button><p>582</p></div>
+                <div class="short-info-buttons-text"><button><i class="fa-solid fa-share"></i></button><p>Share</p></div>
+                <img style="border-radius: 0.4rem; height: 2.5rem; width: 2.5rem;" src="/assets/channel/shorts/Chemteacherphil.jpg">
+            </div>
+        </div>
+        <div class="up-down-btn">
+            <button><i class="fa-solid fa-arrow-up"></i></button>
+            <button id="down-btn" ><i class="fa-solid fa-arrow-down"></i></button>
+        </div>
+    </div>
+
+
+
+
+    <div class="short-row short-row1">
+        <div class="short">
+            <img src="/assets/thumbnail/Shorts Section/10.jpg">
+        </div>
+        <div class="short-info">
+            <div class="short-info-username">
+                <img src="/assets/channel/shorts/Puravjha_.jpg">
+                <p>@Puravjha_</p>
+                <button>Subscribe</button>
+            </div>
+            <div class="short-info-title">
+                <h4>Puri video bohot mazedaar hone wali hai...</h>
+            </div>
+            <div class="short-info-buttons">
+                <div class="short-info-buttons-text"><button><i class="fa-solid fa-thumbs-up"></i></button><p>10K</p></div>
+                <div class="short-info-buttons-text"><button><i class="fa-solid fa-thumbs-down"></i></button><p>Dislike</p></div>
+                <div class="short-info-buttons-text"><button><i class="fa-regular fa-comment"></i></button><p>4582</p></div>
+                <div class="short-info-buttons-text"><button><i class="fa-solid fa-share"></i></button><p>Share</p></div>
+                <img style="border-radius: 0.4rem; height: 2.5rem; width: 2.5rem;" src="/assets/channel/shorts/Puravjha_.jpg">
+            </div>
+        </div>
+        <div class="up-down-btn">
+            <button><i class="fa-solid fa-arrow-up"></i></button>
+            <button id="down-btn" ><i class="fa-solid fa-arrow-down"></i></button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+</div>
+
+</body>
+</html>
+
